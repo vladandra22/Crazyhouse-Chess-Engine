@@ -1,5 +1,5 @@
 #include "Bot.h"
-
+// HELLO ANDRA
 const std::string Bot::BOT_NAME = "MyBot"; /* Edit this, escaped characters are forbidden */
 
 
