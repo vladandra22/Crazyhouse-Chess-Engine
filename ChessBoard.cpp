@@ -1,6 +1,7 @@
 #include "ChessBoard.h"
 #include <cstdlib>
 
+//test
 using namespace std;
  
 MyPiece::MyPiece(Piece m_piesa, PlaySide m_culoare) : piesa(m_piesa), culoare(m_culoare) {}
