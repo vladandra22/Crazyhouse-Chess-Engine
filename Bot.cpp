@@ -1,5 +1,6 @@
 #include "Bot.h"
 
+// buna test meli
 const std::string Bot::BOT_NAME = "MyBot"; /* Edit this, escaped characters are forbidden */
 
 
