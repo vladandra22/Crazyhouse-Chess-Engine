@@ -1,7 +1,6 @@
 #include "ChessBoard.h"
 #include <cstdlib>
 
-//test
 using namespace std;
  
 MyPiece::MyPiece(Piece m_piesa, PlaySide m_culoare) : piesa(m_piesa), culoare(m_culoare) {}
@@ -66,6 +65,8 @@ bool Pawn::isLegalMove(const Board& board, Move m) {
 
 Rook::Rook(PlaySide culoare) : MyPiece(Piece::ROOK, culoare) {};
 bool Rook::isLegalMove(const Board& board, Move m) {
+        if(!m.isPromotion())
+            return false;
         string src = m.getSource().value();
         string dest = m.getDestination().value();
         int src_lit = src[0] - 'a';
@@ -102,6 +103,8 @@ bool Rook::isLegalMove(const Board& board, Move m) {
 
 Bishop::Bishop(PlaySide culoare) : MyPiece(Piece::BISHOP, culoare) {};
 bool Bishop::isLegalMove(const Board& board, Move m) {
+        if(!m.isPromotion())
+            return false;
         string src = m.getSource().value();
         string dest = m.getDestination().value();
         int src_lit = src[0] - 'a';
@@ -133,6 +136,8 @@ bool Bishop::isLegalMove(const Board& board, Move m) {
 
 Knight::Knight(PlaySide culoare) : MyPiece(Piece::KNIGHT, culoare) {};
 bool Knight::isLegalMove(const Board& board, Move m) {
+        if(!m.isPromotion())
+            return false;
         string src = m.getSource().value();
         string dest = m.getDestination().value();
         int src_lit = src[0] - 'a'; // 1
@@ -270,10 +275,9 @@ MyPiece* Board::getPiece(int row, int col) const {
 }
 
 void Board::movePiece(int startRow, int startCol, int endRow, int endCol) {
-        MyPiece* piece = board[startRow][startCol];
-        board[startRow][startCol] = new EmptySquare();
-        //delete piece;
-        board[endRow][endCol] = piece;
+    MyPiece* piece = board[startRow][startCol];
+    board[startRow][startCol] = new EmptySquare();
+    board[endRow][endCol] = piece;
 }
 
 void Board::movePiece(Move *m){
@@ -283,5 +287,6 @@ void Board::movePiece(Move *m){
         int src_num = src[1] - '1';
         int dest_lit = dest[0] - 'a';
         int dest_num = dest[1] - '1';
+        Move::moveTo(m->getSource(), m->getDestination()); 
         movePiece(src_num, src_lit, dest_num, dest_lit);
     }

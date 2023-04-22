@@ -15,11 +15,11 @@ class Bot {
 
  public:
   /* Declare custom fields below */
-    Board board;
+    Board* board = nullptr;
     PlaySide currColor;
   /* Declare custom fields above */
   Bot();
-  Bot(Board m_board, PlaySide m_currColor);
+  Bot(Board* m_board, PlaySide m_currColor);
 
   /**
    * Record move (either by enemy in normal mode, or by either side
