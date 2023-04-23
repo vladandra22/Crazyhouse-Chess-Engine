@@ -103,38 +103,49 @@ bool Rook::isLegalMove(const Board& board, Move m) {
 
 Bishop::Bishop(PlaySide culoare) : MyPiece(Piece::BISHOP, culoare) {};
 bool Bishop::isLegalMove(const Board& board, Move m) {
-        if(!m.isPromotion())
-            return false;
-        string src = m.getSource().value();
-        string dest = m.getDestination().value();
-        int src_lit = src[0] - 'a';
-        int src_num = src[1] - '1';
-        int dest_lit = dest[0] - 'a';
-        int dest_num = dest[1] - '1';
-
-        int d_num = abs(src_num - dest_num);
-        int d_lit = abs(src_lit - dest_lit);
-        // verificam daca e diagonala miscarea
-        if(d_num != d_lit){
-            return false;
-        }
-        // verificam sa nu fie alte mutari in drumul nostru 
-        for(int i = 1; i < d_num; i++){
-            int x = src_lit + i;
-            int y = src_num + i;
-            if(x < 0 || x > 7 || y < 0 || y > 7)
-                return false;
-            if(board.getPiece(x, y)->getType() == Piece::EMPTY)
-                continue;
-            else
-                return false;
-        }
-        // fara nicio piesa pe poz finala => putem face mutarea
-        if(board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::BLACK){
-            return false;
-        }
-        return true;
+    if (!m.isPromotion()) {
+        return false;
     }
+    string src = m.getSource().value();
+    string dest = m.getDestination().value();
+    int src_lit = src[0] - 'a';
+    int src_num = src[1] - '1';
+    int dest_lit = dest[0] - 'a';
+    int dest_num = dest[1] - '1';
+
+    int d_num = abs(src_num - dest_num);
+    int d_lit = abs(src_lit - dest_lit);
+
+    // Check if source and destination squares are the same
+    if (src_lit == dest_lit && src_num == dest_num) {
+        return false;
+    }
+
+    // Check if the move is diagonal
+    if (d_num != d_lit) {
+        return false;
+    }
+
+    // Check for pieces in the path of the move
+    int x_dir = (dest_lit > src_lit) ? 1 : -1;
+    int y_dir = (dest_num > src_num) ? 1 : -1;
+    int x = src_lit + x_dir;
+    int y = src_num + y_dir;
+    while (x != dest_lit && y != dest_num) {
+        if (board.getPiece(y, x)->getType() != Piece::EMPTY) {
+            return false;
+        }
+        x += x_dir;
+        y += y_dir;
+    }
+
+    // Check if the destination square is occupied by a piece of the same color
+    if (board.getPiece(dest_num, dest_lit)->getColor() == getColor()) {
+        return false;
+    }
+
+    return true;
+}
 
 Knight::Knight(PlaySide culoare) : MyPiece(Piece::KNIGHT, culoare) {};
 bool Knight::isLegalMove(const Board& board, Move m) {
@@ -170,38 +181,51 @@ bool Queen::isLegalMove(const Board& board, Move m) {
 
         // verificam obstacolele din calea reginei
         if (d_num == d_lit) { // pe diagonala
-            int num_dir = (dest_num - src_num > 0) ? 1 : -1;
-            int lit_dir = (dest_lit - src_lit > 0) ? 1 : -1;
-
-            for (int i = 1; i < d_num; i++) {
-                int num = src_num + i * num_dir;
-                int lit = src_lit + i * lit_dir;
-                if (board.getPiece(num, lit)->getType() != Piece::EMPTY) {
+            // daca pozitia destinatie e aceeasi cu pozitia sursa
+           if (src_lit == dest_lit && src_num == dest_num) {
+                return false;
+           }
+            // Check for pieces in the path of the move
+            int x_dir = (dest_lit > src_lit) ? 1 : -1;
+            int y_dir = (dest_num > src_num) ? 1 : -1;
+            int x = src_lit + x_dir;
+            int y = src_num + y_dir;
+            while (x != dest_lit && y != dest_num) {
+                if (board.getPiece(y, x)->getType() != Piece::EMPTY) {
                     return false;
                 }
+                x += x_dir;
+                y += y_dir;
             }
+            // Check if the destination square is occupied by a piece of the same color
+            if (board.getPiece(dest_num, dest_lit)->getColor() == getColor()) {
+                return false;
+            }
+            else return true;
         } 
         else if (src_num == dest_num) { // pe orizontala
-            int lit_dir = (dest_lit - src_lit > 0) ? 1 : -1;
-
-            for (int i = 1; i < d_lit; i++) {
-                int lit = src_lit + i * lit_dir;
-                if (board.getPiece(src_num, lit)->getType() != Piece::EMPTY) {
-                    return false;
+            if(src_lit == dest_lit)
+                return false;
+            int start = min(src_lit, dest_lit);
+            int end = max(src_lit, dest_lit);
+            for (int i = start; i <= end; i++) {
+                if (board.getPiece(src_num, i)->getType() != Piece::EMPTY && i != src_lit) {
+                    return false;  // e o piesa in drum
                 }
             }
+            return true;
         } 
         else if (src_lit == dest_lit) { // pe verticala
-            int num_dir = (dest_num - src_num > 0) ? 1 : -1;
-
-            for (int i = 1; i < d_num; i++) {
-                int num = src_num + i * num_dir;
-                if (board.getPiece(num, src_lit)->getType() != Piece::EMPTY) {
-                    return false;
+            int start = min(src_num, dest_num);
+                int end = max(src_num, dest_num);
+                for (int i = start; i <= end; i++) {
+                    if (board.getPiece(i, src_lit)->getType() != Piece::EMPTY && i != src_num) {
+                        return false;  // e o piesa in drum
+                    }
                 }
+                return true;
             }
-        }
-        return true;
+        else return false;
     }
 
 King::King(PlaySide culoare) : MyPiece(Piece::KING, culoare) {};
@@ -213,15 +237,19 @@ bool King::isLegalMove(const Board& board, Move m) {
         int dest_lit = dest[0] - 'a';
         int dest_num = dest[1] - '1';
 
+        // verificam daca sursa este aceeasi cu destinatia
+        if(src_lit == dest_lit && src_num == dest_num){
+            return false;
+        }
         int d_num = abs(src_num - dest_num);
         int d_lit = abs(src_lit - dest_lit);
         //std::cerr << "Calutz: " << d_num << " " << d_lit <<'\n';
-        if (board.getPiece(dest_num, dest_lit)->getType() != Piece::EMPTY) {
+        // daca la destinatie ai o piesa de aceeasi culoare
+        if (board.getPiece(dest_num, dest_lit)->getColor() == culoare) {
                 return false;
         }
-        return(d_num <= 1 && d_lit <= 1);
-      }
-
+        return(d_num == 1 && d_lit == 1);
+}
 EmptySquare::EmptySquare(): MyPiece(Piece::EMPTY, PlaySide::NONE) {};
 bool EmptySquare::isLegalMove(const Board& board, Move m) {
         return true;
@@ -273,8 +301,6 @@ Board::~Board() {
         }
 }
 MyPiece* Board::getPiece(int row, int col) const {
-      //  if(row < 0 || row > 8 || col < 0 || col > 8)
-      //      return (MyPiece*)(-1);
         return board[row][col];
 }
 
@@ -294,3 +320,16 @@ void Board::movePiece(Move *m){
         Move::moveTo(m->getSource(), m->getDestination()); 
         movePiece(src_num, src_lit, dest_num, dest_lit);
     }
+
+void Board::undoPiece(Move *m){
+    string src = m->getDestination().value();
+    string dest = m->getSource().value();
+    int src_lit = src[0] - 'a';
+    int src_num = src[1] - '1';
+    int dest_lit = dest[0] - 'a';
+    int dest_num = dest[1] - '1';
+    MyPiece* piece = board[src_num][src_lit];
+    board[src_num][src_lit] = board[dest_num][dest_lit];
+    board[dest_num][dest_lit] = piece;
+    Move::moveTo(m->getDestination(), m->getSource());
+}

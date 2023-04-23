@@ -1,6 +1,6 @@
 #include <string>
 #include <sstream>
-#include <optional>
+
 #include <cassert>
 
 #include "Bot.h"

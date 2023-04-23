@@ -1,5 +1,6 @@
 #include "Bot.h"
-
+#include <random>
+#include <vector> 
 const std::string Bot::BOT_NAME = "MyBot"; /* Edit this, escaped characters are forbidden */
 
 
@@ -24,16 +25,24 @@ Move* Bot::calculateNextMove() {
    * Move is to be constructed via one of the factory methods declared in Move.h */
   //PlaySide engineSide = Main.getEngineSide();
   PlaySide engineSide = PlaySide::BLACK;
+  std::vector<Move*> legalMovesRand;
   std::queue<Move*> legalMoves= generateLegalMoves();
   while(!legalMoves.empty()){
     Move* m = legalMoves.front();
+    legalMovesRand.push_back(m);
     legalMoves.pop();
-    recordMove(m, engineSide);
-    legalMoves = generateLegalMoves();
-    return m;
+  }
+  std::random_device rd;
+  std::mt19937 g(rd());
+  std::shuffle(legalMovesRand.begin(), legalMovesRand.end(), g);
+  for(Move *move : legalMovesRand){
+      recordMove(move, engineSide);
+      legalMoves = generateLegalMoves();
+      return move;
   }
   return Move::resign();
 }
+
 
 std::string Bot::getBotName() { return Bot::BOT_NAME; }
 
@@ -44,7 +53,7 @@ std::queue<Move*> Bot::generateLegalMoves() {
       MyPiece* piesa = board->getPiece(i, j);
       //PlaySide engineSide = Main.getEngineSide();
       PlaySide engineSide = PlaySide::BLACK;
-      if(piesa->getType() != Piece::EMPTY && piesa->getColor() == engineSide) {
+      if(piesa->getType() != EMPTY && piesa->getColor() == engineSide) {
          for(int x = 0; x < 8; x++)
           for(int y = 7; y >= 0; y--){
             std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));
@@ -91,9 +100,9 @@ bool Bot::isKinginCheck(){
           std::string dest = std::string(1, (char)(king_col + 'a')) + std::string(1, (char)(king_num + '1'));
           Move move(src, dest, Piece::EMPTY);
           if (piesa->isLegalMove(*board, move)) {
-            return true;
+                return true;
+              }
           }
-        }
       }
   }
   return false;

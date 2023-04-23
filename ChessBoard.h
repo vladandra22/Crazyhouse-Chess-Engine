@@ -73,6 +73,7 @@ public:
     MyPiece* getPiece(int row, int col) const;
     void movePiece(int startRow, int startCol, int endRow, int endCol);
     void movePiece(Move *m);
+    void undoPiece(Move *m);
 };
 
 #endif
