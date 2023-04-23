@@ -122,15 +122,17 @@ bool Bishop::isLegalMove(const Board& board, Move m) {
         for(int i = 1; i < d_num; i++){
             int x = src_lit + i;
             int y = src_num + i;
+            if(x < 0 || x > 7 || y < 0 || y > 7)
+                return false;
             if(board.getPiece(x, y)->getType() == Piece::EMPTY)
                 continue;
             else
                 return false;
         }
         // fara nicio piesa pe poz finala => putem face mutarea
-        /*if(board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY){
-            return true;
-        }*/
+        if(board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::BLACK){
+            return false;
+        }
         return true;
     }
 
@@ -271,6 +273,8 @@ Board::~Board() {
         }
 }
 MyPiece* Board::getPiece(int row, int col) const {
+      //  if(row < 0 || row > 8 || col < 0 || col > 8)
+      //      return (MyPiece*)(-1);
         return board[row][col];
 }
 
