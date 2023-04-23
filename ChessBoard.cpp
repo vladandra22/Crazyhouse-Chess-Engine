@@ -65,42 +65,39 @@ bool Pawn::isLegalMove(const Board& board, Move m) {
 
 Rook::Rook(PlaySide culoare) : MyPiece(Piece::ROOK, culoare) {};
 bool Rook::isLegalMove(const Board& board, Move m) {
-        if(!m.isPromotion())
+    string src = m.getSource().value();
+    string dest = m.getDestination().value();
+    int src_lit = src[0] - 'a';
+    int src_num = src[1] - '1';
+    int dest_lit = dest[0] - 'a';
+    int dest_num = dest[1] - '1';
+
+    // verificam randul
+    if (src_num == dest_num) {
+        if(src_lit == dest_lit)
             return false;
-        string src = m.getSource().value();
-        string dest = m.getDestination().value();
-        int src_lit = src[0] - 'a';
-        int src_num = src[1] - '1';
-        int dest_lit = dest[0] - 'a';
-        int dest_num = dest[1] - '1';
-
-        // verificam randul
-        if (src_num == dest_num) {
-            if(src_lit == dest_lit)
-                return false;
-            int start = min(src_lit, dest_lit);
-            int end = max(src_lit, dest_lit);
-            for (int i = start; i <= end; i++) {
-                if (board.getPiece(src_num, i)->getType() != Piece::EMPTY && i != src_lit) {
-                    return false;  // e o piesa in drum
-                }
+        int start = min(src_lit, dest_lit);
+        int end = max(src_lit, dest_lit);
+        for (int i = start; i < end; i++) {
+            if (board.getPiece(src_num, i)->getType() != Piece::EMPTY && i != src_lit) {
+                return false;  // e o piesa in drum
             }
-            return true;
         }
-    // verificam coloana
-        else if (src_lit == dest_lit) {
-            int start = min(src_num, dest_num);
-            int end = max(src_num, dest_num);
-            for (int i = start; i <= end; i++) {
-                if (board.getPiece(i, src_lit)->getType() != Piece::EMPTY && i != src_num) {
-                    return false;  // e o piesa in drum
-                }
-            }
-            return true;
-        }
-        else return false;
+        return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
     }
-
+    // verificam coloana
+    else if (src_lit == dest_lit) {
+        int start = min(src_num, dest_num);
+        int end = max(src_num, dest_num);
+        for (int i = start; i <= end; i++) {
+            if (board.getPiece(i, src_lit)->getType() != Piece::EMPTY && i != src_num) {
+                return false;  // e o piesa in drum
+            }
+        }
+        return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
+    }
+    else return false;
+}
 Bishop::Bishop(PlaySide culoare) : MyPiece(Piece::BISHOP, culoare) {};
 bool Bishop::isLegalMove(const Board& board, Move m) {
     if (!m.isPromotion()) {
@@ -213,7 +210,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
                     return false;  // e o piesa in drum
                 }
             }
-            return true;
+            return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
         } 
         else if (src_lit == dest_lit) { // pe verticala
             int start = min(src_num, dest_num);
@@ -223,7 +220,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
                         return false;  // e o piesa in drum
                     }
                 }
-                return true;
+                return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
             }
         else return false;
     }
