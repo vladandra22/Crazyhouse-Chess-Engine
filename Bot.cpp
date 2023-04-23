@@ -29,7 +29,7 @@ Move* Bot::calculateNextMove() {
     Move* m = legalMoves.front();
     legalMoves.pop();
     recordMove(m, engineSide);
-    std::queue<Move*> legalMoves = generateLegalMoves();
+    legalMoves = generateLegalMoves();
     return m;
   }
   return Move::resign();
@@ -44,7 +44,7 @@ std::queue<Move*> Bot::generateLegalMoves() {
       MyPiece* piesa = board->getPiece(i, j);
       //PlaySide engineSide = Main.getEngineSide();
       PlaySide engineSide = PlaySide::BLACK;
-      if(piesa->getType() != EMPTY && piesa->getColor() == engineSide) {
+      if(piesa->getType() != Piece::EMPTY && piesa->getColor() == engineSide) {
          for(int x = 0; x < 8; x++)
           for(int y = 7; y >= 0; y--){
             std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));

@@ -1,0 +1,422 @@
+==19319== Memcheck, a memory error detector
+==19319== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19319== Using Valgrind-3.15.0-608cb11914-20190413 and LibVEX; rerun with -h for copyright info
+==19319== Command: ./Main
+==19319== Parent PID: 19318
+==19319== 
+--19319-- 
+--19319-- Valgrind options:
+--19319--    --leak-check=full
+--19319--    --show-leak-kinds=all
+--19319--    -s
+--19319--    --track-origins=yes
+--19319--    --verbose
+--19319--    --log-file=valgrind-out.txt
+--19319-- Contents of /proc/version:
+--19319--   Linux version 5.15.90.1-microsoft-standard-WSL2 (oe-user@oe-host) (x86_64-msft-linux-gcc (GCC) 9.3.0, GNU ld (GNU Binutils) 2.34.0.20200220) #1 SMP Fri Jan 27 02:56:13 UTC 2023
+--19319-- 
+--19319-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--19319-- Page sizes: currently 4096, max supported 4096
+--19319-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--19319-- Reading syms from /mnt/c/Users/Catalina/Desktop/vsc/PA/PROIECT/Chess-Engine/FORKED_PROJECT/Chess-Engine/Main
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--19319--   Considering /usr/lib/debug/.build-id/45/87364908de169dec62ffa538170118c1c3a078.debug ..
+--19319--   .. build-id is valid
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--19319--    object doesn't have a symbol table
+--19319--    object doesn't have a dynamic symbol table
+--19319-- Scheduler: using generic scheduler lock implementation.
+--19319-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==19319== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-19319-by-catalina-on-???
+==19319== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-19319-by-catalina-on-???
+==19319== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-19319-by-catalina-on-???
+==19319== 
+==19319== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==19319== don't want to do, unless you know exactly what you're doing,
+==19319== or are doing some strange experiment):
+==19319==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=19319 ...command...
+==19319== 
+==19319== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==19319==   /path/to/gdb ./Main
+==19319== and then give GDB the following command
+==19319==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=19319
+==19319== --pid is optional if only one valgrind process is running
+==19319== 
+--19319-- REDIR: 0x4022e20 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (???)
+--19319-- REDIR: 0x4022bf0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (???)
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--19319--    object doesn't have a symbol table
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--19319--    object doesn't have a symbol table
+==19319== WARNING: new redirection conflicts with existing -- ignoring it
+--19319--     old: 0x04022e20 (strlen              ) R-> (0000.0) 0x580c9ce2 ???
+--19319--     new: 0x04022e20 (strlen              ) R-> (2007.0) 0x0483f060 strlen
+--19319-- REDIR: 0x401f600 (ld-linux-x86-64.so.2:strcmp) redirected to 0x483ffd0 (strcmp)
+--19319-- REDIR: 0x4023380 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4843a20 (mempcpy)
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.29
+--19319--    object doesn't have a symbol table
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+--19319--    object doesn't have a symbol table
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--19319--   Considering /usr/lib/debug/.build-id/18/78e6b475720c7c51969e69ab2d276fae6d1dee.debug ..
+--19319--   .. build-id is valid
+--19319-- Reading syms from /usr/lib/x86_64-linux-gnu/libm-2.31.so
+--19319--   Considering /usr/lib/debug/.build-id/fe/91b4090ea04c1559ff71dd9290062776618891.debug ..
+--19319--   .. build-id is valid
+--19319-- REDIR: 0x4b30480 (libc.so.6:memmove) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f780 (libc.so.6:strncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b307b0 (libc.so.6:strcasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f0a0 (libc.so.6:strcat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f7e0 (libc.so.6:rindex) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b31c50 (libc.so.6:rawmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4cce0 (libc.so.6:wmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4c820 (libc.so.6:wcscmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b305e0 (libc.so.6:mempcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30410 (libc.so.6:bcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f710 (libc.so.6:strncmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f150 (libc.so.6:strcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30540 (libc.so.6:memset) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4c7e0 (libc.so.6:wcschr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f670 (libc.so.6:strnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f230 (libc.so.6:strcspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30800 (libc.so.6:strncasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f1d0 (libc.so.6:strcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30950 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4df50 (libc.so.6:wcsnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4c860 (libc.so.6:wcscpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f820 (libc.so.6:strpbrk) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f100 (libc.so.6:index) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2f630 (libc.so.6:strlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b38bb0 (libc.so.6:memrchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30850 (libc.so.6:strcasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b303d0 (libc.so.6:memchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b4c930 (libc.so.6:wcslen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b2fae0 (libc.so.6:strspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b30750 (libc.so.6:stpncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b306f0 (libc.so.6:stpcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b31c90 (libc.so.6:strchrnul) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4b308a0 (libc.so.6:strncasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--19319-- REDIR: 0x4c18500 (libc.so.6:__strrchr_avx2) redirected to 0x483ea10 (rindex)
+--19319-- REDIR: 0x4b2a0e0 (libc.so.6:malloc) redirected to 0x483b780 (malloc)
+--19319-- REDIR: 0x4c186d0 (libc.so.6:__strlen_avx2) redirected to 0x483ef40 (strlen)
+--19319-- REDIR: 0x4c14cc0 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x48421e0 (bcmp)
+--19319-- REDIR: 0x4c13bd0 (libc.so.6:__strcmp_avx2) redirected to 0x483fed0 (strcmp)
+--19319-- REDIR: 0x4c1b6e0 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x48429f0 (memmove)
+--19319-- REDIR: 0x4908d90 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x483bdf0 (operator new(unsigned long))
+--19319-- REDIR: 0x4906f80 (libstdc++.so.6:operator delete(void*)) redirected to 0x483cf50 (operator delete(void*))
+--19319-- REDIR: 0x4c1b6c0 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4843660 (mempcpy)
+--19319-- REDIR: 0x4c14530 (libc.so.6:__memchr_avx2) redirected to 0x4840050 (memchr)
+--19319-- REDIR: 0x4906f90 (libstdc++.so.6:operator delete(void*, unsigned long)) redirected to 0x483d160 (operator delete(void*, unsigned long))
+--19319-- REDIR: 0x4b2a6d0 (libc.so.6:free) redirected to 0x483c9d0 (free)
+==19319== 
+==19319== HEAP SUMMARY:
+==19319==     in use at exit: 413,000 bytes in 4,794 blocks
+==19319==   total heap usage: 43,632 allocs, 38,838 frees, 4,013,909 bytes allocated
+==19319== 
+==19319== Searching for pointers to 4,794 not-freed blocks
+==19319== Checked 113,048 bytes
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 1 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x10CDD2: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 2 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110138: Board::Board() (ChessBoard.cpp:240)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 3 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110172: Board::Board() (ChessBoard.cpp:241)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 4 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1101AC: Board::Board() (ChessBoard.cpp:242)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 5 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x11021E: Board::Board() (ChessBoard.cpp:248)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 6 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110258: Board::Board() (ChessBoard.cpp:250)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 7 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110292: Board::Board() (ChessBoard.cpp:252)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 8 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110306: Board::Board() (ChessBoard.cpp:254)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are still reachable in loss record 9 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x10D062: EngineComponents::processIncomingMove(Move*) (Main.cpp:232)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 10 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110138: Board::Board() (ChessBoard.cpp:240)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 11 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x11021E: Board::Board() (ChessBoard.cpp:248)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 12 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110258: Board::Board() (ChessBoard.cpp:250)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 13 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110292: Board::Board() (ChessBoard.cpp:252)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 14 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1102CC: Board::Board() (ChessBoard.cpp:253)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 16 bytes in 1 blocks are definitely lost in loss record 15 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x1115D9: Bot::calculateNextMove() (Bot.cpp:31)
+==19319==    by 0x10CF95: EngineComponents::leaveForceMode() (Main.cpp:223)
+==19319==    by 0x10D796: EngineComponents::executeOneCommand() (Main.cpp:276)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 32 bytes in 2 blocks are still reachable in loss record 16 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1100C4: Board::Board() (ChessBoard.cpp:236)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 32 bytes in 2 blocks are still reachable in loss record 17 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1100FE: Board::Board() (ChessBoard.cpp:238)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 48 bytes in 3 blocks are still reachable in loss record 18 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110346: Board::Board() (ChessBoard.cpp:258)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 80 bytes in 1 blocks are still reachable in loss record 19 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x10C7A7: main (Main.cpp:289)
+==19319== 
+==19319== 80 bytes in 5 blocks are definitely lost in loss record 20 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110346: Board::Board() (ChessBoard.cpp:258)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 80 bytes in 5 blocks are definitely lost in loss record 21 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x10D0AC: EngineComponents::processIncomingMove(Move*) (Main.cpp:235)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 88 bytes in 1 blocks are definitely lost in loss record 22 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110DA4: Move::moveTo(std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) (Move.cpp:37)
+==19319==    by 0x1106A5: Board::movePiece(Move*) (ChessBoard.cpp:294)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x10D062: EngineComponents::processIncomingMove(Move*) (Main.cpp:232)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 88 bytes in 1 blocks are definitely lost in loss record 23 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110DA4: Move::moveTo(std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) (Move.cpp:37)
+==19319==    by 0x1106A5: Board::movePiece(Move*) (ChessBoard.cpp:294)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x1115D9: Bot::calculateNextMove() (Bot.cpp:31)
+==19319==    by 0x10CF95: EngineComponents::leaveForceMode() (Main.cpp:223)
+==19319==    by 0x10D796: EngineComponents::executeOneCommand() (Main.cpp:276)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 112 bytes in 7 blocks are still reachable in loss record 24 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1103BA: Board::Board() (ChessBoard.cpp:263)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 128 bytes in 8 blocks are definitely lost in loss record 25 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110383: Board::Board() (ChessBoard.cpp:261)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 240 bytes in 15 blocks are definitely lost in loss record 26 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x1115D9: Bot::calculateNextMove() (Bot.cpp:31)
+==19319==    by 0x10D0C8: EngineComponents::processIncomingMove(Move*) (Main.cpp:238)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 256 bytes in 16 blocks are still reachable in loss record 27 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x1115D9: Bot::calculateNextMove() (Bot.cpp:31)
+==19319==    by 0x10D0C8: EngineComponents::processIncomingMove(Move*) (Main.cpp:238)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 400 bytes in 25 blocks are definitely lost in loss record 28 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1103BA: Board::Board() (ChessBoard.cpp:263)
+==19319==    by 0x1114CE: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 416 bytes in 26 blocks are still reachable in loss record 29 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1104DA: Board::movePiece(int, int, int, int) (ChessBoard.cpp:283)
+==19319==    by 0x1106E7: Board::movePiece(Move*) (ChessBoard.cpp:295)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x10D0AC: EngineComponents::processIncomingMove(Move*) (Main.cpp:235)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 512 bytes in 1 blocks are still reachable in loss record 30 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x1114C3: Bot::Bot() (Bot.cpp:9)
+==19319==    by 0x10CDDD: EngineComponents::newGame() (Main.cpp:202)
+==19319==    by 0x10D73A: EngineComponents::executeOneCommand() (Main.cpp:272)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 2,728 bytes in 31 blocks are definitely lost in loss record 31 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110DA4: Move::moveTo(std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) (Move.cpp:37)
+==19319==    by 0x1106A5: Board::movePiece(Move*) (ChessBoard.cpp:294)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x10D0AC: EngineComponents::processIncomingMove(Move*) (Main.cpp:235)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 2,728 bytes in 31 blocks are definitely lost in loss record 32 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x110DA4: Move::moveTo(std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::optional<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >) (Move.cpp:37)
+==19319==    by 0x1106A5: Board::movePiece(Move*) (ChessBoard.cpp:294)
+==19319==    by 0x11152C: Bot::recordMove(Move*, PlaySide) (Bot.cpp:16)
+==19319==    by 0x1115D9: Bot::calculateNextMove() (Bot.cpp:31)
+==19319==    by 0x10D0C8: EngineComponents::processIncomingMove(Move*) (Main.cpp:238)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 5,896 bytes in 67 blocks are definitely lost in loss record 33 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x111992: Bot::generateLegalMoves() (Bot.cpp:52)
+==19319==    by 0x111578: Bot::calculateNextMove() (Bot.cpp:27)
+==19319==    by 0x10CF95: EngineComponents::leaveForceMode() (Main.cpp:223)
+==19319==    by 0x10D796: EngineComponents::executeOneCommand() (Main.cpp:276)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 5,896 bytes in 67 blocks are definitely lost in loss record 34 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x111992: Bot::generateLegalMoves() (Bot.cpp:52)
+==19319==    by 0x1115EF: Bot::calculateNextMove() (Bot.cpp:32)
+==19319==    by 0x10CF95: EngineComponents::leaveForceMode() (Main.cpp:223)
+==19319==    by 0x10D796: EngineComponents::executeOneCommand() (Main.cpp:276)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 193,864 bytes in 2,203 blocks are definitely lost in loss record 35 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x111992: Bot::generateLegalMoves() (Bot.cpp:52)
+==19319==    by 0x111578: Bot::calculateNextMove() (Bot.cpp:27)
+==19319==    by 0x10D0C8: EngineComponents::processIncomingMove(Move*) (Main.cpp:238)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== 199,056 bytes in 2,262 blocks are definitely lost in loss record 36 of 36
+==19319==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==19319==    by 0x111992: Bot::generateLegalMoves() (Bot.cpp:52)
+==19319==    by 0x1115EF: Bot::calculateNextMove() (Bot.cpp:32)
+==19319==    by 0x10D0C8: EngineComponents::processIncomingMove(Move*) (Main.cpp:238)
+==19319==    by 0x10D83D: EngineComponents::executeOneCommand() (Main.cpp:282)
+==19319==    by 0x10C7CE: main (Main.cpp:295)
+==19319== 
+==19319== LEAK SUMMARY:
+==19319==    definitely lost: 411,368 bytes in 4,727 blocks
+==19319==    indirectly lost: 0 bytes in 0 blocks
+==19319==      possibly lost: 0 bytes in 0 blocks
+==19319==    still reachable: 1,632 bytes in 67 blocks
+==19319==         suppressed: 0 bytes in 0 blocks
+==19319== 
+==19319== ERROR SUMMARY: 19 errors from 19 contexts (suppressed: 0 from 0)

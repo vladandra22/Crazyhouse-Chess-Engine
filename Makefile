@@ -15,7 +15,7 @@ DEPS := $(OBJS:.o=.d)
 build: all
 
 run: all
-	./Main
+	 valgrind --leak-check=full --show-leak-kinds=all -s --track-origins=yes --verbose --log-file=valgrind-out.txt ./Main
 
 all: $(PRGM)
 
