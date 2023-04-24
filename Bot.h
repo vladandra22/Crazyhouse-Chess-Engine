@@ -41,6 +41,6 @@ class Bot {
   static std::string getBotName();
   std::queue<Move*> generateLegalMoves();
   bool isKinginCheck();
-  bool canCapture(MyPiece *piece, Move move);
+  bool isKinginCheck(Move* m);
 };
 #endif

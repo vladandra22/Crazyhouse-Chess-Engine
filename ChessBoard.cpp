@@ -72,6 +72,7 @@ bool Rook::isLegalMove(const Board& board, Move m) {
     int dest_lit = dest[0] - 'a';
     int dest_num = dest[1] - '1';
 
+    int curr_color = board.getPiece(src_num, src_lit)->getColor();
     // verificam randul
     if (src_num == dest_num) {
         if(src_lit == dest_lit)
@@ -83,7 +84,7 @@ bool Rook::isLegalMove(const Board& board, Move m) {
                 return false;  // e o piesa in drum
             }
         }
-        return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
+        return board.getPiece(dest_num, dest_lit)->getColor() == !curr_color|| board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
     }
     // verificam coloana
     else if (src_lit == dest_lit) {
@@ -94,7 +95,7 @@ bool Rook::isLegalMove(const Board& board, Move m) {
                 return false;  // e o piesa in drum
             }
         }
-        return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
+        return board.getPiece(dest_num, dest_lit)->getColor() == !curr_color  || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
     }
     else return false;
 }
@@ -155,7 +156,9 @@ bool Knight::isLegalMove(const Board& board, Move m) {
         int dest_lit = dest[0] - 'a'; //2
         int dest_num = dest[1] - '1'; // 5
 
-        if(board.getPiece(dest_num, dest_lit)->getColor() == 0){
+        int curr_color = board.getPiece(src_num, src_lit)->getColor();
+
+        if(board.getPiece(dest_num, dest_lit)->getColor() == curr_color ){
             return false;
         }
 
@@ -175,6 +178,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
         
         int d_num = abs(src_num - dest_num);
         int d_lit = abs(src_lit - dest_lit);
+        int curr_color = board.getPiece(src_num, src_lit)->getColor();
 
         // verificam obstacolele din calea reginei
         if (d_num == d_lit) { // pe diagonala
@@ -195,7 +199,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
                 y += y_dir;
             }
             // Check if the destination square is occupied by a piece of the same color
-            if (board.getPiece(dest_num, dest_lit)->getColor() == getColor()) {
+            if (board.getPiece(dest_num, dest_lit)->getColor() == curr_color) {
                 return false;
             }
             else return true;
@@ -210,7 +214,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
                     return false;  // e o piesa in drum
                 }
             }
-            return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
+            return board.getPiece(dest_num, dest_lit)->getColor() == !curr_color || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
         } 
         else if (src_lit == dest_lit) { // pe verticala
             int start = min(src_num, dest_num);
@@ -220,7 +224,7 @@ bool Queen::isLegalMove(const Board& board, Move m) {
                         return false;  // e o piesa in drum
                     }
                 }
-                return board.getPiece(dest_num, dest_lit)->getColor() == PlaySide::WHITE || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
+                return board.getPiece(dest_num, dest_lit)->getColor() == !curr_color || board.getPiece(dest_num, dest_lit)->getType() == Piece::EMPTY;
             }
         else return false;
     }
@@ -240,12 +244,11 @@ bool King::isLegalMove(const Board& board, Move m) {
         }
         int d_num = abs(src_num - dest_num);
         int d_lit = abs(src_lit - dest_lit);
-        //std::cerr << "Calutz: " << d_num << " " << d_lit <<'\n';
         // daca la destinatie ai o piesa de aceeasi culoare
         if (board.getPiece(dest_num, dest_lit)->getColor() == culoare) {
                 return false;
         }
-        return(d_num == 1 && d_lit == 1);
+        return(d_num <= 1 && d_lit <= 1);
 }
 EmptySquare::EmptySquare(): MyPiece(Piece::EMPTY, PlaySide::NONE) {};
 bool EmptySquare::isLegalMove(const Board& board, Move m) {
@@ -319,8 +322,8 @@ void Board::movePiece(Move *m){
     }
 
 void Board::undoPiece(Move *m){
-    string src = m->getDestination().value();
-    string dest = m->getSource().value();
+    string src = m->getSource().value();
+    string dest = m->getDestination().value();
     int src_lit = src[0] - 'a';
     int src_num = src[1] - '1';
     int dest_lit = dest[0] - 'a';

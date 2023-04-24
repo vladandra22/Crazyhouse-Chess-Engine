@@ -37,7 +37,11 @@ Move* Bot::calculateNextMove() {
   std::shuffle(legalMovesRand.begin(), legalMovesRand.end(), g);
   for(Move *move : legalMovesRand){
       recordMove(move, engineSide);
-      legalMoves = generateLegalMoves();
+      bool willKingBeInCheck = isKinginCheck();
+      board->undoPiece(move);
+      if(willKingBeInCheck)
+        continue;
+      recordMove(move, engineSide);
       return move;
   }
   return Move::resign();
@@ -81,7 +85,7 @@ std::queue<Move*> Bot::generateLegalMoves() {
 
 bool Bot::isKinginCheck(){
   int king_num = -1, king_col = -1;
-    PlaySide engineSide = PlaySide::BLACK;
+  PlaySide engineSide = PlaySide::BLACK;
   // PlaySide engineSide = Main.getEngineSide();
     for(int i = 0; i < 8; i++)
       for(int j= 0; j < 8; j++)
@@ -90,7 +94,6 @@ bool Bot::isKinginCheck(){
             king_col = j;
             break;
         }
-
     PlaySide opponentSide = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
     for (int i = 0; i < 8; i++) {
       for (int j = 0; j < 8; j++) {
@@ -100,6 +103,7 @@ bool Bot::isKinginCheck(){
           std::string dest = std::string(1, (char)(king_col + 'a')) + std::string(1, (char)(king_num + '1'));
           Move move(src, dest, Piece::EMPTY);
           if (piesa->isLegalMove(*board, move)) {
+                std::cerr << piesa->getType() << " " << piesa->getColor() << " might capture king \n";
                 return true;
               }
           }
@@ -107,3 +111,6 @@ bool Bot::isKinginCheck(){
   }
   return false;
 }
+
+
+
