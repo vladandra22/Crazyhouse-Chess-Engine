@@ -36,9 +36,11 @@ Move* Bot::calculateNextMove() {
   std::mt19937 g(rd());
   std::shuffle(legalMovesRand.begin(), legalMovesRand.end(), g);
   for(Move *move : legalMovesRand){
+      //std::cerr<< "Buna! " <<move->getSource().value() << " " << move->getDestination().value() << "\n";
       recordMove(move, engineSide);
       bool willKingBeInCheck = isKinginCheck();
       board->undoPiece(move);
+      Move::moveTo(move->getDestination(), move->getSource());
       if(willKingBeInCheck)
         continue;
       recordMove(move, engineSide);

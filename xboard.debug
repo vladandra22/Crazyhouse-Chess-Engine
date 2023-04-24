@@ -10,331 +10,633 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-171 >first : xboard
+178 >first : xboard
 protover 2
-188 <first : ./Main
-628 <first : 
-628 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
-628 >first : accepted done
-628 >first : accepted sigint
-628 >first : accepted sigterm
-628 >first : accepted san
-628 >first : accepted reuse
-628 >first : accepted usermove
-628 >first : accepted analyze
-628 >first : accepted ping
-628 >first : accepted setboard
-628 >first : accepted level
-628 >first : accepted variants
-628 >first : accepted name
-628 >first : accepted myname
-629 >first : accepted done
+213 <first : ./Main
+875 <first : 
+875 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+875 >first : accepted done
+875 >first : accepted sigint
+875 >first : accepted sigterm
+875 >first : accepted san
+875 >first : accepted reuse
+875 >first : accepted usermove
+875 >first : accepted analyze
+875 >first : accepted ping
+875 >first : accepted setboard
+875 >first : accepted level
+875 >first : accepted variants
+875 >first : accepted name
+875 >first : accepted myname
+876 >first : accepted done
 recognized 'crazyhouse' (-1) as variant crazyhouse
 Reset(1, 0) from gameMode 0
 recognized 'crazyhouse' (-1) as variant crazyhouse
 GameEnds(0, (null), 2)
-631 >first : quit
+879 >first : quit
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-698 >first : xboard
+956 >first : xboard
 protover 2
-698 >first : new
+956 >first : new
 random
-698 >first : variant crazyhouse
-698 >first : level 40 5 0
-698 >first : post
-698 >first : hard
-723 <first : ./Main
-723 <first : 
-723 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
-723 >first : accepted done
-723 >first : accepted sigint
-723 >first : accepted sigterm
-723 >first : accepted san
-723 >first : accepted reuse
-723 >first : accepted usermove
-723 >first : accepted analyze
-723 >first : accepted ping
-723 >first : accepted setboard
-723 >first : accepted level
-723 >first : accepted variants
-723 >first : accepted name
-723 >first : accepted myname
-723 >first : accepted done
+956 >first : variant crazyhouse
+956 >first : level 40 5 0
+956 >first : post
+956 >first : hard
+982 <first : ./Main
+982 <first : 
+982 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+982 >first : accepted done
+982 >first : accepted sigint
+982 >first : accepted sigterm
+982 >first : accepted san
+982 >first : accepted reuse
+982 >first : accepted usermove
+982 >first : accepted analyze
+982 >first : accepted ping
+982 >first : accepted setboard
+982 >first : accepted level
+982 >first : accepted variants
+982 >first : accepted name
+982 >first : accepted myname
+982 >first : accepted done
+3601 >first : force
+4558 >first : usermove 4558 >first : b2b4
+6219 >first : name vladandra22
+6219 >first : white
+6219 >first : time 30000
+6219 >first : otim 30000
+6219 >first : black
+book hit = (NULL)
+6219 >first : go
 nps: w=-1, b=-1
-2608 >first : name vladandra22
-nps: w=-1, b=-1
-2608 >first : time 30000
-2608 >first : otim 30000
+6222 <first : Buna! a7 a6 0
+6222 <first : Buna! a7 a5 0
+6222 <first : Buna! b7 b6 0
+6222 <first : Buna! b7 b5 0
+6222 <first : Buna! c7 c6 0
+6222 <first : Buna! c7 c5 0
+6222 <first : Buna! d7 d6 0
+6222 <first : Buna! d7 d5 0
+6222 <first : Buna! e7 e6 0
+6222 <first : Buna! e7 e5 0
+6222 <first : Buna! f7 f6 0
+6222 <first : Buna! f7 f5 0
+6222 <first : Buna! g7 g6 0
+6222 <first : Buna! g7 g5 0
+6222 <first : Buna! h7 h6 0
+6222 <first : Buna! h7 h5 0
+6222 <first : Buna! b8 a6 3
+6222 <first : Buna! b8 c6 3
+6222 <first : Buna! g8 f6 3
+6222 <first : Buna! g8 h6 3
+6222 <first : move g8h6
+17091 >first : time 29999
+17091 >first : otim 28913
 book hit = (NULL)
-2608 >first : usermove 2608 >first : b2b4
-4099 >first : force
-5718 >first : name vladandra22
-5718 >first : white
-5718 >first : time 30000
-5718 >first : otim 30000
-5718 >first : black
+17091 >first : usermove 17091 >first : e2e4
+17092 <first : Buna! h6 f5 3
+17092 <first : Buna! h6 g8 3
+17092 <first : Buna! h6 g4 3
+17092 <first : Buna! a7 a6 0
+17092 <first : Buna! a7 a5 0
+17092 <first : Buna! b7 b6 0
+17092 <first : Buna! b7 b5 0
+17092 <first : Buna! c7 c6 0
+17092 <first : Buna! c7 c5 0
+17092 <first : Buna! d7 d6 0
+17092 <first : Buna! d7 d5 0
+17092 <first : Buna! e7 e6 0
+17092 <first : Buna! e7 e5 0
+17092 <first : Buna! f7 f6 0
+17092 <first : Buna! f7 f5 0
+17092 <first : Buna! g7 g6 0
+17092 <first : Buna! g7 g5 0
+17092 <first : Buna! b8 a6 3
+17092 <first : Buna! b8 c6 3
+17092 <first : Buna! h8 g8 1
+17092 <first : move f7f5
+19107 >first : time 29999
+19107 >first : otim 28711
 book hit = (NULL)
-5718 >first : go
-nps: w=-1, b=-1
-5721 <first : Buna! a7 a6 0
-5721 <first : Buna! a7 a5 0
-5721 <first : Buna! b7 b6 0
-5721 <first : Buna! b7 b5 0
-5721 <first : Buna! c7 c6 0
-5721 <first : Buna! c7 c5 0
-5721 <first : Buna! d7 d6 0
-5721 <first : Buna! d7 d5 0
-5721 <first : Buna! e7 e6 0
-5721 <first : Buna! e7 e5 0
-5721 <first : Buna! f7 f6 0
-5721 <first : Buna! f7 f5 0
-5721 <first : Buna! g7 g6 0
-5721 <first : Buna! g7 g5 0
-5721 <first : Buna! h7 h6 0
-5721 <first : Buna! h7 h5 0
-5721 <first : Buna! b8 a6 3
-5721 <first : Buna! b8 c6 3
-5721 <first : Buna! g8 f6 3
-5721 <first : Buna! g8 h6 3
-5721 <first : move b8c6
-7204 >first : time 29999
-7204 >first : otim 29851
+19107 >first : usermove 19107 >first : e4f5
+19109 <first : Buna! h6 f7 3
+19109 <first : Buna! h6 f5 3
+19109 <first : Buna! h6 g8 3
+19109 <first : Buna! h6 g4 3
+19109 <first : Buna! a7 a6 0
+19109 <first : Buna! a7 a5 0
+19109 <first : Buna! b7 b6 0
+19109 <first : Buna! b7 b5 0
+19109 <first : Buna! c7 c6 0
+19109 <first : Buna! c7 c5 0
+19109 <first : Buna! d7 d6 0
+19109 <first : Buna! d7 d5 0
+19109 <first : Buna! e7 e6 0
+19109 <first : Buna! e7 e5 0
+19109 <first : Buna! g7 g6 0
+19109 <first : Buna! g7 g5 0
+19109 <first : Buna! b8 a6 3
+19109 <first : Buna! b8 c6 3
+19109 <first : Buna! e8 f7 5
+19109 <first : Buna! h8 g8 1
+19109 <first : move g7g6
+25324 >first : time 29999
+25324 >first : otim 28090
 book hit = (NULL)
-7204 >first : usermove 7204 >first : c2c4
-7206 <first : Buna! c6 a5 3
-7206 <first : Buna! c6 b8 3
-7206 <first : Buna! c6 b4 3
-7206 <first : Buna! c6 d4 3
-7206 <first : Buna! c6 e5 3
-7206 <first : Buna! a7 a6 0
-7206 <first : Buna! a7 a5 0
-7206 <first : Buna! b7 b6 0
-7206 <first : Buna! b7 b5 0
-7206 <first : Buna! d7 d6 0
-7206 <first : Buna! d7 d5 0
-7206 <first : Buna! e7 e6 0
-7206 <first : Buna! e7 e5 0
-7206 <first : Buna! f7 f6 0
-7206 <first : Buna! f7 f5 0
-7206 <first : Buna! g7 g6 0
-7206 <first : Buna! g7 g5 0
-7206 <first : Buna! h7 h6 0
-7206 <first : Buna! h7 h5 0
-7206 <first : Buna! a8 b8 1
-7206 <first : Buna! g8 f6 3
-7206 <first : Buna! g8 h6 3
-7206 <first : move b7b5
-8012 >first : time 29999
-8012 >first : otim 29771
+25324 >first : usermove 25324 >first : h2h4
+25325 <first : Buna! g6 f5 0
+25325 <first : Buna! g6 g5 0
+25325 <first : Buna! h6 f7 3
+25325 <first : Buna! h6 f5 3
+25325 <first : Buna! h6 g8 3
+25325 <first : Buna! h6 g4 3
+25325 <first : Buna! a7 a6 0
+25325 <first : Buna! a7 a5 0
+25325 <first : Buna! b7 b6 0
+25325 <first : Buna! b7 b5 0
+25325 <first : Buna! c7 c6 0
+25325 <first : Buna! c7 c5 0
+25325 <first : Buna! d7 d6 0
+25325 <first : Buna! d7 d5 0
+25325 <first : Buna! e7 e6 0
+25325 <first : Buna! e7 e5 0
+25325 <first : Buna! b8 a6 3
+25325 <first : Buna! b8 c6 3
+25325 <first : Buna! e8 f7 5
+25325 <first : Buna! f8 g7 2
+25325 <first : Buna! h8 g8 1
+25325 <first : move h6f7
+44156 >first : time 29999
+44156 >first : otim 26207
 book hit = (NULL)
-8012 >first : usermove 8012 >first : c4b5
-8025 <first : Buna! c6 a5 3
-8025 <first : Buna! c6 b8 3
-8025 <first : Buna! c6 b4 3
-8025 <first : Buna! c6 d4 3
-8025 <first : Buna! c6 e5 3
-8025 <first : Buna! a7 a6 0
-8025 <first : Buna! a7 a5 0
-8025 <first : Buna! d7 d6 0
-8025 <first : Buna! d7 d5 0
-8025 <first : Buna! e7 e6 0
-8025 <first : Buna! e7 e5 0
-8025 <first : Buna! f7 f6 0
-8025 <first : Buna! f7 f5 0
-8025 <first : Buna! g7 g6 0
-8025 <first : Buna! g7 g5 0
-8025 <first : Buna! h7 h6 0
-8025 <first : Buna! h7 h5 0
-8025 <first : Buna! a8 b8 1
-8025 <first : Buna! c8 a6 2
-8025 <first : Buna! c8 b7 2
-8025 <first : Buna! g8 f6 3
-8025 <first : Buna! g8 h6 3
-8025 <first : move f7f5
-8589 >first : time 29998
-8589 >first : otim 29714
+44156 >first : usermove 44156 >first : h4h5
+44158 <first : Buna! g6 f5 0
+44158 <first : Buna! g6 g5 0
+44158 <first : Buna! g6 h5 0
+44158 <first : Buna! a7 a6 0
+44158 <first : Buna! a7 a5 0
+44158 <first : Buna! b7 b6 0
+44158 <first : Buna! b7 b5 0
+44158 <first : Buna! c7 c6 0
+44158 <first : Buna! c7 c5 0
+44158 <first : Buna! d7 d6 0
+44158 <first : Buna! d7 d5 0
+44158 <first : Buna! e7 e6 0
+44158 <first : Buna! e7 e5 0
+44158 <first : Buna! f7 d6 3
+44158 <first : Buna! f7 e5 3
+44158 <first : Buna! f7 g5 3
+44158 <first : Buna! f7 h6 3
+44158 <first : Buna! h7 h6 0
+44158 <first : Buna! b8 a6 3
+44158 <first : Buna! b8 c6 3
+44158 <first : Buna! f8 g7 2
+44158 <first : Buna! f8 h6 2
+44158 <first : Buna! h8 g8 1
+44158 <first : move g6h5
+46558 >first : time 29999
+46559 >first : otim 25967
 book hit = (NULL)
-8589 >first : usermove 8589 >first : b5c6
-8590 <first : Buna! f5 f4 0
-8590 <first : Buna! a7 a6 0
-8590 <first : Buna! a7 a5 0
-8590 <first : Buna! d7 c6 0
-8590 <first : Buna! d7 d6 0
-8590 <first : Buna! d7 d5 0
-8590 <first : Buna! e7 e6 0
-8590 <first : Buna! e7 e5 0
-8590 <first : Buna! g7 g6 0
-8590 <first : Buna! g7 g5 0
-8590 <first : Buna! h7 h6 0
-8590 <first : Buna! h7 h5 0
-8590 <first : Buna! a8 b8 1
-8590 <first : Buna! c8 a6 2
-8590 <first : Buna! c8 b7 2
-8590 <first : Buna! e8 f7 5
-8590 <first : Buna! g8 f6 3
-8590 <first : Buna! g8 h6 3
-8590 <first : move c8b7
-9654 >first : time 29998
-9654 >first : otim 29608
+46559 >first : usermove 46559 >first : h1h5
+46560 <first : Buna! a7 a6 0
+46560 <first : Buna! a7 a5 0
+46560 <first : Buna! b7 b6 0
+46560 <first : Buna! b7 b5 0
+46560 <first : Buna! c7 c6 0
+46560 <first : Buna! c7 c5 0
+46560 <first : Buna! d7 d6 0
+46560 <first : Buna! d7 d5 0
+46560 <first : Buna! e7 e6 0
+46560 <first : Buna! e7 e5 0
+46560 <first : Buna! f7 d6 3
+46560 <first : Buna! f7 e5 3
+46560 <first : Buna! f7 g5 3
+46560 <first : Buna! f7 h6 3
+46560 <first : Buna! h7 h6 0
+46560 <first : Buna! b8 a6 3
+46560 <first : Buna! b8 c6 3
+46560 <first : Buna! f8 g7 2
+46560 <first : Buna! f8 h6 2
+46560 <first : Buna! h8 g8 1
+46560 <first : move b8a6
+47342 >first : time 29999
+47342 >first : otim 25888
 book hit = (NULL)
-9654 >first : usermove 9654 >first : c6d7
-9656 <first : Buna! f5 f4 0
-9656 <first : Buna! a7 a6 0
-9656 <first : Buna! a7 a5 0
-9656 <first : Buna! b7 a6 2
-9656 <first : Buna! b7 c8 2
-9656 <first : Buna! b7 c6 2
-9656 <first : Buna! b7 d5 2
-9656 <first : Buna! b7 e4 2
-9656 <first : Buna! b7 f3 2
-9656 <first : Buna! b7 g2 2
-9656 <first : Buna! c7 c6 0
-9656 <first : Buna! c7 c5 0
-9656 <first : Buna! e7 e6 0
-9656 <first : Buna! e7 e5 0
-9656 <first : Buna! g7 g6 0
-9656 <first : Buna! g7 g5 0
-9656 <first : Buna! h7 h6 0
-9656 <first : Buna! h7 h5 0
-9656 <first : Buna! a8 b8 1
-9656 <first : Buna! a8 c8 1
-9656 <first : Buna! d8 b8 4
-9656 <first : Buna! d8 c8 4
-9656 <first : Buna! e8 d7 5
-9656 <first : Buna! e8 f7 5
-9656 <first : Buna! g8 f6 3
-9656 <first : Buna! g8 h6 3
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : 0 1 might capture king 
-9656 <first : move e8d7
-11338 >first : time 29998
-11338 >first : otim 29440
+47342 >first : usermove 47342 >first : h5h6
+47343 <first : Buna! a6 b8 3
+47343 <first : Buna! a6 b4 3
+47343 <first : Buna! a6 c5 3
+47343 <first : Buna! b7 b6 0
+47343 <first : Buna! b7 b5 0
+47343 <first : Buna! c7 c6 0
+47343 <first : Buna! c7 c5 0
+47343 <first : Buna! d7 d6 0
+47343 <first : Buna! d7 d5 0
+47343 <first : Buna! e7 e6 0
+47343 <first : Buna! e7 e5 0
+47343 <first : Buna! f7 d6 3
+47343 <first : Buna! f7 e5 3
+47343 <first : Buna! f7 g5 3
+47343 <first : Buna! f7 h6 3
+47343 <first : Buna! a8 b8 1
+47343 <first : Buna! f8 g7 2
+47343 <first : Buna! f8 h6 2
+47343 <first : Buna! h8 g8 1
+47343 <first : move a6b4
+52231 >first : time 29998
+52231 >first : otim 25400
 book hit = (NULL)
-11338 >first : usermove 11338 >first : d2d4
-11339 <first : Buna! f5 f4 0
-11339 <first : Buna! a7 a6 0
-11339 <first : Buna! a7 a5 0
-11339 <first : Buna! b7 a6 2
-11339 <first : Buna! b7 c8 2
-11339 <first : Buna! b7 c6 2
-11339 <first : Buna! b7 d5 2
-11339 <first : Buna! b7 e4 2
-11339 <first : Buna! b7 f3 2
-11339 <first : Buna! b7 g2 2
-11339 <first : Buna! b7 h1 2
-11339 <first : Buna! c7 c6 0
-11339 <first : Buna! c7 c5 0
-11339 <first : Buna! d7 c8 5
-11339 <first : Buna! d7 c6 5
-11339 <first : Buna! d7 d6 5
-11339 <first : Buna! d7 e8 5
-11339 <first : Buna! d7 e6 5
-11339 <first : Buna! e7 e6 0
-11339 <first : Buna! e7 e5 0
-11339 <first : Buna! g7 g6 0
-11339 <first : Buna! g7 g5 0
-11339 <first : Buna! h7 h6 0
-11339 <first : Buna! h7 h5 0
-11339 <first : Buna! a8 b8 1
-11339 <first : Buna! a8 c8 1
-11339 <first : Buna! d8 b8 4
-11339 <first : Buna! d8 c8 4
-11339 <first : Buna! d8 e8 4
-11339 <first : Buna! g8 f6 3
-11339 <first : Buna! g8 h6 3
-11339 <first : move f5f4
-13104 >first : time 29997
-13104 >first : otim 29263
+52231 >first : usermove 52231 >first : g2g3
+52244 <first : Buna! b4 a6 3
+52244 <first : Buna! b4 a2 3
+52244 <first : Buna! b4 c6 3
+52244 <first : Buna! b4 c2 3
+52244 <first : Buna! b4 d5 3
+52244 <first : Buna! b4 d3 3
+52244 <first : Buna! a7 a6 0
+52244 <first : Buna! a7 a5 0
+52244 <first : Buna! b7 b6 0
+52244 <first : Buna! b7 b5 0
+52244 <first : Buna! c7 c6 0
+52244 <first : Buna! c7 c5 0
+52244 <first : Buna! d7 d6 0
+52244 <first : Buna! d7 d5 0
+52244 <first : Buna! e7 e6 0
+52244 <first : Buna! e7 e5 0
+52244 <first : Buna! f7 d6 3
+52244 <first : Buna! f7 e5 3
+52244 <first : Buna! f7 g5 3
+52244 <first : Buna! f7 h6 3
+52244 <first : Buna! a8 b8 1
+52244 <first : Buna! f8 g7 2
+52244 <first : Buna! f8 h6 2
+52244 <first : Buna! h8 g8 1
+52244 <first : move b4d5
+BackwardInner(15), current 16, forward 16
+BackwardInner(14), current 15, forward 16
+ForwardInner(15), current 14, forward 16
+ForwardInner(16), current 15, forward 16
+77822 >first : time 29997
+77822 >first : otim 22842
 book hit = (NULL)
-13104 >first : usermove 13104 >first : d1d3
-13106 <first : Buna! f4 f3 0
-13106 <first : Buna! a7 a6 0
-13106 <first : Buna! a7 a5 0
-13106 <first : Buna! b7 a6 2
-13106 <first : Buna! b7 c8 2
-13106 <first : Buna! b7 c6 2
-13106 <first : Buna! b7 d5 2
-13106 <first : Buna! b7 e4 2
-13106 <first : Buna! b7 f3 2
-13106 <first : Buna! b7 g2 2
-13106 <first : Buna! b7 h1 2
-13106 <first : Buna! c7 c6 0
-13106 <first : Buna! c7 c5 0
-13106 <first : Buna! d7 c8 5
-13106 <first : Buna! d7 c6 5
-13106 <first : Buna! d7 d6 5
-13106 <first : Buna! d7 e8 5
-13106 <first : Buna! d7 e6 5
-13106 <first : Buna! e7 e6 0
-13106 <first : Buna! e7 e5 0
-13106 <first : Buna! g7 g6 0
-13106 <first : Buna! g7 g5 0
-13106 <first : Buna! h7 h6 0
-13106 <first : Buna! h7 h5 0
-13106 <first : Buna! a8 b8 1
-13106 <first : Buna! a8 c8 1
-13106 <first : Buna! d8 b8 4
-13106 <first : Buna! d8 c8 4
-13106 <first : Buna! d8 e8 4
-13106 <first : Buna! g8 f6 3
-13106 <first : Buna! g8 h6 3
-13106 <first : move d8e8
-13755 >first : time 29997
-13755 >first : otim 29198
+77822 >first : usermove 77822 >first : h6g6
+77824 <first : Buna! d5 b6 3
+77824 <first : Buna! d5 b4 3
+77824 <first : Buna! d5 c3 3
+77824 <first : Buna! d5 e3 3
+77824 <first : Buna! d5 f6 3
+77824 <first : Buna! d5 f4 3
+77824 <first : Buna! a7 a6 0
+77824 <first : Buna! a7 a5 0
+77824 <first : Buna! b7 b6 0
+77824 <first : Buna! b7 b5 0
+77824 <first : Buna! c7 c6 0
+77824 <first : Buna! c7 c5 0
+77824 <first : Buna! d7 d6 0
+77824 <first : Buna! e7 e6 0
+77824 <first : Buna! e7 e5 0
+77824 <first : Buna! f7 d6 3
+77824 <first : Buna! f7 e5 3
+77824 <first : Buna! f7 g5 3
+77824 <first : Buna! f7 h6 3
+77824 <first : Buna! h7 g6 0
+77824 <first : Buna! h7 h6 0
+77824 <first : Buna! h7 h5 0
+77824 <first : Buna! a8 b8 1
+77824 <first : Buna! f8 g7 2
+77824 <first : Buna! f8 h6 2
+77824 <first : Buna! h8 g8 1
+77824 <first : move b7b6
+78622 >first : time 29997
+78622 >first : otim 22762
 book hit = (NULL)
-13755 >first : usermove 13755 >first : d3c3
-13757 <first : Buna! f4 f3 0
-13757 <first : Buna! a7 a6 0
-13757 <first : Buna! a7 a5 0
-13757 <first : Buna! b7 a6 2
-13757 <first : Buna! b7 c8 2
-13757 <first : Buna! b7 c6 2
-13757 <first : Buna! b7 d5 2
-13757 <first : Buna! b7 e4 2
-13757 <first : Buna! b7 f3 2
-13757 <first : Buna! b7 g2 2
-13757 <first : Buna! b7 h1 2
-13757 <first : Buna! c7 c6 0
-13757 <first : Buna! c7 c5 0
-13757 <first : Buna! d7 c8 5
-13757 <first : Buna! d7 c6 5
-13757 <first : Buna! d7 d8 5
-13757 <first : Buna! d7 d6 5
-13757 <first : Buna! d7 e6 5
-13757 <first : Buna! e7 e6 0
-13757 <first : Buna! e7 e5 0
-13757 <first : Buna! g7 g6 0
-13757 <first : Buna! g7 g5 0
-13757 <first : Buna! h7 h6 0
-13757 <first : Buna! h7 h5 0
-13757 <first : Buna! a8 b8 1
-13757 <first : Buna! a8 c8 1
-13757 <first : Buna! a8 d8 1
-13757 <first : Buna! e8 b8 4
-13757 <first : Buna! e8 c8 4
-13757 <first : Buna! e8 d8 4
-13757 <first : Buna! e8 f7 4
-13757 <first : Buna! e8 g6 4
-13757 <first : Buna! e8 h5 4
-13757 <first : Buna! g8 f6 3
-13757 <first : Buna! g8 h6 3
-13757 <first : move b7h1
+78622 >first : usermove 78622 >first : g6g7
+78624 <first : Buna! d5 b4 3
+78624 <first : Buna! d5 c3 3
+78624 <first : Buna! d5 e3 3
+78624 <first : Buna! d5 f6 3
+78624 <first : Buna! d5 f4 3
+78624 <first : Buna! b6 b5 0
+78624 <first : Buna! a7 a6 0
+78624 <first : Buna! a7 a5 0
+78624 <first : Buna! c7 c6 0
+78624 <first : Buna! c7 c5 0
+78624 <first : Buna! d7 d6 0
+78624 <first : Buna! e7 e6 0
+78624 <first : Buna! e7 e5 0
+78624 <first : Buna! f7 d6 3
+78624 <first : Buna! f7 e5 3
+78624 <first : Buna! f7 g5 3
+78624 <first : Buna! f7 h6 3
+78624 <first : Buna! h7 h6 0
+78624 <first : Buna! h7 h5 0
+78624 <first : Buna! a8 b8 1
+78624 <first : Buna! c8 a6 2
+78624 <first : Buna! c8 b7 2
+78624 <first : Buna! f8 g7 2
+78624 <first : Buna! h8 g8 1
+78624 <first : move f7g5
+98479 >first : time 29997
+98479 >first : otim 20776
+book hit = (NULL)
+98479 >first : usermove 98479 >first : f5f6
+98493 <first : Buna! d5 b4 3
+98493 <first : Buna! d5 c3 3
+98493 <first : Buna! d5 e3 3
+98493 <first : Buna! d5 f6 3
+98493 <first : Buna! d5 f4 3
+98493 <first : Buna! g5 e6 3
+98493 <first : Buna! g5 e4 3
+98493 <first : Buna! g5 f7 3
+98493 <first : Buna! g5 f3 3
+98493 <first : Buna! g5 h3 3
+98493 <first : Buna! b6 b5 0
+98493 <first : Buna! a7 a6 0
+98493 <first : Buna! a7 a5 0
+98493 <first : Buna! c7 c6 0
+98493 <first : Buna! c7 c5 0
+98493 <first : Buna! d7 d6 0
+98493 <first : Buna! e7 e6 0
+98493 <first : Buna! e7 e5 0
+98493 <first : Buna! e7 f6 0
+98493 <first : Buna! h7 h6 0
+98493 <first : Buna! h7 h5 0
+98493 <first : Buna! a8 b8 1
+98493 <first : Buna! c8 a6 2
+98493 <first : Buna! c8 b7 2
+98493 <first : Buna! e8 f7 5
+98493 <first : Buna! f8 g7 2
+98493 <first : Buna! h8 g8 1
+98493 <first : move d5f4
+112779 >first : time 29995
+112779 >first : otim 19348
+book hit = (NULL)
+112779 >first : usermove 112779 >first : d2d4
+112798 <first : Buna! f4 d5 3
+112798 <first : Buna! f4 d3 3
+112798 <first : Buna! f4 e6 3
+112798 <first : Buna! f4 e2 3
+112798 <first : Buna! f4 g6 3
+112798 <first : Buna! f4 g2 3
+112798 <first : Buna! f4 h5 3
+112798 <first : Buna! f4 h3 3
+112798 <first : Buna! g5 e6 3
+112798 <first : Buna! g5 e4 3
+112798 <first : Buna! g5 f7 3
+112798 <first : Buna! g5 f3 3
+112798 <first : Buna! g5 h3 3
+112798 <first : Buna! b6 b5 0
+112798 <first : Buna! a7 a6 0
+112798 <first : Buna! a7 a5 0
+112798 <first : Buna! c7 c6 0
+112798 <first : Buna! c7 c5 0
+112798 <first : Buna! d7 d6 0
+112798 <first : Buna! d7 d5 0
+112798 <first : Buna! e7 e6 0
+112798 <first : Buna! e7 e5 0
+112798 <first : Buna! e7 f6 0
+112798 <first : Buna! h7 h6 0
+112798 <first : Buna! h7 h5 0
+112798 <first : Buna! a8 b8 1
+112798 <first : Buna! c8 a6 2
+112798 <first : Buna! c8 b7 2
+112798 <first : Buna! e8 f7 5
+112798 <first : Buna! f8 g7 2
+112798 <first : Buna! h8 g8 1
+112798 <first : move d7d6
+115588 >first : time 29993
+115588 >first : otim 19069
+book hit = (NULL)
+115588 >first : usermove 115588 >first : g3f4
+115590 <first : Buna! g5 e6 3
+115590 <first : Buna! g5 e4 3
+115590 <first : Buna! g5 f7 3
+115590 <first : Buna! g5 f3 3
+115590 <first : Buna! g5 h3 3
+115590 <first : Buna! b6 b5 0
+115590 <first : Buna! d6 d5 0
+115590 <first : Buna! a7 a6 0
+115590 <first : Buna! a7 a5 0
+115590 <first : Buna! c7 c6 0
+115590 <first : Buna! c7 c5 0
+115590 <first : Buna! e7 e6 0
+115590 <first : Buna! e7 e5 0
+115590 <first : Buna! e7 f6 0
+115590 <first : Buna! h7 h6 0
+115590 <first : Buna! h7 h5 0
+115590 <first : Buna! a8 b8 1
+115590 <first : Buna! c8 a6 2
+115590 <first : Buna! c8 b7 2
+115590 <first : Buna! c8 d7 2
+115590 <first : Buna! c8 e6 2
+115590 <first : Buna! c8 f5 2
+115590 <first : Buna! c8 g4 2
+115590 <first : Buna! c8 h3 2
+115590 <first : Buna! d8 d7 4
+115590 <first : Buna! e8 d7 5
+115590 <first : Buna! e8 f7 5
+115590 <first : Buna! f8 g7 2
+115590 <first : Buna! h8 g8 1
+115590 <first : move a8b8
+119171 >first : time 29993
+119171 >first : otim 18711
+book hit = (NULL)
+119171 >first : usermove 119171 >first : g7e7
+119172 <first : Buna! g5 e6 3
+119172 <first : Buna! g5 e4 3
+119172 <first : Buna! g5 f7 3
+119172 <first : Buna! g5 f3 3
+119172 <first : Buna! g5 h3 3
+119172 <first : Buna! b6 b5 0
+119172 <first : Buna! d6 d5 0
+119172 <first : Buna! a7 a6 0
+119172 <first : Buna! a7 a5 0
+119172 <first : Buna! c7 c6 0
+119172 <first : Buna! c7 c5 0
+119172 <first : Buna! h7 h6 0
+119172 <first : Buna! h7 h5 0
+119172 <first : Buna! b8 a8 1
+119172 <first : Buna! b8 b7 1
+119172 <first : Buna! c8 a6 2
+119172 <first : Buna! c8 b7 2
+119172 <first : Buna! c8 d7 2
+119172 <first : Buna! c8 e6 2
+119172 <first : Buna! c8 f5 2
+119172 <first : Buna! c8 g4 2
+119172 <first : Buna! c8 h3 2
+119172 <first : Buna! d8 d7 4
+119172 <first : Buna! d8 e7 4
+119172 <first : Buna! e8 d7 5
+119172 <first : Buna! e8 e7 5
+119172 <first : Buna! e8 f7 5
+119172 <first : Buna! f8 e7 2
+119172 <first : Buna! f8 g7 2
+119172 <first : Buna! f8 h6 2
+119172 <first : Buna! h8 g8 1
+119172 <first : 1 1 might capture king 
+119172 <first : 1 1 might capture king 
+119172 <first : 1 1 might capture king 
+119172 <first : 1 1 might capture king 
+119172 <first : 1 1 might capture king 
+119172 <first : move d8e7
+123621 >first : time 29993
+123621 >first : otim 18266
+book hit = (NULL)
+123621 >first : usermove 123621 >first : d1e2
+123622 <first : Buna! g5 e6 3
+123622 <first : Buna! g5 e4 3
+123622 <first : Buna! g5 f7 3
+123622 <first : Buna! g5 f3 3
+123622 <first : Buna! g5 h3 3
+123622 <first : Buna! b6 b5 0
+123622 <first : Buna! d6 d5 0
+123622 <first : Buna! a7 a6 0
+123622 <first : Buna! a7 a5 0
+123622 <first : Buna! c7 c6 0
+123622 <first : Buna! c7 c5 0
+123622 <first : Buna! e7 d8 4
+123622 <first : Buna! e7 d7 4
+123622 <first : Buna! e7 e6 4
+123622 <first : Buna! e7 e5 4
+123622 <first : Buna! e7 e4 4
+123622 <first : Buna! e7 e3 4
+123622 <first : Buna! e7 e2 4
+123622 <first : Buna! e7 f7 4
+123622 <first : Buna! e7 f6 4
+123622 <first : Buna! e7 g7 4
+123622 <first : Buna! h7 h6 0
+123622 <first : Buna! h7 h5 0
+123622 <first : Buna! b8 a8 1
+123622 <first : Buna! b8 b7 1
+123622 <first : Buna! c8 a6 2
+123622 <first : Buna! c8 b7 2
+123622 <first : Buna! c8 d7 2
+123622 <first : Buna! c8 e6 2
+123622 <first : Buna! c8 f5 2
+123622 <first : Buna! c8 g4 2
+123622 <first : Buna! c8 h3 2
+123622 <first : Buna! e8 d8 5
+123622 <first : Buna! e8 d7 5
+123622 <first : Buna! e8 f7 5
+123622 <first : Buna! f8 g7 2
+123622 <first : Buna! f8 h6 2
+123622 <first : Buna! h8 g8 1
+123622 <first : move e7e2
+125171 >first : time 29993
+125171 >first : otim 18111
+book hit = (NULL)
+125171 >first : usermove 125171 >first : f1e2
+125172 <first : Buna! g5 e6 3
+125172 <first : Buna! g5 e4 3
+125172 <first : Buna! g5 f7 3
+125172 <first : Buna! g5 f3 3
+125172 <first : Buna! g5 h3 3
+125172 <first : Buna! b6 b5 0
+125172 <first : Buna! d6 d5 0
+125172 <first : Buna! a7 a6 0
+125172 <first : Buna! a7 a5 0
+125172 <first : Buna! c7 c6 0
+125172 <first : Buna! c7 c5 0
+125173 <first : Buna! h7 h6 0
+125173 <first : Buna! h7 h5 0
+125173 <first : Buna! b8 a8 1
+125173 <first : Buna! b8 b7 1
+125173 <first : Buna! c8 a6 2
+125173 <first : Buna! c8 b7 2
+125173 <first : Buna! c8 d7 2
+125173 <first : Buna! c8 e6 2
+125173 <first : Buna! c8 f5 2
+125173 <first : Buna! c8 g4 2
+125173 <first : Buna! c8 h3 2
+125173 <first : Buna! e8 d8 5
+125173 <first : Buna! e8 d7 5
+125173 <first : Buna! e8 e7 5
+125173 <first : Buna! e8 f7 5
+125173 <first : Buna! f8 e7 2
+125173 <first : Buna! f8 g7 2
+125173 <first : Buna! f8 h6 2
+125173 <first : Buna! h8 g8 1
+125173 <first : move f8e7
+128421 >first : time 29993
+128421 >first : otim 17786
+book hit = (NULL)
+128421 >first : usermove 128421 >first : b1c3
+128422 <first : Buna! g5 e6 3
+128422 <first : Buna! g5 e4 3
+128422 <first : Buna! g5 f7 3
+128422 <first : Buna! g5 f3 3
+128422 <first : Buna! g5 h3 3
+128422 <first : Buna! b6 b5 0
+128422 <first : Buna! d6 d5 0
+128422 <first : Buna! a7 a6 0
+128422 <first : Buna! a7 a5 0
+128422 <first : Buna! c7 c6 0
+128422 <first : Buna! c7 c5 0
+128422 <first : Buna! e7 d8 2
+128422 <first : Buna! e7 f8 2
+128422 <first : Buna! e7 f6 2
+128422 <first : Buna! h7 h6 0
+128422 <first : Buna! h7 h5 0
+128422 <first : Buna! b8 a8 1
+128422 <first : Buna! b8 b7 1
+128422 <first : Buna! c8 a6 2
+128422 <first : Buna! c8 b7 2
+128422 <first : Buna! c8 d7 2
+128422 <first : Buna! c8 e6 2
+128422 <first : Buna! c8 f5 2
+128422 <first : Buna! c8 g4 2
+128422 <first : Buna! c8 h3 2
+128422 <first : Buna! e8 d8 5
+128422 <first : Buna! e8 d7 5
+128422 <first : Buna! e8 f8 5
+128422 <first : Buna! e8 f7 5
+128422 <first : Buna! h8 f8 1
+128422 <first : Buna! h8 g8 1
+128422 <first : move c8f5
+183636 >first : time 29993
+183636 >first : otim 12265
+book hit = (NULL)
+183636 >first : usermove 183636 >first : g1h3
+183638 <first : Buna! f5 c8 2
+183638 <first : Buna! f5 c2 2
+183638 <first : Buna! f5 d7 2
+183638 <first : Buna! f5 d3 2
+183638 <first : Buna! f5 e6 2
+183638 <first : Buna! f5 e4 2
+183638 <first : Buna! f5 g6 2
+183638 <first : Buna! f5 g4 2
+183638 <first : Buna! f5 h3 2
+183638 <first : Buna! g5 e6 3
+183638 <first : Buna! g5 e4 3
+183638 <first : Buna! g5 f7 3
+183638 <first : Buna! g5 f3 3
+183638 <first : Buna! g5 h3 3
+183638 <first : Buna! b6 b5 0
+183638 <first : Buna! d6 d5 0
+183638 <first : Buna! a7 a6 0
+183638 <first : Buna! a7 a5 0
+183638 <first : Buna! c7 c6 0
+183638 <first : Buna! c7 c5 0
+183638 <first : Buna! e7 d8 2
+183638 <first : Buna! e7 f8 2
+183638 <first : Buna! e7 f6 2
+183638 <first : Buna! h7 h6 0
+183638 <first : Buna! h7 h5 0
+183638 <first : Buna! b8 a8 1
+183638 <first : Buna! b8 b7 1
+183638 <first : Buna! b8 c8 1
+183638 <first : Buna! b8 d8 1
+183638 <first : Buna! e8 d8 5
+183638 <first : Buna! e8 d7 5
+183638 <first : Buna! e8 f8 5
+183638 <first : Buna! e8 f7 5
+183638 <first : Buna! h8 f8 1
+183638 <first : Buna! h8 g8 1
+183638 <first : move e7f8
+BackwardInner(35), current 36, forward 36
+ForwardInner(36), current 35, forward 36
 GameEnds(29, xboard exit, 2)
-45297 >first : result * {xboard exit}
-45297 >first : quit
+314203 >first : result * {xboard exit}
+314203 >first : quit
