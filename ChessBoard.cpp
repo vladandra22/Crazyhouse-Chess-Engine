@@ -10,8 +10,6 @@ PlaySide MyPiece::getColor() {return culoare; }
 
 Pawn::Pawn(PlaySide culoare) : MyPiece(Piece::PAWN, culoare) {}
 bool Pawn::isLegalMove(const Board& board, Move m) {
-        if(!m.isNormal() && !m.isPromotion())
-            return false;
         string src = m.getSource().value();
         string dest = m.getDestination().value();
         int src_lit = src[0] - 'a';
@@ -38,14 +36,15 @@ bool Pawn::isLegalMove(const Board& board, Move m) {
 
             return false;
         }
-
+       // std::cerr << "buna! sunt mutarea " << src << " " << dest << " \n";
         if(board.getPiece(dest_num, dest_lit)->getType() != Piece::EMPTY)
             return false;
+       // std::cerr << "offf tot aici sunt \n";
 
         // daca nu e pozitie libera, nu putem muta.
         // pionul e pe alb
         if(direction == 1){
-            if(src_num == dest_num + 1){
+            if(dest_num == src_num + 1){
                 return true;
             }
             if(src_num == 1 && dest_num == 3  && board.getPiece(2, src_lit)->getType() == Piece::EMPTY){
@@ -53,7 +52,7 @@ bool Pawn::isLegalMove(const Board& board, Move m) {
             }
         }
         else {
-            if(dest_num == src_num - 1){
+            if(src_num == dest_num + 1){
                 return true;
             }
             if(src_num == 6 && dest_num == 4 && board.getPiece(5, src_lit)->getType() == Piece::EMPTY){
@@ -146,6 +145,7 @@ bool Bishop::isLegalMove(const Board& board, Move m) {
 
     return true;
 }
+
 
 Knight::Knight(PlaySide culoare) : MyPiece(Piece::KNIGHT, culoare) {};
 bool Knight::isLegalMove(const Board& board, Move m) {
@@ -251,6 +251,7 @@ bool King::isLegalMove(const Board& board, Move m) {
             return false;
         return(d_num <= 1 && d_lit <= 1);
 }
+
 EmptySquare::EmptySquare(): MyPiece(Piece::EMPTY, PlaySide::NONE) {};
 bool EmptySquare::isLegalMove(const Board& board, Move m) {
         return true;

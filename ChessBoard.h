@@ -68,6 +68,8 @@ class EmptySquare : public MyPiece{
 class Board {
 public:
     MyPiece* board[8][8];
+    vector<MyPiece*> isCapturedWhite;
+    vector<MyPiece*> isCapturedBlack;
     Board();
     ~Board();
     MyPiece* getPiece(int row, int col) const;

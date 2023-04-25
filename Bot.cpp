@@ -11,6 +11,7 @@ Bot::Bot(
 }
 
 
+
 void Bot::recordMove(Move* move, PlaySide sideToMove) {
     /* You might find it useful to also separately
      * record last move in another custom field */
@@ -24,7 +25,7 @@ Move* Bot::calculateNextMove() {
    * Return move that you are willing to submit
    * Move is to be constructed via one of the factory methods declared in Move.h */
   //PlaySide engineSide = Main.getEngineSide();
-  PlaySide engineSide = PlaySide::BLACK;
+  PlaySide engineSide = PlaySide::WHITE;
   std::vector<Move*> legalMovesRand;
   std::queue<Move*> legalMoves= generateLegalMoves();
   while(!legalMoves.empty()){
@@ -43,6 +44,29 @@ Move* Bot::calculateNextMove() {
       Move::moveTo(move->getDestination(), move->getSource());
       if(willKingBeInCheck)
         continue;
+     /* string dest = move->getDestination().value();
+      int dest_lit = dest[0] - 'a';
+      int dest_num = dest[1] - '1';
+
+      //MyPiece* piesa = board->getPiece(src_num, src_lit);
+      MyPiece* dest_piesa = board->getPiece(dest_num, dest_lit);
+      if(dest_piesa->getType() != Piece::EMPTY){
+        if(dest_piesa->getColor() == PlaySide::WHITE){
+            board->isCapturedWhite.push_back(dest_piesa);
+        }
+        else if(dest_piesa->getColor() == PlaySide::BLACK){
+            board->isCapturedBlack.push_back(dest_piesa);
+        }
+      }
+      std::cerr << "\n";
+      std::cerr << "Piese capturate albe: \n";
+      for(MyPiece* piesa2 : board->isCapturedWhite)
+          std::cerr << piesa2->getType() << " ";
+      std::cerr << "\n";
+      std::cerr << "Piese capturate negre: \n";
+      for(MyPiece* piesa2 : board->isCapturedBlack)
+          std::cerr << piesa2->getType() << " ";
+      std::cerr << "\n";*/
       recordMove(move, engineSide);
       return move;
   }
@@ -58,7 +82,7 @@ std::queue<Move*> Bot::generateLegalMoves() {
     for(int j = 0; j < 8; j++){
       MyPiece* piesa = board->getPiece(i, j);
       //PlaySide engineSide = Main.getEngineSide();
-      PlaySide engineSide = PlaySide::BLACK;
+      PlaySide engineSide = PlaySide::WHITE;
       if(piesa->getType() != EMPTY && piesa->getColor() == engineSide) {
          for(int x = 0; x < 8; x++)
           for(int y = 7; y >= 0; y--){
@@ -87,7 +111,7 @@ std::queue<Move*> Bot::generateLegalMoves() {
 
 bool Bot::isKinginCheck(){
   int king_num = -1, king_col = -1;
-  PlaySide engineSide = PlaySide::BLACK;
+  PlaySide engineSide = PlaySide::WHITE;
   // PlaySide engineSide = Main.getEngineSide();
     for(int i = 0; i < 8; i++)
       for(int j= 0; j < 8; j++)
@@ -110,7 +134,7 @@ bool Bot::isKinginCheck(){
               }
           }
       }
-  }
+  } 
   return false;
 }
 
