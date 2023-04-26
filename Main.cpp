@@ -285,6 +285,10 @@ class EngineComponents {
   }
 };
 
+enum PlaySide getEngineSide(){
+  return engineSide;
+}
+
 int main() {
   EngineComponents* engine = new EngineComponents();
   engine->performHandshake();

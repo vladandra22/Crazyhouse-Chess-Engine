@@ -8,7 +8,7 @@
 #include "Move.h"
 #include "PlaySide.h" 
 
-
+extern enum PlaySide getEngineSide();
 class Bot {
  private:
   static const std::string BOT_NAME;
@@ -39,8 +39,7 @@ class Bot {
   Move* calculateNextMove();
 
   static std::string getBotName();
-  std::queue<Move*> generateLegalMoves();
-  bool isKinginCheck();
-  bool isKinginCheck(Move* m);
+  std::queue<Move*> generateLegalMoves(PlaySide engineSide);
+  bool isKinginCheck(PlaySide engineSide);
 };
 #endif

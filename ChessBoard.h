@@ -8,8 +8,11 @@
 
 using namespace std;
 
+extern enum PlaySide getEngineSide();
+
 class Board; 
 
+// Clasa abstracta myPieces
 class MyPiece {
 public:
     MyPiece(Piece m_piesa, PlaySide m_culoare);
@@ -17,8 +20,6 @@ public:
     Piece getType ();
     PlaySide getColor();
     virtual bool isLegalMove(const Board& board, Move m) = 0;
-
-protected:
     Piece piesa;
     PlaySide culoare;
 };
@@ -72,8 +73,7 @@ public:
     vector<MyPiece*> isCapturedBlack;
     Board();
     ~Board();
-    MyPiece* getPiece(int row, int col) const;
-    void movePiece(int startRow, int startCol, int endRow, int endCol);
+    MyPiece* getPiece(int lin, int col) const;
     void movePiece(Move *m);
     void undoPiece(Move *m);
 };

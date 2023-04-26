@@ -24,68 +24,59 @@ Move* Bot::calculateNextMove() {
    *
    * Return move that you are willing to submit
    * Move is to be constructed via one of the factory methods declared in Move.h */
-  //PlaySide engineSide = Main.getEngineSide();
-  PlaySide engineSide = PlaySide::WHITE;
+
+  // Jucator curent
+  PlaySide engineSide = getEngineSide();
+
+  // Generam toate miscarile intr-o coada si dupa aceea le amestecam.
   std::vector<Move*> legalMovesRand;
-  std::queue<Move*> legalMoves= generateLegalMoves();
-  while(!legalMoves.empty()){
+  std::queue<Move*> legalMoves = generateLegalMoves(engineSide);
+  while (!legalMoves.empty()) {
     Move* m = legalMoves.front();
     legalMovesRand.push_back(m);
     legalMoves.pop();
   }
+
+  // Shuffle mutari
   std::random_device rd;
   std::mt19937 g(rd());
   std::shuffle(legalMovesRand.begin(), legalMovesRand.end(), g);
-  for(Move *move : legalMovesRand){
-      //std::cerr<< "Buna! " <<move->getSource().value() << " " << move->getDestination().value() << "\n";
-      recordMove(move, engineSide);
-      bool willKingBeInCheck = isKinginCheck();
-      board->undoPiece(move);
-      Move::moveTo(move->getDestination(), move->getSource());
-      if(willKingBeInCheck)
-        continue;
-     /* string dest = move->getDestination().value();
-      int dest_lit = dest[0] - 'a';
-      int dest_num = dest[1] - '1';
 
-      //MyPiece* piesa = board->getPiece(src_num, src_lit);
-      MyPiece* dest_piesa = board->getPiece(dest_num, dest_lit);
-      if(dest_piesa->getType() != Piece::EMPTY){
-        if(dest_piesa->getColor() == PlaySide::WHITE){
-            board->isCapturedWhite.push_back(dest_piesa);
-        }
-        else if(dest_piesa->getColor() == PlaySide::BLACK){
-            board->isCapturedBlack.push_back(dest_piesa);
-        }
-      }
-      std::cerr << "\n";
-      std::cerr << "Piese capturate albe: \n";
-      for(MyPiece* piesa2 : board->isCapturedWhite)
-          std::cerr << piesa2->getType() << " ";
-      std::cerr << "\n";
-      std::cerr << "Piese capturate negre: \n";
-      for(MyPiece* piesa2 : board->isCapturedBlack)
-          std::cerr << piesa2->getType() << " ";
-      std::cerr << "\n";*/
-      recordMove(move, engineSide);
-      return move;
+  // Rationament: facem mutarea, verificam daca regele este in sah si ii dam undo.
+  // Daca regele e in sah din cauza acelei mutari, continuam sa generam altele.
+  // Altfel, facem pe bune mutarea si o si returnam.
+  for (Move* move : legalMovesRand) {
+    // std::cerr<< "Buna! " <<move->getSource().value() << " " << move->getDestination().value() << "\n";
+    recordMove(move, engineSide);
+    bool willKingBeInCheck = isKinginCheck(engineSide);
+    board->undoPiece(move);
+    if (willKingBeInCheck)
+      continue;
+    recordMove(move, engineSide);
+    return move;
   }
+  // Daca nu gaseste nicio mutare buna, jucatorul curent da resign.
   return Move::resign();
 }
 
 
+
 std::string Bot::getBotName() { return Bot::BOT_NAME; }
 
-std::queue<Move*> Bot::generateLegalMoves() {
+// Generarea miscarilor legale
+std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
   std::queue<Move*> moves;
+  // Luam pe rand fiecare patrat
   for(int i = 0; i < 8; i++)
     for(int j = 0; j < 8; j++){
+      // Extragem piesa de pe acel patrat
       MyPiece* piesa = board->getPiece(i, j);
-      //PlaySide engineSide = Main.getEngineSide();
-      PlaySide engineSide = PlaySide::WHITE;
-      if(piesa->getType() != EMPTY && piesa->getColor() == engineSide) {
+      // Daca piesa curenta este a jucatorului curent, generam 
+      // toate miscarile disponibile pentru aceasta
+      if(piesa->getColor() == engineSide) {
          for(int x = 0; x < 8; x++)
-          for(int y = 7; y >= 0; y--){
+          for(int y = 0; y < 8; y++){
+            // Generare mutare
             std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));
             std::string dest = std::string(1, (char)(x + 'a')) + std::string(1, (char)(y + '1'));
             Move *m = new Move(src, dest, Piece::EMPTY);
@@ -96,6 +87,8 @@ std::queue<Move*> Bot::generateLegalMoves() {
           }
       }
     }
+  
+  // Cod auxiliar pentru afisare mutari facute
   std::queue<Move*> cpyMoves = moves;
   while(!cpyMoves.empty()){
     Move *m = cpyMoves.front();
@@ -109,10 +102,9 @@ std::queue<Move*> Bot::generateLegalMoves() {
   return moves;
 }
 
-bool Bot::isKinginCheck(){
+bool Bot::isKinginCheck(PlaySide engineSide){
+  // Cautare rege
   int king_num = -1, king_col = -1;
-  PlaySide engineSide = PlaySide::WHITE;
-  // PlaySide engineSide = Main.getEngineSide();
     for(int i = 0; i < 8; i++)
       for(int j= 0; j < 8; j++)
         if(board->getPiece(i, j)->getType() == Piece::KING && board->getPiece(i,j)->getColor() == engineSide){
@@ -120,21 +112,27 @@ bool Bot::isKinginCheck(){
             king_col = j;
             break;
         }
+    
+    // Culoare oponent
     PlaySide opponentSide = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
     for (int i = 0; i < 8; i++) {
       for (int j = 0; j < 8; j++) {
         MyPiece* piesa = board->getPiece(i, j);
-        if (piesa->getType() != Piece::EMPTY && piesa->getColor() == opponentSide) {
+        // Cautam piese de culoarea oponentului
+        if (piesa->getColor() == opponentSide) {
+          // Extragem mutari tip piesa_oponent->rege
           std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));
           std::string dest = std::string(1, (char)(king_col + 'a')) + std::string(1, (char)(king_num + '1'));
+          // std::cerr << "miscare " << src << " " << dest << " " << opponentSide << "\n";
           Move move(src, dest, Piece::EMPTY);
           if (piesa->isLegalMove(*board, move)) {
-                std::cerr << piesa->getType() << " " << piesa->getColor() << " might capture king \n";
+                // std::cerr << piesa->getType() << " " << piesa->getColor() << " might capture king \n";
                 return true;
               }
           }
       }
   } 
+  // Daca nicio piesa a oponentului nu genereaza sah, atunci returnam fals.
   return false;
 }
 
