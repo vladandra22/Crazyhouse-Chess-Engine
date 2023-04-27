@@ -2,6 +2,7 @@
 #define BOT_H
 #include <string>
 #include <queue>
+#include <vector>
 
 #include "Move.h"
 #include "PlaySide.h"
@@ -9,6 +10,7 @@
 struct ChessPiece {
     Piece piesa;
     PlaySide culoare;
+    bool isPromotion;
 };
 
 
@@ -19,6 +21,7 @@ class Bot {
  public:
   /* Declare custom fields below */
     ChessPiece board[8][8];
+    std::vector<ChessPiece> isCaptured;
   /* Declare custom fields above */
   Bot();
 

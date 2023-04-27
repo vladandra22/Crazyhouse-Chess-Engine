@@ -304,6 +304,7 @@ class EngineComponents {
 };
 
 int main() {
+  freopen("output.log", "w", stderr);
   EngineComponents* engine = new EngineComponents();
   engine->performHandshake();
 
