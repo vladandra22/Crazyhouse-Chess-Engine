@@ -1,3 +1,4 @@
+
 #include <string>
 #include <sstream>
 
@@ -10,6 +11,10 @@
 
 static PlaySide sideToMove;
 static PlaySide engineSide;
+
+PlaySide getEngineSide() {
+  return engineSide;
+}
 
 static void toggleSideToMove() {
     static const PlaySide switchTable[] = {
@@ -180,7 +185,8 @@ class EngineComponents {
       std::cout << "\n";
 
       getline(scanner, command);
-      assert(command.rfind("protover", 0) == 0);
+      assert(command.rfind("protover ", 0) == 0 && "PROTOCOL ERROR: EXPECTED PROTOVER CMD");
+      assert(command.at(strlen("protover ")) == '2' && "PROTOCOL ERROR: PROTOCOL VER != 2");
 
       /* Respond with features */
       std::string features = constructFeaturesPayload();
@@ -228,12 +234,24 @@ class EngineComponents {
   }
 
   void processIncomingMove(Move *move) {
-    if (state.value() == FORCE_MODE || state.value() == RECV_NEW) {
+    if (state.value() == FORCE_MODE) {
       bot.value()->recordMove(move, sideToMove);
       toggleSideToMove();
     } else if (state.value() == PLAYING) {
       bot.value()->recordMove(move, sideToMove);
       toggleSideToMove();
+
+      Move *response = bot.value()->calculateNextMove();
+      emitMove(response);
+
+      delete response;
+      toggleSideToMove();
+    } else if (state.value() == RECV_NEW) {
+      state = EngineState::PLAYING;
+
+      bot.value()->recordMove(move, sideToMove);
+      toggleSideToMove();
+      engineSide = sideToMove;
 
       Move *response = bot.value()->calculateNextMove();
       emitMove(response);
@@ -284,10 +302,6 @@ class EngineComponents {
     }
   }
 };
-
-enum PlaySide getEngineSide(){
-  return engineSide;
-}
 
 int main() {
   EngineComponents* engine = new EngineComponents();

@@ -1,25 +1,26 @@
 #ifndef BOT_H
 #define BOT_H
-
 #include <string>
 #include <queue>
 
-#include "ChessBoard.h"
 #include "Move.h"
-#include "PlaySide.h" 
+#include "PlaySide.h"
 
-extern enum PlaySide getEngineSide();
+struct ChessPiece {
+    Piece piesa;
+    PlaySide culoare;
+};
+
+
 class Bot {
  private:
   static const std::string BOT_NAME;
 
  public:
   /* Declare custom fields below */
-    Board* board = nullptr;
-    PlaySide currColor;
+    ChessPiece board[8][8];
   /* Declare custom fields above */
   Bot();
-  Bot(Board* m_board, PlaySide m_currColor);
 
   /**
    * Record move (either by enemy in normal mode, or by either side
@@ -30,16 +31,15 @@ class Bot {
   void recordMove(Move* move, PlaySide sideToMove);
 
   /**
-   * Calculates next move, in response to enemyMove
-   * @param enemyMove the enemy's last move
-   *                  null if this is the opening move, or previous
-   *                  move has been recorded in force mode
+   * Calculates and return the bot's next move
    * @return your move
    */
   Move* calculateNextMove();
 
   static std::string getBotName();
+  void generateChessBoard(ChessPiece board[8][8]);
   std::queue<Move*> generateLegalMoves(PlaySide engineSide);
-  bool isKinginCheck(PlaySide engineSide);
+  bool isLegalMove(ChessPiece board[8][8], Move m);
+  bool isKinginCheck(ChessPiece cpyBoard[8][8], PlaySide engineSide);
 };
 #endif

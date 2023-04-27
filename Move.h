@@ -16,6 +16,7 @@ class Move {
   Move(std::optional<std::string> _source,
        std::optional<std::string> _destination,
        std::optional<Piece> _replacement);
+
   /*
     Use the following 4 constructors for Move:
     moveTo(src, dst), if emitting a standard move (advance, capture, castle)

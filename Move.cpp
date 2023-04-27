@@ -49,4 +49,3 @@ Move* Move::dropIn(std::optional<std::string> destination,
 }
 
 Move* Move::resign() { return new Move({}, {}, {}); }
-
