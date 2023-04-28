@@ -2,7 +2,9 @@
 #define BOT_H
 #include <string>
 #include <queue>
-#include <vector>
+#include <stack>
+#include <algorithm>
+#include <optional>
 
 #include "Move.h"
 #include "PlaySide.h"
@@ -21,7 +23,8 @@ class Bot {
  public:
   /* Declare custom fields below */
     ChessPiece board[8][8];
-    std::vector<ChessPiece> isCaptured;
+    int isCapturedWhite[6]; // vector de frecventa
+    int isCapturedBlack[6];
   /* Declare custom fields above */
   Bot();
 
@@ -32,6 +35,7 @@ class Bot {
    * @param sideToMode side to move
    */
   void recordMove(Move* move, PlaySide sideToMove);
+  void recordMove2(ChessPiece board[8][8], Move* move, PlaySide sideToMove);
 
   /**
    * Calculates and return the bot's next move
