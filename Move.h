@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <optional>
+#include <cstring>
 
 #include "Piece.h"
 

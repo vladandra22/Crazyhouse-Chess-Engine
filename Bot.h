@@ -5,6 +5,7 @@
 #include <stack>
 #include <algorithm>
 #include <optional>
+#include <cstring>
 
 #include "Move.h"
 #include "PlaySide.h"
@@ -13,6 +14,7 @@ struct ChessPiece {
     Piece piesa;
     PlaySide culoare;
     bool isPromotion;
+    int moves_count;
 };
 
 
@@ -48,5 +50,7 @@ class Bot {
   std::queue<Move*> generateLegalMoves(PlaySide engineSide);
   bool isLegalMove(ChessPiece board[8][8], Move m);
   bool isKinginCheck(ChessPiece cpyBoard[8][8], PlaySide engineSide);
+  bool isSquareSafe(int row, int col, PlaySide engineSide);
+  int isCastling(PlaySide engineSide);
 };
 #endif

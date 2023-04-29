@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <algorithm>
 #include <cmath>
+#include <cstring>
 
 const std::string Bot::BOT_NAME = "MyBot"; /* Edit this, escaped characters are forbidden */
 extern PlaySide getEngineSide();
@@ -15,35 +16,35 @@ Bot::Bot() { /* Initialize custom fields here */
 
 void Bot::generateChessBoard(ChessPiece board[8][8]) {
     // Initialize black pieces
-    board[0][0] = {Piece::ROOK, PlaySide::WHITE, false};
-    board[0][1] = {Piece::KNIGHT, PlaySide::WHITE, false};
-    board[0][2] = {Piece::BISHOP, PlaySide::WHITE, false};
-    board[0][3] = {Piece::QUEEN, PlaySide::WHITE, false};
-    board[0][4] = {Piece::KING, PlaySide::WHITE, false};
-    board[0][5] = {Piece::BISHOP, PlaySide::WHITE, false};
-    board[0][6] = {Piece::KNIGHT, PlaySide::WHITE, false};
-    board[0][7] = {Piece::ROOK, PlaySide::WHITE, false};
+    board[0][0] = {Piece::ROOK, PlaySide::WHITE, false, 0};
+    board[0][1] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
+    board[0][2] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
+    board[0][3] = {Piece::QUEEN, PlaySide::WHITE, false, 0};
+    board[0][4] = {Piece::KING, PlaySide::WHITE, false, 0};
+    board[0][5] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
+    board[0][6] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
+    board[0][7] = {Piece::ROOK, PlaySide::WHITE, false, 0};
     for (int i = 0; i < 8; i++) {
-        board[1][i] = {Piece::PAWN, PlaySide::WHITE, false};
+        board[1][i] = {Piece::PAWN, PlaySide::WHITE, false, 0};
     }
     // Initialize empty squares
     for (int i = 2; i < 6; i++) {
         for (int j = 0; j < 8; j++) {
-            board[i][j] = {Piece::EMPTY, PlaySide::NONE, false};
+            board[i][j] = {Piece::EMPTY, PlaySide::NONE, false, 0};
         }
     }
     // Initialize white pieces
     for (int i = 0; i < 8; i++) {
-        board[6][i] = {Piece::PAWN, PlaySide::BLACK, false};
+        board[6][i] = {Piece::PAWN, PlaySide::BLACK, false, 0};
     }
-    board[7][0] = {Piece::ROOK, PlaySide::BLACK, false};
-    board[7][1] = {Piece::KNIGHT, PlaySide::BLACK, false};
-    board[7][2] = {Piece::BISHOP, PlaySide::BLACK, false};
-    board[7][3] = {Piece::QUEEN, PlaySide::BLACK, false};
-    board[7][4] = {Piece::KING, PlaySide::BLACK, false};
-    board[7][5] = {Piece::BISHOP, PlaySide::BLACK, false};
-    board[7][6] = {Piece::KNIGHT, PlaySide::BLACK, false};
-    board[7][7] = {Piece::ROOK, PlaySide::BLACK, false};
+    board[7][0] = {Piece::ROOK, PlaySide::BLACK, false, 0};
+    board[7][1] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
+    board[7][2] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
+    board[7][3] = {Piece::QUEEN, PlaySide::BLACK, false, 0};
+    board[7][4] = {Piece::KING, PlaySide::BLACK, false, 0};
+    board[7][5] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
+    board[7][6] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
+    board[7][7] = {Piece::ROOK, PlaySide::BLACK, false, 0};
 }
 
 // Functie care imi face miscarea pe tabla.
@@ -51,6 +52,7 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
     /* You might find it useful to also separately
      * record last move in another custom field */
 
+    //e1g1, e1c1, e8g8, e8g8
     // Caz 1: Drop in (Crazyhouse)
     if(move->isDropIn()){
       std::string dest = move->getDestination().value();
@@ -70,6 +72,38 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
     }
     // Caz 2: Miscare normala
     else if(move->isNormal()){
+      if(move->getSource().value() == "e1" && move->getDestination().value() == "g1"){
+        if(board[0][4].piesa == Piece::KING){
+          board[0][7].piesa = Piece::EMPTY;
+          board[0][7].culoare = PlaySide::NONE;
+          board[0][5].piesa = Piece::ROOK;
+          board[0][5].culoare = PlaySide::WHITE;
+        }
+      }
+      else if(move->getSource().value() == "e1" && move->getDestination().value() == "c1"){
+        if(board[0][4].piesa == Piece::KING){
+            board[0][0].piesa = Piece::EMPTY;
+            board[0][0].culoare = PlaySide::NONE;
+            board[0][3].piesa = Piece::ROOK;
+            board[0][3].culoare = PlaySide::WHITE;
+        }
+      }
+      else if(move->getSource().value() == "e8" && move->getDestination().value() == "g8"){
+        if(board[7][4].piesa == Piece::KING){
+          board[7][7].piesa = Piece::EMPTY;
+          board[7][7].culoare = PlaySide::NONE;
+          board[7][5].piesa = Piece::ROOK;
+          board[7][5].culoare = PlaySide::BLACK;
+        }
+      }
+      else if(move->getSource().value() == "e8" && move->getDestination().value() == "c8"){
+        if(board[7][4].piesa == Piece::KING){
+          board[7][0].piesa = Piece::EMPTY;
+          board[7][0].culoare = PlaySide::NONE;
+          board[7][3].piesa = Piece::ROOK;
+          board[7][3].culoare = PlaySide::BLACK;
+        }
+      }    
       std::string src = move->getSource().value();
       std::string dest = move->getDestination().value();
       int src_lit = src[0] - 'a';
@@ -100,8 +134,16 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
       board[src_num][src_lit].culoare = PlaySide::NONE;
       board[src_num][src_lit].piesa = Piece::EMPTY;
       board[src_num][src_lit].isPromotion = false;
+      board[src_num][src_lit].moves_count = 0;
       board[dest_num][dest_lit] = piece;
+      board[dest_num][dest_lit].moves_count++;
       Move::moveTo(move->getSource(), move->getDestination());
+      for(int i = 7; i >= 0; i--) {       
+        for(int j = 0; j < 8; j++) {          
+           std::cerr << i << " " << j << " " << board[i][j].piesa << " " << board[i][j].culoare << "| ";        
+           }
+        std::cerr << "\n";     
+        }
     }
     else if(move->isPromotion()){
       std::string src = move->getSource().value();
@@ -171,6 +213,73 @@ Move* Bot::calculateNextMove() {
    * Return move that you are willing to submit
    * Move is to be constructed via one of the factory methods declared in Move.h */
   PlaySide engineSide = getEngineSide();
+  std::cerr << (engineSide == PlaySide::WHITE ? "ALB!!!!!!!" : "NEGRU!!!!!!") << "\n";
+
+  int rocada = isCastling(engineSide);
+  // Rocada mica
+  if(rocada == 0){
+    int side = (engineSide == PlaySide::WHITE) ? 0 : 7;
+    ChessPiece king = board[side][4];
+    ChessPiece rook = board[side][7];
+
+    board[side][4].culoare = PlaySide::NONE;
+    board[side][4].piesa = Piece::EMPTY;
+    board[side][4].isPromotion = false;
+    board[side][4].moves_count = 0;
+    board[side][7].culoare = PlaySide::NONE;
+    board[side][7].piesa = Piece::EMPTY;
+    board[side][4].isPromotion = false;
+    board[side][7].moves_count = 0;
+
+    board[side][6] = king;
+    board[side][6].moves_count++;
+    board[side][5] = rook;
+    board[side][5].moves_count++;
+
+    std::string src = std::string(1, (char)(4 + 'a')) + std::string(1, (char)(side + '1'));
+    std::string dest = std::string(1, (char)(6 + 'a')) + std::string(1, (char)(side + '1'));
+    Move* misc_king = new Move(src, dest, {});
+    Move::moveTo(misc_king->getSource(), misc_king->getDestination());
+
+
+    std::cerr << board[side][6].moves_count << " " << "rege" << engineSide <<"\n";
+    std::cerr << board[side][5].moves_count << " " << "tura" << engineSide <<"\n";
+    return misc_king;
+  }
+   // facem rocada mare
+  else if (rocada == 1) {
+    //std::cerr << "ROCADA MARE :D" << "\n";
+    int side = (engineSide == PlaySide :: WHITE) ? 0 : 7;
+    ChessPiece king =  board[side][4];
+    ChessPiece rook = board[side][7];
+    // eliberam patratelele turei si regelui
+    board[side][4].culoare = PlaySide :: NONE;
+    board[side][4].piesa = Piece :: EMPTY;
+    board[side][0].culoare = PlaySide :: NONE;
+    board[side][0].piesa = Piece :: EMPTY;
+    // mutam regele si tura
+    board[side][2] = king;
+    board[side][2].moves_count++;
+    board[side][3] = rook;
+    board[side][3].moves_count++;
+
+    std::string src = std::string(1, (char)(4 + 'a')) + std::string(1, (char)(side + '1'));
+    std::string dest = std::string(1, (char)(2 + 'a')) + std::string(1, (char)(side + '1'));
+    Move* misc_king = new Move(src, dest, {});
+    Move::moveTo(misc_king->getSource(), misc_king->getDestination());
+
+    // std::string src2 = std::string(1, (char)(0 + 'a')) + std::string(1, (char)(side + '1'));
+    // std::string dest2 = std::string(1, (char)(3 + 'a')) + std::string(1, (char)(side + '1'));
+    // Move* misc_rook = new Move(src2, dest2, {});
+    // Move::moveTo(misc_rook->getSource(), misc_rook->getDestination());
+    // recordMove(misc_rook, engineSide); //nu merge daca decomentam
+
+    std::cerr << board[side][2].moves_count << " " << "rege"<< engineSide << "\n";
+    std::cerr << board[side][3].moves_count << " " << "tura"<< engineSide << "\n";
+    
+    return misc_king;
+  } 
+
   std::vector<Move*> legalMovesRand;
   std::queue<Move*> legalMoves = generateLegalMoves(engineSide);
   while (!legalMoves.empty()) {
@@ -187,7 +296,6 @@ Move* Bot::calculateNextMove() {
   // Daca regele e in sah din cauza acelei mutari, continuam sa generam altele.
   // Altfel, facem pe bune mutarea si o si returnam.
   for (Move* move : legalMovesRand) {
-    // std::cerr<< "Buna! " <<move->getSource().value() << " " << move->getDestination().value() << "\n";
     //recordMove(board, move, engineSide);
     //return move;
     ChessPiece cpyBoard[8][8];
@@ -196,35 +304,11 @@ Move* Bot::calculateNextMove() {
         cpyBoard[i][j] = board[i][j];
     recordMove2(cpyBoard, move, engineSide);
 
-    std::cerr<<"\n\n";
-    for(int i = 7; i >= 0; i--){
-      for(int j = 0; j < 8; j++){
-        std::cerr << "(" << cpyBoard[i][j].piesa << " " << cpyBoard[i][j].culoare << ") ";
-      }
-      std::cerr << "\n";
-    }
-    std::cerr<<"\n\n";
 
     if(isKinginCheck(cpyBoard, engineSide))
       continue;
     recordMove(move, engineSide);
-
     // Afisare pentru crazyhouse
-    std::cerr << "\n";
-    for(int i = 0; i < 6; i++)
-      std::cerr << isCapturedWhite[i] << " ";
-    std::cerr << "\n";
-    
-    for(int i = 0; i < 6; i++)
-      std::cerr << isCapturedBlack[i] << " ";
-    std::cerr << "\n";
-
-    for(int i = 7; i >= 0; i--){
-      for(int j = 0; j < 8; j++){
-        std::cerr << "(" << board[i][j].piesa << " " << board[i][j].culoare << ") ";
-      }
-      std::cerr << "\n";
-    }
 
     return move;
   }
@@ -280,7 +364,6 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
           }
       }
     }
-  std::cerr << "\nEngine color " << (engineSide == PlaySide::WHITE ? "WHITE\n" : "BLACK\n");
 
   // Generare mutari CrazyHouse
  for(int i = 0; i < 8; i++)
@@ -314,7 +397,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
     }
 
     // Afisare mutari generate
-   /* std::queue<Move*> cpyMoves = moves;
+    std::queue<Move*> cpyMoves = moves;
     while(!cpyMoves.empty()){
       Move *m = cpyMoves.front();
       cpyMoves.pop();
@@ -332,7 +415,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
         int src_num11 = src[1] - '1';
         std::cerr << "Buna! " << src << " " << dest << " " << board[src_num11][src_lit11].piesa<< "\n";
       }
-    }*/
+    }
   return moves;
 }
 
@@ -560,13 +643,81 @@ bool Bot::isKinginCheck(ChessPiece cpyBoard[8][8], PlaySide engineSide){
           std::string dest = std::string(1, (char)(king_col + 'a')) + std::string(1, (char)(king_num + '1'));
           Move move(src, dest, {});
           if (isLegalMove(cpyBoard, move)) {
-                std::cerr << board[i][j].piesa << " " << board[i][j].culoare << " might capture king \n";
                 return true;
               }
-              else std::cerr << board[i][j].piesa << " " << board[i][j].culoare << " cant capture king \n";
           }
       }
   } 
   // Daca nicio piesa a oponentului nu genereaza sah, atunci returnam fals.
   return false;
+}
+
+bool Bot::isSquareSafe(int row, int col, PlaySide engineSide){
+  std::queue<Move*> moves2;
+  PlaySide playside = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
+  moves2 = generateLegalMoves(playside);
+  while(!moves2.empty()){
+    Move *m2 = moves2.front();
+    moves2.pop();
+    std::string dest = m2->getDestination().value();
+    delete m2;
+    int dest_lit = dest[0] - 'a';
+    int dest_num = dest[1] - '1';
+    if(dest_lit == col && dest_num == row){
+      return false;
+    }
+  }
+    return true;
+}
+
+int Bot::isCastling(PlaySide engineSide){
+  int side = (engineSide == PlaySide::WHITE) ? 0 : 7;
+  int ok = 1;
+  ChessPiece king, rook_s, rook_l;
+  king = board[side][4];
+  rook_s = board[side][7]; // rocada mica
+  rook_l = board[side][0]; // rocada mare
+
+  // Daca pe pozitia regelui nu e regele
+  if(king.piesa != Piece::KING){
+    return -1;
+  }
+  
+  // Daca pe pozitia turei e ROOK 
+  if(rook_l.piesa == Piece::ROOK){
+    // Verificam daca piesele au mai fost mutate sau nu
+    if(rook_l.moves_count != 0 || king.moves_count != 0){
+        ok = 0;
+    }
+    // Verificam daca avem spatii goale intre piese
+    for(int i = 1; i <= 3; i++){
+      if(board[side][i].piesa != Piece::EMPTY){
+        ok = 0;
+      }
+    }
+    if(isKinginCheck(board, engineSide)){
+      ok = 0;
+    }
+    if(isSquareSafe(side, 2, engineSide) && isSquareSafe(side, 3, engineSide) && ok == 1){
+      return 1; // 1 = facem rocada mare
+    }
+  }
+  ok = 1;
+  if(rook_s.piesa == Piece::ROOK){
+    if(king.moves_count != 0 || rook_s.moves_count != 0){
+      ok = 0;
+    }
+    for(int i = 5; i <= 6; i++){
+      if(board[side][i].piesa != Piece::EMPTY){
+        ok = 0;
+      }
+    }
+    if(isKinginCheck(board, engineSide)){
+      ok = 0;
+    }
+    if(isSquareSafe(side, 5, engineSide) && isSquareSafe(side, 6, engineSide) && ok == 1){
+      return 0; // 0 = facem rocada mica
+    }
+  }
+  return -1;
 }
