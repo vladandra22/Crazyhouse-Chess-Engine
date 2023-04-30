@@ -27,6 +27,8 @@ class Bot {
     ChessPiece board[8][8];
     int isCapturedWhite[6]; // vector de frecventa
     int isCapturedBlack[6];
+    std::string last_src;
+    std::string last_dest;
   /* Declare custom fields above */
   Bot();
 

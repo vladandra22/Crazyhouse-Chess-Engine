@@ -55,6 +55,8 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
     //e1g1, e1c1, e8g8, e8g8
     // Caz 1: Drop in (Crazyhouse)
     if(move->isDropIn()){
+      last_src = "zz";
+      last_dest = move->getDestination().value();
       std::string dest = move->getDestination().value();
       int dest_lit = dest[0] - 'a';
       int dest_num = dest[1] - '1';
@@ -72,36 +74,34 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
     }
     // Caz 2: Miscare normala
     else if(move->isNormal()){
+      last_src = move->getSource().value();
+      last_dest = move->getDestination().value();
       if(move->getSource().value() == "e1" && move->getDestination().value() == "g1"){
         if(board[0][4].piesa == Piece::KING){
+          board[0][5] = board[0][7];
           board[0][7].piesa = Piece::EMPTY;
           board[0][7].culoare = PlaySide::NONE;
-          board[0][5].piesa = Piece::ROOK;
-          board[0][5].culoare = PlaySide::WHITE;
         }
       }
       else if(move->getSource().value() == "e1" && move->getDestination().value() == "c1"){
         if(board[0][4].piesa == Piece::KING){
+            board[0][3] = board[0][0];
             board[0][0].piesa = Piece::EMPTY;
             board[0][0].culoare = PlaySide::NONE;
-            board[0][3].piesa = Piece::ROOK;
-            board[0][3].culoare = PlaySide::WHITE;
         }
       }
       else if(move->getSource().value() == "e8" && move->getDestination().value() == "g8"){
         if(board[7][4].piesa == Piece::KING){
+          board[7][5] = board[7][7];
           board[7][7].piesa = Piece::EMPTY;
           board[7][7].culoare = PlaySide::NONE;
-          board[7][5].piesa = Piece::ROOK;
-          board[7][5].culoare = PlaySide::BLACK;
         }
       }
       else if(move->getSource().value() == "e8" && move->getDestination().value() == "c8"){
         if(board[7][4].piesa == Piece::KING){
+          board[7][3] = board[7][0];
           board[7][0].piesa = Piece::EMPTY;
           board[7][0].culoare = PlaySide::NONE;
-          board[7][3].piesa = Piece::ROOK;
-          board[7][3].culoare = PlaySide::BLACK;
         }
       }    
       std::string src = move->getSource().value();
@@ -111,6 +111,25 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
       int dest_lit = dest[0] - 'a';
       int dest_num = dest[1] - '1';
       ChessPiece piece = board[src_num][src_lit];
+      // Stergere pion daca am mutare En Passant
+      if(board[dest_num][dest_lit].culoare == PlaySide::NONE && board[src_num][src_lit].piesa == Piece::PAWN && src_num != dest_num && src_lit != dest_lit){
+          PlaySide side = board[src_lit][src_num].culoare;
+          int direction = (side == PlaySide::WHITE) ? -1 : 1;
+          board[dest_num][dest_lit] = piece;
+          board[src_num][src_lit].piesa = Piece::EMPTY;
+          board[src_num][src_lit].culoare = PlaySide::NONE;
+          board[dest_num - direction][dest_lit].piesa = Piece::EMPTY;
+          board[dest_num - direction][dest_lit].culoare = PlaySide::NONE;
+          board[dest_num - direction][dest_lit].isPromotion = false;
+          if(side == PlaySide::WHITE){
+            isCapturedBlack[Piece::PAWN]++;
+          }
+          else if(side == PlaySide::BLACK){
+            isCapturedWhite[Piece::PAWN]++;
+          }
+          Move::moveTo(move->getSource(), move->getDestination());
+          return;
+      }
       // Daca e captura, adaug la vectorul de frecventa.
       if(board[dest_num][dest_lit].culoare == PlaySide::BLACK){
         if(board[dest_num][dest_lit].isPromotion == true){
@@ -146,6 +165,8 @@ void Bot::recordMove(Move* move, PlaySide sideToMove) {
         }
     }
     else if(move->isPromotion()){
+      last_src = move->getSource().value();
+      last_dest = move->getDestination().value();
       std::string src = move->getSource().value();
       std::string dest = move->getDestination().value();
       int src_lit = src[0] - 'a';
@@ -216,6 +237,7 @@ Move* Bot::calculateNextMove() {
   std::cerr << (engineSide == PlaySide::WHITE ? "ALB!!!!!!!" : "NEGRU!!!!!!") << "\n";
 
   int rocada = isCastling(engineSide);
+  std::cerr << "\n\n\nROCADA MEA FRUMI " << rocada << "\n\n\n\n";
   // Rocada mica
   if(rocada == 0){
     int side = (engineSide == PlaySide::WHITE) ? 0 : 7;
@@ -244,6 +266,7 @@ Move* Bot::calculateNextMove() {
 
     std::cerr << board[side][6].moves_count << " " << "rege" << engineSide <<"\n";
     std::cerr << board[side][5].moves_count << " " << "tura" << engineSide <<"\n";
+    //recordMove(misc_king, engineSide);
     return misc_king;
   }
    // facem rocada mare
@@ -251,7 +274,7 @@ Move* Bot::calculateNextMove() {
     //std::cerr << "ROCADA MARE :D" << "\n";
     int side = (engineSide == PlaySide :: WHITE) ? 0 : 7;
     ChessPiece king =  board[side][4];
-    ChessPiece rook = board[side][7];
+    ChessPiece rook = board[side][0];
     // eliberam patratelele turei si regelui
     board[side][4].culoare = PlaySide :: NONE;
     board[side][4].piesa = Piece :: EMPTY;
@@ -276,7 +299,7 @@ Move* Bot::calculateNextMove() {
 
     std::cerr << board[side][2].moves_count << " " << "rege"<< engineSide << "\n";
     std::cerr << board[side][3].moves_count << " " << "tura"<< engineSide << "\n";
-    
+    //recordMove(misc_king, engineSide);
     return misc_king;
   } 
 
@@ -317,7 +340,6 @@ Move* Bot::calculateNextMove() {
 
 std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
   std::queue<Move*> moves;
-  engineSide = getEngineSide();
   // Luam pe rand fiecare patrat
   for(int i = 0; i < 8; i++)
     for(int j = 0; j < 8; j++){
@@ -337,7 +359,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
                   Move *m = new Move(src, dest, Piece::QUEEN);
                   moves.push(m);
                 }
-                else if( (j + 1 < 8) && board[i + direction][j - 1].culoare == other_color){
+                else if( (j + 1 < 8) && board[i + direction][j + 1].culoare == other_color){
                   std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));
                   std::string dest = std::string(1, (char)(j + 1 + 'a')) + std::string(1, (char)(i + direction + '1'));
                     Move *m = new Move(src, dest, Piece::QUEEN);
@@ -372,22 +394,22 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
         if(board[i][j].culoare == PlaySide::NONE){
           std::string dest = std::string(1, (char)(j + 'a')) + std::string(1, (char)(i + '1'));
           if(engineSide == PlaySide::WHITE){
-            for(int i = 0; i < 6; i++){
-              if(isCapturedWhite[i] > 0){
-                  Piece replacement = (Piece)i;
+            for(int k = 0; k < 6; k++){
+              if(isCapturedWhite[k] > 0){
+                  Piece replacement = (Piece)k;
                   // Nu avem voie sa dam dropIn unui pion de pe ultimele randuri
-                  if(replacement == Piece::PAWN && (i == 0 || i == 1)) continue;
+                  if(replacement == Piece::PAWN && (i == 0 || i == 7)) continue;
                   Move* move2 = Move::dropIn(dest, replacement);
                   moves.push(move2);
               }
             }
           }
           else if(engineSide == PlaySide::BLACK){
-            for(int i = 0; i < 6; i++){
-              if(isCapturedBlack[i] > 0){
-                  Piece replacement = (Piece)i;
+            for(int k = 0; k < 6; k++){
+              if(isCapturedBlack[k] > 0){
+                  Piece replacement = (Piece)k;
                   // Nu avem voie sa dam dropIn unui pion de pe ultimele randuri
-                  if(replacement == Piece::PAWN && (i == 0 || i == 1)) continue;
+                  if(replacement == Piece::PAWN && (i == 0 || i == 7)) continue;
                   Move* move3 = Move::dropIn(dest, replacement);
                   moves.push(move3);
               }
@@ -395,6 +417,54 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
           }
         }
     }
+      // Generare mutari En Passant
+    int last_src_num = last_src[1] - '1';
+    int last_dest_lit = last_dest[0] - 'a';
+    int last_dest_num = last_dest[1] - '1';
+
+     bool enPassant = false;
+    if(last_src != "zz" && board[last_dest_num][last_dest_lit].piesa == Piece::PAWN && abs(last_dest_num - last_src_num) == 2)
+      enPassant = true;
+    
+      for(int j = 0; j < 8; j++){
+        if(board[3][j].piesa == Piece::PAWN && board[3][j].culoare == PlaySide::BLACK && engineSide == PlaySide::BLACK){
+          if(enPassant == true)
+            {
+              if(j - 1 > 0 && j - 1 == last_dest_lit){
+              std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(3 + '1'));
+              std::string dest = std::string(1, (char)(j - 1 + 'a')) + std::string(1, (char)(2+ '1'));
+              Move *move4 = new Move(src, dest, {});
+              moves.push(move4);
+              }
+              if(j + 1 < 8 && j + 1 == last_dest_lit){
+                std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(3 + '1'));
+                std::string dest = std::string(1, (char)(j + 1 + 'a')) + std::string(1, (char)(2 + '1'));
+                Move *move4 = new Move(src, dest, {});
+                moves.push(move4);
+              }
+            }
+        }
+      }
+    
+      for(int j = 0; j < 8; j++){
+        if(board[4][j].piesa == Piece::PAWN && board[4][j].culoare == PlaySide::WHITE && engineSide == PlaySide::WHITE){
+          if(enPassant == true)
+          {
+            if(j - 1 > 0 && j - 1 == last_dest_lit){
+              std::string src = std::string(1, (char)(j + 'a')) + std::string(4, (char)(4 + '1'));
+              std::string dest = std::string(1, (char)(j - 1 + 'a')) + std::string(1, (char)(5 + '1'));
+              Move *move4 = new Move(src, dest, {});
+              moves.push(move4);
+            }
+            if(j + 1 < 8 && j + 1 == last_dest_lit){
+              std::string src = std::string(1, (char)(j + 'a')) + std::string(1, (char)(4 + '1'));
+              std::string dest = std::string(1, (char)(j + 1 + 'a')) + std::string(1, (char)(5 + '1'));
+              Move *move4 = new Move(src, dest, {});
+              moves.push(move4);
+            }
+          }
+        }
+      }
 
     // Afisare mutari generate
     std::queue<Move*> cpyMoves = moves;
@@ -655,6 +725,7 @@ bool Bot::isKinginCheck(ChessPiece cpyBoard[8][8], PlaySide engineSide){
 bool Bot::isSquareSafe(int row, int col, PlaySide engineSide){
   std::queue<Move*> moves2;
   PlaySide playside = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
+  
   moves2 = generateLegalMoves(playside);
   while(!moves2.empty()){
     Move *m2 = moves2.front();
@@ -695,10 +766,13 @@ int Bot::isCastling(PlaySide engineSide){
         ok = 0;
       }
     }
-    if(isKinginCheck(board, engineSide)){
-      ok = 0;
-    }
-    if(isSquareSafe(side, 2, engineSide) && isSquareSafe(side, 3, engineSide) && ok == 1){
+    int side2 = (engineSide == PlaySide::WHITE) ? 1 : 6;
+    int oppSide = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
+    for(int i = 1; i <= 5; i++)
+      if(board[side2][i].piesa == Piece::PAWN && board[side2][i].culoare == oppSide)
+        ok = 0;
+    if(ok == 1)
+      if(isSquareSafe(side, 2, engineSide) && isSquareSafe(side, 3, engineSide) && isSquareSafe(side, 4, engineSide)){
       return 1; // 1 = facem rocada mare
     }
   }
@@ -712,12 +786,15 @@ int Bot::isCastling(PlaySide engineSide){
         ok = 0;
       }
     }
-    if(isKinginCheck(board, engineSide)){
-      ok = 0;
-    }
-    if(isSquareSafe(side, 5, engineSide) && isSquareSafe(side, 6, engineSide) && ok == 1){
-      return 0; // 0 = facem rocada mica
-    }
+    int side2 = (engineSide == PlaySide::WHITE) ? 1 : 6;
+    int oppSide = (engineSide == PlaySide::WHITE) ? PlaySide::BLACK : PlaySide::WHITE;
+    for(int i = 3; i <= 7; i++)
+      if(board[side2][i].piesa == Piece::PAWN && board[side2][i].culoare == oppSide)
+        ok = 0;
+    if(ok == 1)
+      if(isSquareSafe(side, 5, engineSide) && isSquareSafe(side, 4, engineSide) && isSquareSafe(side, 6, engineSide)){
+        return 0; // 0 = facem rocada mica
+      }
   }
   return -1;
 }
