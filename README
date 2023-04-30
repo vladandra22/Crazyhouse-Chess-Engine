@@ -1,0 +1,106 @@
+Etapa 1 - Proiect Proiectarea Algoritmilor 2023
+
+Proiect realizat de Vlad Andra, Marian Melania-Valentina, Bogdan Elena-Catalina
+Grupa: 321CCa
+
+
+Pentru manipularea pieselor de pe tabla am implementat structura ChessPiece in
+Bot.h, structura care contine urmatoarele campuri: tipul piesei, culoarea 
+acesteia, daca piesa este promovata sau nu, si numarul de mutari efectuate de
+piesa pe tabla.
+
+Metode implementate in Bot.cpp:
+
+- generateChessBoard:
+    - metoda prin care populam tabla de sah cu piesele ambilor jucatori
+
+- recordMove:
+    - metoda care efectueaza o miscare pe tabla
+    - in aceasta metoda, tratam cazurile urmatoare: drop in(pentru crazyhouse),
+    miscare normala si miscare de pion promovat
+    - in cazul miscarii normale, tratam si cazurile de rocada, in care pe langa
+    mutarea regelui la rocada, mutam si tura, si cel de en passant, in care
+    eliberam atat spatiul de pe care pleaca pionul jucatorului curent, cat si
+    spatiul pionului capturat.
+
+- recordMove2:
+    - metoda care simuleaza o mutare pe tabla de sah, prin intermediul unei
+    copii la tabla(cpyBoard)
+    - similar cu recordMove, tratam cazurile de drop in, miscare normala si
+    miscare de pion promovat.
+
+- calculateNextMove:
+    - metoda care calculeaza urmatoarea miscare a jucatorului curent
+    - initial, verificam daca este posibila efectuarea uneia dintre rocade
+    prin apelarea metodei isCastling; daca da, atunci miscarea va fi neaparat
+    de tip rocada.
+    - dupa aceasta verificare, initializam un vector care contine toate
+    miscarile posibile(generate prin apelul metodei generateLegalMoves) si le
+    randomizam ordinea.
+    - ulterior, luam fiecare miscare pe rand si ii simulam efectuarea cu
+    ajutorul metodei recordMove2, prin care inregistram o miscare pe o copie a
+    tablei noastre de sah; verificam daca regele este in sah dupa efectuarea
+    simularii, iar daca acesta este in siguranta, efectuam miscarea pe tabla de
+    sah(prin metoda recordMove) si o returnam.
+
+- generateLegalMoves:
+    - metoda care genereaza toate miscarile legale ale jucatorului curent
+    - extragem de pe tabla fiecare piesa a jucatorului si generam toate
+    miscarile posibile pentru piesa respectiva
+    - generarea miscarulor normale trateaza si cazul de pawn promotion, in care
+    pionul ajuns pe ultima linie a tablei(fata de partea de pe care pleaca) isi
+    upgradeaza statusul intr-o piesa de tip QUEEN si ii preia caracteristicile
+    (se deplaseaza pe tabla ca o regina).
+    - in aceasta metoda, generam si miscarile CRAZYHOUSE, in care cautam o
+    destinatie nula pentru a da drop unei piese pe tabla, piesa care apartine
+    vectorului de frecventa corespunzator culorii jucatorului(isCapturedWhite
+    si isCapturedBlack).
+    - ulterior, generam si mutarile de tip en passant, in care verificam daca
+    ultima mutare a adversarului este una care permite efectuarea en passant
+    (mutare a unui pion de pe prima linie cu 2 spatii).
+    
+
+- getBotName: metoda care returneaza denumirea botului
+
+- isLegalMove:
+    - metoda care verifica daca o miscare poate fi efectuata sau nu in jocul de
+    sah.
+    - tratam aceasta miscare in functie de tipul piesei care doreste sa o
+    efectueze si verificam validitatea acestora(de exemplu: pionul se misca
+    pe diagonala doar daca poate captura o piesa a adversarului, cu 2 pozitii
+    inainte daca este la prima mutare si cu o pozitie in fata in rest; mutarea
+    de tip en passant este verificata separat).
+
+- isKinginCheck:
+    - metoda care verifica daca regele jucatorului curent se afla sau nu in sah.
+    - initial, determinam pozitia curenta a regelui pe tabla.
+    - extragem de pe tabla fiecare piesa a adversarului si simulam o miscare in
+    care destinatia piesei adversarului este pozitia regelui
+    - prin intermediul metodei isLegalMove, verificam daca miscarea simulata
+    este o miscare legala in jocul de sah; daca apelul returneaza true, atunci
+    regele este in sah.
+
+- isSquareSafe:
+    - metoda care verifica daca o pozitie de pe tabla este amenintata de orice
+    piesa a adversarului
+    - salvam intr-o coada toate mutarile valide ale adversarului si verificam
+    pentru fiecare mutare ca destinatia acesteia nu coincide cu pozitia primita
+    de functie ca parametru.
+
+- isCastling:
+    - metoda care verifica daca exista posibilitatea ca jucatorul curent sa
+        efectueze o rocada
+    - conditiile pentru rocada verificate sunt urmatoarele: daca regele sau
+        tura nu au fost mutate anterior, daca spatiile dintre rege si tura sunt
+        libere si neamenintate de piesele adversarului care nu sunt pioni;
+        pentru verificarea amenintarii de catre pioni, realizam o verificare
+        suplimentara.
+    - daca exista posibilitatea efectuarii ambelor rocade, o efectuam pe cea
+    mare.
+
+Contributii:
+
+Vlad Andra: Algoritmul de Crazyhouse, tratarea cazului de pawn promotion,
+            Adaugarea de comentarii pe cod.
+Marian Melania-Valentina: Rocada mica si mare, En Passant, README.
+Bogdan Elena-Catalina: Generarea mutarilor pe tabla, README.

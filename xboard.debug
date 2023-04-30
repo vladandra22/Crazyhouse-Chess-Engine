@@ -10,2268 +10,2753 @@ recognized 'normal' (-1) as variant normal
 GameEnds(0, (null), 2)
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-164 >first : xboard
+189 >first : xboard
 protover 2
-182 <first : Makefile:29: warning: overriding commands for target `run'
-182 <first : Makefile:18: warning: ignoring old commands for target `run'
-182 <first : ./Main
-560 <first : 
-560 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
-560 >first : accepted done
-560 >first : accepted sigint
-560 >first : accepted sigterm
-560 >first : accepted san
-560 >first : accepted reuse
-560 >first : accepted usermove
-560 >first : accepted analyze
-560 >first : accepted ping
-560 >first : accepted setboard
-560 >first : accepted level
-560 >first : accepted variants
-560 >first : accepted name
-560 >first : accepted myname
-561 >first : accepted done
+204 <first : Makefile:29: warning: overriding commands for target `run'
+204 <first : Makefile:18: warning: ignoring old commands for target `run'
+204 <first : ./Main
+634 <first : 
+634 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+634 >first : accepted done
+634 >first : accepted sigint
+634 >first : accepted sigterm
+634 >first : accepted san
+634 >first : accepted reuse
+634 >first : accepted usermove
+634 >first : accepted analyze
+634 >first : accepted ping
+634 >first : accepted setboard
+634 >first : accepted level
+634 >first : accepted variants
+634 >first : accepted name
+634 >first : accepted myname
+635 >first : accepted done
 recognized 'crazyhouse' (-1) as variant crazyhouse
 Reset(1, 0) from gameMode 0
 recognized 'crazyhouse' (-1) as variant crazyhouse
 GameEnds(0, (null), 2)
-564 >first : quit
+637 >first : quit
 shuffleOpenings = 0
 StartChildProcess (dir=".") make run
-613 >first : xboard
+679 >first : xboard
 protover 2
-613 >first : new
+680 >first : new
 random
-613 >first : variant crazyhouse
-613 >first : level 40 5 0
-613 >first : post
-613 >first : hard
-626 <first : Makefile:29: warning: overriding commands for target `run'
-626 <first : Makefile:18: warning: ignoring old commands for target `run'
-626 <first : ./Main
-626 <first : 
-626 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
-626 >first : accepted done
-626 >first : accepted sigint
-626 >first : accepted sigterm
-626 >first : accepted san
-626 >first : accepted reuse
-626 >first : accepted usermove
-626 >first : accepted analyze
-626 >first : accepted ping
-626 >first : accepted setboard
-626 >first : accepted level
-626 >first : accepted variants
-626 >first : accepted name
-626 >first : accepted myname
-626 >first : accepted done
-5527 >first : force
+680 >first : variant crazyhouse
+680 >first : level 40 5 0
+680 >first : post
+680 >first : hard
+695 <first : Makefile:29: warning: overriding commands for target `run'
+695 <first : Makefile:18: warning: ignoring old commands for target `run'
+695 <first : ./Main
+695 <first : 
+695 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+695 >first : accepted done
+695 >first : accepted sigint
+695 >first : accepted sigterm
+695 >first : accepted san
+695 >first : accepted reuse
+695 >first : accepted usermove
+695 >first : accepted analyze
+695 >first : accepted ping
+695 >first : accepted setboard
+695 >first : accepted level
+695 >first : accepted variants
+695 >first : accepted name
+695 >first : accepted myname
+696 >first : accepted done
+6550 >first : force
 StartChildProcess (dir=".") make run
-5545 >second: xboard
+8189 >second: xboard
 protover 2
-5558 <second: Makefile:29: warning: overriding commands for target `run'
-5558 <second: Makefile:18: warning: ignoring old commands for target `run'
-5558 <second: ./Main
-5561 <second: 
-5561 <second: feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
-5561 >second: accepted done
-5561 >second: accepted sigint
-5561 >second: accepted sigterm
-5561 >second: accepted san
-5561 >second: accepted reuse
-5561 >second: accepted usermove
-5561 >second: accepted analyze
-5561 >second: accepted ping
-5561 >second: accepted setboard
-5561 >second: accepted level
-5561 >second: accepted variants
-5561 >second: accepted name
-5561 >second: accepted myname
-5561 >second: accepted done
-5562 >second: new
+8199 <second: Makefile:29: warning: overriding commands for target `run'
+8199 <second: Makefile:18: warning: ignoring old commands for target `run'
+8200 <second: ./Main
+8201 <second: 
+8201 <second: feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+8201 >second: accepted done
+8201 >second: accepted sigint
+8201 >second: accepted sigterm
+8201 >second: accepted san
+8201 >second: accepted reuse
+8201 >second: accepted usermove
+8201 >second: accepted analyze
+8201 >second: accepted ping
+8201 >second: accepted setboard
+8201 >second: accepted level
+8201 >second: accepted variants
+8201 >second: accepted name
+8201 >second: accepted myname
+8201 >second: accepted done
+8203 >second: new
 random
-5562 >second: variant crazyhouse
-5562 >second: level 40 5 0
-5562 >second: post
-5562 >second: hard
-5562 >second: force
+8203 >second: variant crazyhouse
+8203 >second: level 40 5 0
+8203 >second: post
+8203 >second: hard
+8203 >second: force
 New game (0): MyBot-MyBot (w)
-5576 >first : computer
-5576 >first : name MyBot
-5576 >second: computer
-5576 >second: name MyBot
-5576 >first : black
-5576 >first : time 30000
-5576 >first : otim 30000
-5576 >first : white
+8215 >first : computer
+8215 >first : name MyBot
+8215 >second: computer
+8215 >second: name MyBot
+8215 >first : black
+8215 >first : time 30000
+8215 >first : otim 30000
+8215 >first : white
 book hit = (NULL)
-5576 >first : go
+8215 >first : go
 nps: w=-1, b=-1
-5580 <first : move b1c3
-5580 >second: time 30000
-5580 >second: otim 29999
-book hit = (NULL)
-5580 >second: usermove 5580 >second: b1c3
-5580 >second: black
-5580 >second: go
-5700 <second: move c7c6
-5700 >first : time 29999
-5700 >first : otim 29988
-book hit = (NULL)
-5700 >first : usermove 5700 >first : c7c6
-5798 <first : move c3a4
-5798 >second: time 29988
-5798 >second: otim 29989
-book hit = (NULL)
-5798 >second: usermove 5798 >second: c3a4
-5917 <second: move h7h5
-5917 >first : time 29989
-5917 >first : otim 29976
-book hit = (NULL)
-5917 >first : usermove 5917 >first : h7h5
-6014 <first : move h2h4
-6014 >second: time 29976
-6014 >second: otim 29980
-book hit = (NULL)
-6014 >second: usermove 6014 >second: h2h4
-6111 <second: move e7e5
-6111 >first : time 29980
-6111 >first : otim 29966
-book hit = (NULL)
-6111 >first : usermove 6111 >first : e7e5
-6207 <first : move g1h3
-6208 >second: time 29966
-6208 >second: otim 29970
-book hit = (NULL)
-6208 >second: usermove 6208 >second: g1h3
-6330 <second: move g8f6
-6330 >first : time 29970
-6330 >first : otim 29954
-book hit = (NULL)
-6330 >first : usermove 6330 >first : g8f6
-6455 <first : move e2e3
-6455 >second: time 29954
-6455 >second: otim 29958
-book hit = (NULL)
-6455 >second: usermove 6455 >second: e2e3
-6555 <second: move f8b4
-6555 >first : time 29958
-6555 >first : otim 29944
-book hit = (NULL)
-6555 >first : usermove 6555 >first : f8b4
-6680 <first : move a4c5
-6680 >second: time 29944
-6680 >second: otim 29945
-book hit = (NULL)
-6680 >second: usermove 6680 >second: a4c5
-6801 <second: move e8g8
-6801 >first : time 29945
-6801 >first : otim 29932
-book hit = (NULL)
-6801 >first : usermove 6801 >first : e8g8
-6896 <first : move c5a6
-6896 >second: time 29932
-6896 >second: otim 29936
-book hit = (NULL)
-6896 >second: usermove 6896 >second: c5a6
-7015 <second: move d7d6
-7015 >first : time 29936
-7015 >first : otim 29920
-book hit = (NULL)
-7015 >first : usermove 7015 >first : d7d6
-7114 <first : move b2b3
-7115 >second: time 29920
-7115 >second: otim 29926
-book hit = (NULL)
-7115 >second: usermove 7115 >second: b2b3
-7213 <second: move f6g4
-7213 >first : time 29926
-7213 >first : otim 29910
-book hit = (NULL)
-7213 >first : usermove 7214 >first : f6g4
-7337 <first : move f1c4
-7337 >second: time 29910
-7337 >second: otim 29913
-book hit = (NULL)
-7337 >second: usermove 7337 >second: f1c4
-7463 <second: move g4h2
-7463 >first : time 29913
-7463 >first : otim 29897
-book hit = (NULL)
-7463 >first : usermove 7463 >first : g4h2
-7585 <first : move d1h5
-7585 >second: time 29897
-7585 >second: otim 29901
-book hit = (NULL)
-7585 >second: usermove 7585 >second: d1h5
-7709 <second: move b4c3
-7709 >first : time 29901
-7709 >first : otim 29885
-book hit = (NULL)
-7709 >first : usermove 7709 >first : b4c3
-7806 <first : move f2f4
-7806 >second: time 29885
-7806 >second: otim 29891
-book hit = (NULL)
-7806 >second: usermove 7806 >second: f2f4
-7904 <second: move e5e4
-7904 >first : time 29891
-7904 >first : otim 29875
-book hit = (NULL)
-7904 >first : usermove 7904 >first : e5e4
-7997 <first : move P@e7
-LegalDrop: 0 @ 6,6)
-LegalDrop: 0 @ 6,6)
-LegalDrop: 0 @ 6,6)
-LegalDrop: 0 @ 6,6)
-7997 >second: time 29875
-7997 >second: otim 29882
-book hit = (NULL)
-7997 >second: usermove 7997 >second: P@e7
-8011 <second: move f8e8
-8011 >first : time 29882
-8011 >first : otim 29874
-book hit = (NULL)
-8011 >first : usermove 8011 >first : f8e8
-8103 <first : move c4d3
-8103 >second: time 29874
-8103 >second: otim 29873
-book hit = (NULL)
-8103 >second: usermove 8103 >second: c4d3
-8195 <second: move e8f8
-8195 >first : time 29873
-8195 >first : otim 29864
-book hit = (NULL)
-8195 >first : usermove 8195 >first : e8f8
-8283 <first : move e7e8q
-8283 >second: time 29864
-8283 >second: otim 29864
-book hit = (NULL)
-8283 >second: usermove 8283 >second: e7e8q
-8373 <second: move g7g5
-8373 >first : time 29864
-8373 >first : otim 29855
-book hit = (NULL)
-8373 >first : usermove 8373 >first : g7g5
-8471 <first : move e8d7
-8471 >second: time 29855
-8471 >second: otim 29854
-book hit = (NULL)
-8471 >second: usermove 8471 >second: e8d7
-8573 <second: move b8d7
-8573 >first : time 29854
-8573 >first : otim 29845
-book hit = (NULL)
-8573 >first : usermove 8573 >first : b8d7
-8696 <first : move h5h8
-8696 >second: time 29845
-8696 >second: otim 29842
-book hit = (NULL)
-8696 >second: usermove 8696 >second: h5h8
-8820 <second: move c3h8
-8821 >first : time 29842
-8821 >first : otim 29833
-book hit = (NULL)
-8821 >first : usermove 8821 >first : c3h8
-8942 <first : move e1e2
-8942 >second: time 29833
-8942 >second: otim 29830
-book hit = (NULL)
-8942 >second: usermove 8942 >second: e1e2
-9040 <second: move Q@e5
-LegalDrop: 70 @ 6,4)
-LegalDrop: 70 @ 6,4)
-LegalDrop: 70 @ 6,4)
-LegalDrop: 70 @ 6,4)
-9040 >first : time 29830
-9040 >first : otim 29823
-book hit = (NULL)
-9040 >first : usermove 9040 >first : Q@e5
-9056 <first : move h1h2
-9056 >second: time 29823
-9056 >second: otim 29828
-book hit = (NULL)
-9056 >second: usermove 9056 >second: h1h2
-9148 <second: move e5g7
-9148 >first : time 29828
-9148 >first : otim 29814
-book hit = (NULL)
-9148 >first : usermove 9148 >first : e5g7
-9270 <first : move N@b5
-LegalDrop: 1 @ 3,4)
-LegalDrop: 1 @ 3,4)
-LegalDrop: 1 @ 3,4)
-LegalDrop: 1 @ 3,4)
-9270 >second: time 29814
-9270 >second: otim 29816
-book hit = (NULL)
-9270 >second: usermove 9270 >second: N@b5
-9285 <second: move P@b2
-LegalDrop: 66 @ 3,1)
-LegalDrop: 66 @ 3,1)
-LegalDrop: 66 @ 3,1)
-LegalDrop: 66 @ 3,1)
-9285 >first : time 29816
-9285 >first : otim 29812
-book hit = (NULL)
-9285 >first : usermove 9285 >first : P@b2
-9299 <first : move c2c3
-9299 >second: time 29812
-9299 >second: otim 29815
-book hit = (NULL)
-9299 >second: usermove 9299 >second: c2c3
-9389 <second: move c6c5
-9389 >first : time 29815
-9389 >first : otim 29803
-book hit = (NULL)
-9389 >first : usermove 9389 >first : c6c5
-9481 <first : move e2f2
-9481 >second: time 29803
-9481 >second: otim 29805
-book hit = (NULL)
-9481 >second: usermove 9481 >second: e2f2
-9574 <second: move b7b6
-9574 >first : time 29805
-9574 >first : otim 29794
-book hit = (NULL)
-9574 >first : usermove 9574 >first : b7b6
-9667 <first : move a6c7
-9667 >second: time 29794
-9667 >second: otim 29796
-book hit = (NULL)
-9668 >second: usermove 9668 >second: a6c7
-9777 <second: move d6d5
-9777 >first : time 29796
-9777 >first : otim 29783
-book hit = (NULL)
-9777 >first : usermove 9777 >first : d6d5
-9866 <first : move f2f1
-9866 >second: time 29783
-9866 >second: otim 29787
-book hit = (NULL)
-9866 >second: usermove 9866 >second: f2f1
-9957 <second: move e4d3
-9958 >first : time 29787
-9958 >first : otim 29774
-book hit = (NULL)
-9958 >first : usermove 9958 >first : e4d3
-10052 <first : move c1b2
-10052 >second: time 29774
-10052 >second: otim 29778
-book hit = (NULL)
-10052 >second: usermove 10052 >second: c1b2
-10148 <second: move c8a6
-10148 >first : time 29778
-10148 >first : otim 29764
-book hit = (NULL)
-10148 >first : usermove 10148 >first : c8a6
-10271 <first : move P@g6
-LegalDrop: 0 @ 8,5)
-LegalDrop: 0 @ 8,5)
-LegalDrop: 0 @ 8,5)
-LegalDrop: 0 @ 8,5)
-10271 >second: time 29764
-10271 >second: otim 29765
-book hit = (NULL)
-10271 >second: usermove 10271 >second: P@g6
-10286 <second: move B@e4
-LegalDrop: 68 @ 6,3)
-LegalDrop: 68 @ 6,3)
-LegalDrop: 68 @ 6,3)
-LegalDrop: 68 @ 6,3)
-10287 >first : time 29765
-10287 >first : otim 29763
-book hit = (NULL)
-10287 >first : usermove 10287 >first : B@e4
-10293 <first : move c7e8
-10293 >second: time 29763
-10293 >second: otim 29765
-book hit = (NULL)
-10293 >second: usermove 10293 >second: c7e8
-10409 <second: move e4f3
-10409 >first : time 29765
-10409 >first : otim 29751
-book hit = (NULL)
-10409 >first : usermove 10409 >first : e4f3
-10506 <first : move f1f2
-10506 >second: time 29751
-10506 >second: otim 29755
-book hit = (NULL)
-10506 >second: usermove 10506 >second: f1f2
-10601 <second: move g7e5
-10602 >first : time 29755
-10602 >first : otim 29742
-book hit = (NULL)
-10602 >first : usermove 10602 >first : g7e5
-10715 <first : move e3e4
-10715 >second: time 29742
-10715 >second: otim 29744
-book hit = (NULL)
-10715 >second: usermove 10715 >second: e3e4
-10809 <second: move d8e7
-10809 >first : time 29744
-10809 >first : otim 29732
-book hit = (NULL)
-10809 >first : usermove 10809 >first : d8e7
-10906 <first : move g2f3
-10906 >second: time 29732
-10906 >second: otim 29734
-book hit = (NULL)
-10906 >second: usermove 10906 >second: g2f3
-10998 <second: move e7e8
-10998 >first : time 29734
-10998 >first : otim 29723
-book hit = (NULL)
-10998 >first : usermove 10998 >first : e7e8
-11100 <first : move B@a4
-LegalDrop: 2 @ 2,3)
-LegalDrop: 2 @ 2,3)
-LegalDrop: 2 @ 2,3)
-LegalDrop: 2 @ 2,3)
-11100 >second: time 29723
-11100 >second: otim 29724
-book hit = (NULL)
-11100 >second: usermove 11100 >second: B@a4
-11113 <second: move N@d8
-LegalDrop: 67 @ 5,7)
-LegalDrop: 67 @ 5,7)
-LegalDrop: 67 @ 5,7)
-LegalDrop: 67 @ 5,7)
-11113 >first : time 29724
-11113 >first : otim 29722
-book hit = (NULL)
-11113 >first : usermove 11113 >first : N@d8
-11118 <first : move f2g1
-11118 >second: time 29722
-11118 >second: otim 29723
-book hit = (NULL)
-11118 >second: usermove 11118 >second: f2g1
-11214 <second: move h8f6
-11214 >first : time 29723
-11214 >first : otim 29712
-book hit = (NULL)
-11214 >first : usermove 11214 >first : h8f6
-11332 <first : move a1d1
-11332 >second: time 29712
-11332 >second: otim 29711
-book hit = (NULL)
-11332 >second: usermove 11332 >second: a1d1
-11451 <second: move e8e6
-11452 >first : time 29711
-11452 >first : otim 29700
-book hit = (NULL)
-11452 >first : usermove 11452 >first : e8e6
-11540 <first : move e4d5
-11540 >second: time 29700
-11540 >second: otim 29703
-book hit = (NULL)
-11540 >second: usermove 11540 >second: e4d5
-11632 <second: move f6h8
-11632 >first : time 29703
-11632 >first : otim 29691
-book hit = (NULL)
-11632 >first : usermove 11632 >first : f6h8
-11746 <first : move P@h7
-LegalDrop: 0 @ 9,6)
-LegalDrop: 0 @ 9,6)
-LegalDrop: 0 @ 9,6)
-LegalDrop: 0 @ 9,6)
-11746 >second: time 29691
-11746 >second: otim 29691
-book hit = (NULL)
-11746 >second: usermove 11746 >second: P@h7
-11750 <second: move g8g7
-11750 >first : time 29691
-11750 >first : otim 29691
-book hit = (NULL)
-11750 >first : usermove 11750 >first : g8g7
-11838 <first : move f4g5
-11838 >second: time 29691
-11838 >second: otim 29682
-book hit = (NULL)
-11838 >second: usermove 11838 >second: f4g5
-11928 <second: move e6d5
-11928 >first : time 29682
-11928 >first : otim 29682
-book hit = (NULL)
-11928 >first : usermove 11928 >first : e6d5
-12017 <first : move P@e4
-LegalDrop: 0 @ 6,3)
-LegalDrop: 0 @ 6,3)
-LegalDrop: 0 @ 6,3)
-LegalDrop: 0 @ 6,3)
-12017 >second: time 29682
-12017 >second: otim 29673
-book hit = (NULL)
-12017 >second: usermove 12017 >second: P@e4
-12021 <second: move e5f4
-12021 >first : time 29673
-12021 >first : otim 29681
-book hit = (NULL)
-12021 >first : usermove 12021 >first : e5f4
-12110 <first : move b2a3
-12110 >second: time 29681
-12110 >second: otim 29665
-book hit = (NULL)
-12110 >second: usermove 12110 >second: b2a3
-12203 <second: move P@e5
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 6,4)
-12203 >first : time 29665
-12203 >first : otim 29672
-book hit = (NULL)
-12203 >first : usermove 12203 >first : P@e5
-12214 <first : move d1b1
-12214 >second: time 29672
-12214 >second: otim 29663
-book hit = (NULL)
-12214 >second: usermove 12214 >second: d1b1
-12308 <second: move d8e6
-12309 >first : time 29663
-12309 >first : otim 29663
-book hit = (NULL)
-12309 >first : usermove 12309 >first : d8e6
-12427 <first : move g1f1
-12427 >second: time 29663
-12427 >second: otim 29652
-book hit = (NULL)
-12427 >second: usermove 12427 >second: g1f1
-12524 <second: move f4e3
-12525 >first : time 29652
-12525 >first : otim 29653
-book hit = (NULL)
-12525 >first : usermove 12525 >first : f4e3
-12623 <first : move h3f4
-12624 >second: time 29653
-12624 >second: otim 59642
-book hit = (NULL)
-12624 >second: usermove 12624 >second: h3f4
-12744 <second: move d5e4
-12744 >first : time 59642
-12744 >first : otim 59641
-book hit = (NULL)
-12744 >first : usermove 12744 >first : d5e4
-12845 <first : move b5c7
-12845 >second: time 59641
-12845 >second: otim 59632
-book hit = (NULL)
-12845 >second: usermove 12845 >second: b5c7
-12967 <second: move e3f2
-12967 >first : time 59632
-12967 >first : otim 59629
-book hit = (NULL)
-12967 >first : usermove 12967 >first : e3f2
-13065 <first : move h2f2
-13065 >second: time 59629
-13065 >second: otim 59622
-book hit = (NULL)
-13065 >second: usermove 13065 >second: h2f2
-13158 <second: move e4b4
-13158 >first : time 59622
-13158 >first : otim 59619
-book hit = (NULL)
-13158 >first : usermove 13158 >first : e4b4
-13281 <first : move Q@h2
-LegalDrop: 4 @ 9,1)
-LegalDrop: 4 @ 9,1)
-LegalDrop: 4 @ 9,1)
-LegalDrop: 4 @ 9,1)
-13281 >second: time 59619
-13281 >second: otim 59609
-book hit = (NULL)
-13281 >second: usermove 13281 >second: Q@h2
-13293 <second: move a8e8
-13294 >first : time 59609
-13294 >first : otim 59618
-book hit = (NULL)
-13294 >first : usermove 13294 >first : a8e8
-13409 <first : move c7d5
-13409 >second: time 59618
-13409 >second: otim 59598
-book hit = (NULL)
-13409 >second: usermove 13409 >second: c7d5
-13532 <second: move P@e2
-LegalDrop: 66 @ 6,1)
-LegalDrop: 66 @ 6,1)
-LegalDrop: 66 @ 6,1)
-LegalDrop: 66 @ 6,1)
-13532 >first : time 59598
-13532 >first : otim 59606
-book hit = (NULL)
-13532 >first : usermove 13532 >first : P@e2
-13546 <first : move f2e2
-13546 >second: time 59606
-13546 >second: otim 59597
-book hit = (NULL)
-13546 >second: usermove 13546 >second: f2e2
-13638 <second: move a6b7
-13638 >first : time 59597
-13638 >first : otim 59596
-book hit = (NULL)
-13638 >first : usermove 13638 >first : a6b7
-13732 <first : move b1d1
-13732 >second: time 59596
-13732 >second: otim 59587
-book hit = (NULL)
-13732 >second: usermove 13732 >second: b1d1
-13830 <second: move d7b8
-13830 >first : time 59587
-13830 >first : otim 59587
-book hit = (NULL)
-13830 >first : usermove 13830 >first : d7b8
-13948 <first : move h2g3
-13948 >second: time 59587
-13948 >second: otim 59575
-book hit = (NULL)
-13948 >second: usermove 13948 >second: h2g3
-14046 <second: move b4d4
-14046 >first : time 59575
-14046 >first : otim 59577
-book hit = (NULL)
-14046 >first : usermove 14046 >first : b4d4
-14143 <first : move P@c2
-LegalDrop: 0 @ 4,1)
-LegalDrop: 0 @ 4,1)
-LegalDrop: 0 @ 4,1)
-LegalDrop: 0 @ 4,1)
-14143 >second: time 59577
-14143 >second: otim 59566
-book hit = (NULL)
-14143 >second: usermove 14143 >second: P@c2
-14157 <second: move b8d7
-14157 >first : time 59566
-14157 >first : otim 59575
-book hit = (NULL)
-14157 >first : usermove 14157 >first : b8d7
-14274 <first : move d1c1
-14274 >second: time 59575
-14274 >second: otim 59554
-book hit = (NULL)
-14274 >second: usermove 14274 >second: d1c1
-14370 <second: move f8g8
-14370 >first : time 59554
-14370 >first : otim 59566
-book hit = (NULL)
-14370 >first : usermove 14370 >first : f8g8
-14465 <first : move g3g4
-14465 >second: time 59566
-14465 >second: otim 59544
-book hit = (NULL)
-14465 >second: usermove 14465 >second: g3g4
-14562 <second: move d3e2
-14562 >first : time 59544
-14562 >first : otim 59556
-book hit = (NULL)
-14562 >first : usermove 14562 >first : d3e2
-14659 <first : move f1e1
-14660 >second: time 59556
-14660 >second: otim 59535
-book hit = (NULL)
-14660 >second: usermove 14660 >second: f1e1
-14746 <second: move R@d1
-LegalDrop: 69 @ 5,0)
-LegalDrop: 69 @ 5,0)
-LegalDrop: 69 @ 5,0)
-LegalDrop: 69 @ 5,0)
-14746 >first : time 59535
-14746 >first : otim 59548
-book hit = (NULL)
-14746 >first : usermove 14746 >first : R@d1
-14750 <first : move c1d1
-14750 >second: time 59548
-14750 >second: otim 59534
-book hit = (NULL)
-14750 >second: usermove 14750 >second: c1d1
-14839 <second: move d4g1
-14839 >first : time 59534
-14839 >first : otim 59539
-book hit = (NULL)
-14839 >first : usermove 14839 >first : d4g1
-14952 <first : move g4g1
-14952 >second: time 59539
-14952 >second: otim 59523
-book hit = (NULL)
-14952 >second: usermove 14952 >second: g4g1
-15074 <second: move a7a6
-15074 >first : time 59523
-15074 >first : otim 59526
-book hit = (NULL)
-15074 >first : usermove 15074 >first : a7a6
-15172 <first : move Q@g4
-LegalDrop: 4 @ 8,3)
-LegalDrop: 4 @ 8,3)
-LegalDrop: 4 @ 8,3)
-LegalDrop: 4 @ 8,3)
-15173 >second: time 59526
-15173 >second: otim 59513
-book hit = (NULL)
-15173 >second: usermove 15173 >second: Q@g4
-15186 <second: move e8e7
-15186 >first : time 59513
-15186 >first : otim 59525
-book hit = (NULL)
-15186 >first : usermove 15186 >first : e8e7
-15279 <first : move e1e2
-15279 >second: time 59525
-15279 >second: otim 59504
-book hit = (NULL)
-15279 >second: usermove 15279 >second: e1e2
-15375 <second: move b7a8
-15375 >first : time 59504
-15376 >first : otim 59516
-book hit = (NULL)
-15376 >first : usermove 15376 >first : b7a8
-15470 <first : move R@h2
-LegalDrop: 3 @ 9,1)
-LegalDrop: 3 @ 9,1)
-LegalDrop: 3 @ 9,1)
-LegalDrop: 3 @ 9,1)
-15471 >second: time 59516
-15471 >second: otim 59494
-book hit = (NULL)
-15471 >second: usermove 15471 >second: R@h2
-15485 <second: move g7f8
-15485 >first : time 59494
-15485 >first : otim 59514
-book hit = (NULL)
-15485 >first : usermove 15485 >first : g7f8
-15577 <first : move P@b5
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-15577 >second: time 59514
-15577 >second: otim 59485
-book hit = (NULL)
-15577 >second: usermove 15577 >second: P@b5
-15588 <second: move d7b8
-15588 >first : time 59485
-15588 >first : otim 59513
-book hit = (NULL)
-15588 >first : usermove 15588 >first : d7b8
-15703 <first : move h2f2
-15703 >second: time 59513
-15703 >second: otim 59474
-book hit = (NULL)
-15703 >second: usermove 15703 >second: h2f2
-15796 <second: move e7e8
-15796 >first : time 59474
-15796 >first : otim 59504
-book hit = (NULL)
-15796 >first : usermove 15796 >first : e7e8
-15892 <first : move d1c1
-15892 >second: time 59504
-15892 >second: otim 59464
-book hit = (NULL)
-15892 >second: usermove 15892 >second: d1c1
-15988 <second: move a8c6
-15989 >first : time 59464
-15989 >first : otim 59494
-book hit = (NULL)
-15989 >first : usermove 15989 >first : a8c6
-16110 <first : move g1e1
-16110 >second: time 59494
-16110 >second: otim 59452
-book hit = (NULL)
-16110 >second: usermove 16110 >second: g1e1
-16209 <second: move e8d8
-16210 >first : time 59452
-16210 >first : otim 59484
-book hit = (NULL)
-16210 >first : usermove 16210 >first : e8d8
-16303 <first : move d5b6
-16303 >second: time 59484
-16303 >second: otim 59443
-book hit = (NULL)
-16303 >second: usermove 16303 >second: d5b6
-16426 <second: move d8e8
-16426 >first : time 59443
-16426 >first : otim 59472
-book hit = (NULL)
-16427 >first : usermove 16427 >first : d8e8
-16524 <first : move P@d6
-LegalDrop: 0 @ 5,5)
-LegalDrop: 0 @ 5,5)
-LegalDrop: 0 @ 5,5)
-LegalDrop: 0 @ 5,5)
-16524 >second: time 59472
-16524 >second: otim 59433
-book hit = (NULL)
-16524 >second: usermove 16524 >second: P@d6
-16535 <second: move e6g7
-16535 >first : time 59433
-16535 >first : otim 59471
-book hit = (NULL)
-16535 >first : usermove 16535 >first : e6g7
-16656 <first : move f4e6
-16656 >second: time 59471
-16656 >second: otim 59421
-book hit = (NULL)
-16656 >second: usermove 16656 >second: f4e6
-16773 <second: move g7e6
-16773 >first : time 59421
-16773 >first : otim 59459
-book hit = (NULL)
-16773 >first : usermove 16773 >first : g7e6
-16899 <first : move g4g2
-16900 >second: time 59459
-16900 >second: otim 59408
-book hit = (NULL)
-16900 >second: usermove 16900 >second: g4g2
-17000 <second: move N@d3
-LegalDrop: 67 @ 5,2)
-LegalDrop: 67 @ 5,2)
-LegalDrop: 67 @ 5,2)
-LegalDrop: 67 @ 5,2)
-17000 >first : time 59408
-17000 >first : otim 59449
-book hit = (NULL)
-17000 >first : usermove 17000 >first : N@d3
-17017 <first : move a3c5
-17018 >second: time 59449
-17018 >second: otim 59406
-book hit = (NULL)
-17018 >second: usermove 17018 >second: a3c5
-17156 <second: move e8e7
-17156 >first : time 59406
-17156 >first : otim 59435
-book hit = (NULL)
-17156 >first : usermove 17156 >first : e8e7
-17262 <first : move c2d3
-17262 >second: time 59435
-17262 >second: otim 59396
-book hit = (NULL)
-17262 >second: usermove 17262 >second: c2d3
-17368 <second: move a6b5
-17369 >first : time 59396
-17369 >first : otim 59424
-book hit = (NULL)
-17369 >first : usermove 17369 >first : a6b5
-17484 <first : move b6a8
-17484 >second: time 59424
-17484 >second: otim 59384
-book hit = (NULL)
-17484 >second: usermove 17484 >second: b6a8
-17620 <second: move P@a6
-LegalDrop: 66 @ 2,5)
-LegalDrop: 66 @ 2,5)
-LegalDrop: 66 @ 2,5)
-LegalDrop: 66 @ 2,5)
-17620 >first : time 59384
-17620 >first : otim 59411
-book hit = (NULL)
-17620 >first : usermove 17620 >first : P@a6
-17627 <first : move a2a3
-17627 >second: time 59411
-17627 >second: otim 59384
-book hit = (NULL)
-17627 >second: usermove 17627 >second: a2a3
-17737 <second: move f7f6
-17737 >first : time 59384
-17737 >first : otim 59400
-book hit = (NULL)
-17737 >first : usermove 17737 >first : f7f6
-17842 <first : move d6e7
-17842 >second: time 59400
-17842 >second: otim 59373
-book hit = (NULL)
-17842 >second: usermove 17842 >second: d6e7
-17957 <second: move f8e8
-17957 >first : time 59373
-17957 >first : otim 59388
-book hit = (NULL)
-17957 >first : usermove 17957 >first : f8e8
-18061 <first : move c3c4
-18062 >second: time 59388
-18062 >second: otim 59363
-book hit = (NULL)
-18062 >second: usermove 18062 >second: c3c4
-18169 <second: move c6a8
-18169 >first : time 59363
-18169 >first : otim 59377
-book hit = (NULL)
-18169 >first : usermove 18169 >first : c6a8
-18296 <first : move N@f5
-LegalDrop: 1 @ 7,4)
-LegalDrop: 1 @ 7,4)
-LegalDrop: 1 @ 7,4)
-LegalDrop: 1 @ 7,4)
-18296 >second: time 59377
-18296 >second: otim 59350
-book hit = (NULL)
-18296 >second: usermove 18296 >second: N@f5
-18301 <second: move N@c3
-LegalDrop: 67 @ 4,2)
-LegalDrop: 67 @ 4,2)
-LegalDrop: 67 @ 4,2)
-LegalDrop: 67 @ 4,2)
-18301 >first : time 59350
-18301 >first : otim 59377
-book hit = (NULL)
-18301 >first : usermove 18301 >first : N@c3
-18313 <first : move c1c3
-18313 >second: time 59377
-18313 >second: otim 59349
-book hit = (NULL)
-18313 >second: usermove 18313 >second: c1c3
-18423 <second: move e5e4
-18424 >first : time 59349
-18424 >first : otim 59366
-book hit = (NULL)
-18424 >first : usermove 18424 >first : e5e4
-18539 <first : move R@b2
-LegalDrop: 3 @ 3,1)
-LegalDrop: 3 @ 3,1)
-LegalDrop: 3 @ 3,1)
-LegalDrop: 3 @ 3,1)
-18539 >second: time 59366
-18539 >second: otim 59337
-book hit = (NULL)
-18539 >second: usermove 18539 >second: R@b2
-18558 <second: move a8c6
-18558 >first : time 59337
-18558 >first : otim 59364
-book hit = (NULL)
-18558 >first : usermove 18558 >first : a8c6
-18694 <first : move N@g7
-LegalDrop: 1 @ 8,6)
-LegalDrop: 1 @ 8,6)
-LegalDrop: 1 @ 8,6)
-LegalDrop: 1 @ 8,6)
-18694 >second: time 59364
-18694 >second: otim 59324
-book hit = (NULL)
-18694 >second: usermove 18694 >second: N@g7
-18710 <second: move e8d7
-18710 >first : time 59324
-18710 >first : otim 59362
-book hit = (NULL)
-18710 >first : usermove 18710 >first : e8d7
-18809 <first : move P@g3
-LegalDrop: 0 @ 8,2)
-LegalDrop: 0 @ 8,2)
-LegalDrop: 0 @ 8,2)
-LegalDrop: 0 @ 8,2)
-18809 >second: time 59362
-18809 >second: otim 59314
-book hit = (NULL)
-18809 >second: usermove 18809 >second: P@g3
-18814 <second: move e6c7
-18814 >first : time 59314
-18814 >first : otim 59362
-book hit = (NULL)
-18814 >first : usermove 18814 >first : e6c7
-18948 <first : move e1g1
-18948 >second: time 59362
-18948 >second: otim 59300
-book hit = (NULL)
-18948 >second: usermove 18948 >second: e1g1
-19049 <second: move g8g7
-19049 >first : time 59300
-19049 >first : otim 59352
-book hit = (NULL)
-19049 >first : usermove 19049 >first : g8g7
-19165 <first : move f5d4
-19165 >second: time 59352
-19165 >second: otim 59289
-book hit = (NULL)
-19165 >second: usermove 19165 >second: f5d4
-19309 <second: move N@e8
-LegalDrop: 67 @ 6,7)
-LegalDrop: 67 @ 6,7)
-LegalDrop: 67 @ 6,7)
-LegalDrop: 67 @ 6,7)
-19309 >first : time 59289
-19309 >first : otim 59337
-book hit = (NULL)
-19309 >first : usermove 19309 >first : N@e8
-19332 <first : move e2e1
-19333 >second: time 59337
-19333 >second: otim 59286
-book hit = (NULL)
-19333 >second: usermove 19333 >second: e2e1
-19438 <second: move c7a8
-19438 >first : time 59286
-19438 >first : otim 59327
-book hit = (NULL)
-19438 >first : usermove 19438 >first : c7a8
-19571 <first : move g2h3
-19572 >second: time 59327
-19572 >second: otim 59273
-book hit = (NULL)
-19572 >second: usermove 19572 >second: g2h3
-19686 <second: move d7c7
-19686 >first : time 59273
-19686 >first : otim 59315
-book hit = (NULL)
-19687 >first : usermove 19687 >first : d7c7
-19777 <first : move d4b5
-19777 >second: time 59315
-19777 >second: otim 89264
-book hit = (NULL)
-19777 >second: usermove 19777 >second: d4b5
-19886 <second: move c7b7
-19886 >first : time 89264
-19886 >first : otim 89304
-book hit = (NULL)
-19886 >first : usermove 19886 >first : c7b7
-19984 <first : move P@e2
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-19984 >second: time 89304
-19984 >second: otim 89254
-book hit = (NULL)
-19984 >second: usermove 19984 >second: P@e2
-19993 <second: move e8d6
-19993 >first : time 89254
-19993 >first : otim 89304
-book hit = (NULL)
-19993 >first : usermove 19993 >first : e8d6
-20127 <first : move d3d4
-20127 >second: time 89304
-20127 >second: otim 89241
-book hit = (NULL)
-20127 >second: usermove 20127 >second: d3d4
-20230 <second: move g7f7
-20230 >first : time 89241
-20230 >first : otim 89293
-book hit = (NULL)
-20230 >first : usermove 20230 >first : g7f7
-20338 <first : move d4d5
-20339 >second: time 89293
-20339 >second: otim 89230
-book hit = (NULL)
-20339 >second: usermove 20339 >second: d4d5
-20442 <second: move e4f3
-20442 >first : time 89230
-20442 >first : otim 89283
-book hit = (NULL)
-20442 >first : usermove 20442 >first : e4f3
-20558 <first : move h3f1
-20559 >second: time 89283
-20559 >second: otim 89218
-book hit = (NULL)
-20559 >second: usermove 20559 >second: h3f1
-20690 <second: move f3e2
-20690 >first : time 89218
-20690 >first : otim 89270
-book hit = (NULL)
-20690 >first : usermove 20690 >first : f3e2
-20805 <first : move b5d4
-20805 >second: time 89270
-20805 >second: otim 89206
-book hit = (NULL)
-20805 >second: usermove 20805 >second: b5d4
-20936 <second: move P@a5
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 2,4)
-20936 >first : time 89206
-20936 >first : otim 89257
-book hit = (NULL)
-20936 >first : usermove 20936 >first : P@a5
-20940 <first : move c3d3
-20940 >second: time 89257
-20940 >second: otim 89206
-book hit = (NULL)
-20940 >second: usermove 20940 >second: c3d3
-21043 <second: move P@c3
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 4,2)
-21043 >first : time 89206
-21043 >first : otim 89246
-book hit = (NULL)
-21043 >first : usermove 21043 >first : P@c3
-21057 <first : move g1h1
-21057 >second: time 89246
-21057 >second: otim 89205
-book hit = (NULL)
-21057 >second: usermove 21057 >second: g1h1
-21162 <second: move f7e7
-21162 >first : time 89205
-21162 >first : otim 89236
-book hit = (NULL)
-21162 >first : usermove 21162 >first : f7e7
-21283 <first : move f1h3
-21283 >second: time 89236
-21283 >second: otim 89193
-book hit = (NULL)
-21283 >second: usermove 21283 >second: f1h3
-21412 <second: move P@e3
-LegalDrop: 66 @ 6,2)
-LegalDrop: 66 @ 6,2)
-LegalDrop: 66 @ 6,2)
-LegalDrop: 66 @ 6,2)
-21413 >first : time 89193
-21413 >first : otim 89223
-book hit = (NULL)
-21413 >first : usermove 21413 >first : P@e3
-21424 <first : move b2c2
-21424 >second: time 89223
-21424 >second: otim 89191
-book hit = (NULL)
-21424 >second: usermove 21424 >second: b2c2
-21530 <second: move d6c4
-21530 >first : time 89191
-21531 >first : otim 89212
-book hit = (NULL)
-21531 >first : usermove 21531 >first : d6c4
-21661 <first : move f2f6
-21661 >second: time 89212
-21661 >second: otim 89178
-book hit = (NULL)
-21661 >second: usermove 21661 >second: f2f6
-21786 <second: move P@b6
-LegalDrop: 66 @ 3,5)
-LegalDrop: 66 @ 3,5)
-LegalDrop: 66 @ 3,5)
-LegalDrop: 66 @ 3,5)
-21786 >first : time 89178
-21786 >first : otim 89200
-book hit = (NULL)
-21786 >first : usermove 21786 >first : P@b6
-21801 <first : move c2b2
-21802 >second: time 89200
-21802 >second: otim 89177
-book hit = (NULL)
-21802 >second: usermove 21802 >second: c2b2
-21911 <second: move b6c5
-21911 >first : time 89177
-21911 >first : otim 89189
-book hit = (NULL)
-21911 >first : usermove 21911 >first : b6c5
-22008 <first : move h3e6
-22009 >second: time 89189
-22009 >second: otim 89167
-book hit = (NULL)
-22009 >second: usermove 22009 >second: h3e6
-22151 <second: move B@h3
-LegalDrop: 68 @ 9,2)
-LegalDrop: 68 @ 9,2)
-LegalDrop: 68 @ 9,2)
-LegalDrop: 68 @ 9,2)
-22151 >first : time 89167
-22151 >first : otim 89175
-book hit = (NULL)
-22151 >first : usermove 22151 >first : B@h3
-22167 <first : move P@b5
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-LegalDrop: 0 @ 3,4)
-22167 >second: time 89175
-22167 >second: otim 89165
-book hit = (NULL)
-22167 >second: usermove 22167 >second: P@b5
-22172 <second: move e7c7
-22172 >first : time 89165
-22172 >first : otim 89174
-book hit = (NULL)
-22172 >first : usermove 22172 >first : e7c7
-22265 <first : move d4e2
-22265 >second: time 89174
-22265 >second: otim 89156
-book hit = (NULL)
-22265 >second: usermove 22265 >second: d4e2
-22401 <second: move h3e6
-22401 >first : time 89156
-22401 >first : otim 89161
-book hit = (NULL)
-22401 >first : usermove 22401 >first : h3e6
-22538 <first : move e1f1
-22538 >second: time 89161
-22538 >second: otim 89142
-book hit = (NULL)
-22538 >second: usermove 22538 >second: e1f1
-22653 <second: move Q@d4
-LegalDrop: 70 @ 5,3)
-LegalDrop: 70 @ 5,3)
-LegalDrop: 70 @ 5,3)
-LegalDrop: 70 @ 5,3)
-22654 >first : time 89142
-22654 >first : otim 89149
-book hit = (NULL)
-22654 >first : usermove 22654 >first : Q@d4
-22668 <first : move f1g2
-22668 >second: time 89149
-22668 >second: otim 89141
-book hit = (NULL)
-22668 >second: usermove 22668 >second: f1g2
-22777 <second: move c6b5
-22777 >first : time 89141
-22777 >first : otim 89138
-book hit = (NULL)
-22777 >first : usermove 22777 >first : c6b5
-22883 <first : move h1c1
-22884 >second: time 89138
-22884 >second: otim 89130
-book hit = (NULL)
-22884 >second: usermove 22884 >second: h1c1
-23019 <second: move P@g4
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 8,3)
-23019 >first : time 89130
-23019 >first : otim 89125
-book hit = (NULL)
-23019 >first : usermove 23019 >first : P@g4
-23035 <first : move g2h1
-23036 >second: time 89125
-23036 >second: otim 89128
-book hit = (NULL)
-23036 >second: usermove 23036 >second: g2h1
-23137 <second: move e3d2
-23137 >first : time 89128
-23137 >first : otim 89115
-book hit = (NULL)
-23137 >first : usermove 23137 >first : e3d2
-23246 <first : move P@c6
-LegalDrop: 0 @ 4,5)
-LegalDrop: 0 @ 4,5)
-LegalDrop: 0 @ 4,5)
-LegalDrop: 0 @ 4,5)
-23247 >second: time 89115
-23247 >second: otim 89117
-book hit = (NULL)
-23247 >second: usermove 23247 >second: P@c6
-23258 <second: move b8c6
-23258 >first : time 89117
-23258 >first : otim 89114
-book hit = (NULL)
-23258 >first : usermove 23258 >first : b8c6
-23385 <first : move d3d2
-23385 >second: time 89114
-23385 >second: otim 89105
-book hit = (NULL)
-23385 >second: usermove 23385 >second: d3d2
-23510 <second: move c3b2
-23511 >first : time 89105
-23511 >first : otim 89101
-book hit = (NULL)
-23511 >first : usermove 23511 >first : c3b2
-23623 <first : move b3c4
-23624 >second: time 89101
-23624 >second: otim 89093
-book hit = (NULL)
-23624 >second: usermove 23624 >second: b3c4
-23739 <second: move b7b8
-23740 >first : time 89093
-23740 >first : otim 89089
-book hit = (NULL)
-23740 >first : usermove 23740 >first : b7b8
-23846 <first : move P@a7
+8218 <first : move h2h3
+8218 >second: time 30000
+8218 >second: otim 29999
+book hit = (NULL)
+8218 >second: usermove 8218 >second: h2h3
+8218 >second: black
+8218 >second: go
+8312 <second: move b7b5
+8312 >first : time 29999
+8312 >first : otim 29990
+book hit = (NULL)
+8312 >first : usermove 8312 >first : b7b5
+8410 <first : move g2g3
+8410 >second: time 29990
+8410 >second: otim 29989
+book hit = (NULL)
+8410 >second: usermove 8410 >second: g2g3
+8500 <second: move b5b4
+8500 >first : time 29989
+8500 >first : otim 29981
+book hit = (NULL)
+8500 >first : usermove 8501 >first : b5b4
+8590 <first : move b1a3
+8590 >second: time 29981
+8590 >second: otim 29980
+book hit = (NULL)
+8590 >second: usermove 8590 >second: b1a3
+8702 <second: move f7f5
+8702 >first : time 29980
+8702 >first : otim 29970
+book hit = (NULL)
+8702 >first : usermove 8702 >first : f7f5
+8793 <first : move d2d3
+8794 >second: time 29970
+8794 >second: otim 29971
+book hit = (NULL)
+8794 >second: usermove 8794 >second: d2d3
+8885 <second: move g8h6
+8885 >first : time 29971
+8885 >first : otim 29961
+book hit = (NULL)
+8885 >first : usermove 8885 >first : g8h6
+9002 <first : move c1f4
+9002 >second: time 29961
+9002 >second: otim 29960
+book hit = (NULL)
+9002 >second: usermove 9002 >second: c1f4
+9127 <second: move h6f7
+9127 >first : time 29960
+9127 >first : otim 29948
+book hit = (NULL)
+9127 >first : usermove 9127 >first : h6f7
+9237 <first : move d3d4
+9237 >second: time 29948
+9237 >second: otim 29949
+book hit = (NULL)
+9237 >second: usermove 9237 >second: d3d4
+9323 <second: move h7h5
+9323 >first : time 29949
+9323 >first : otim 29940
+book hit = (NULL)
+9323 >first : usermove 9323 >first : h7h5
+9412 <first : move f1g2
+9412 >second: time 29940
+9412 >second: otim 29940
+book hit = (NULL)
+9412 >second: usermove 9412 >second: f1g2
+9498 <second: move c7c6
+9498 >first : time 29940
+9498 >first : otim 29931
+book hit = (NULL)
+9498 >first : usermove 9498 >first : c7c6
+9589 <first : move f4c1
+9589 >second: time 29931
+9589 >second: otim 29931
+book hit = (NULL)
+9589 >second: usermove 9589 >second: f4c1
+9707 <second: move g7g6
+9707 >first : time 29931
+9707 >first : otim 29919
+book hit = (NULL)
+9707 >first : usermove 9707 >first : g7g6
+9808 <first : move h1h2
+9809 >second: time 29919
+9809 >second: otim 29920
+book hit = (NULL)
+9809 >second: usermove 9809 >second: h1h2
+9907 <second: move f7h6
+9907 >first : time 29920
+9907 >first : otim 29910
+book hit = (NULL)
+9907 >first : usermove 9907 >first : f7h6
+10027 <first : move a3c4
+10027 >second: time 29910
+10027 >second: otim 29908
+book hit = (NULL)
+10027 >second: usermove 10027 >second: a3c4
+10144 <second: move a7a5
+10144 >first : time 29908
+10144 >first : otim 29898
+book hit = (NULL)
+10144 >first : usermove 10144 >first : a7a5
+10242 <first : move e2e3
+10242 >second: time 29898
+10242 >second: otim 29899
+book hit = (NULL)
+10242 >second: usermove 10242 >second: e2e3
+10341 <second: move a8a6
+10341 >first : time 29899
+10341 >first : otim 29888
+book hit = (NULL)
+10341 >first : usermove 10341 >first : a8a6
+10440 <first : move c4d6
+10440 >second: time 29888
+10440 >second: otim 29889
+book hit = (NULL)
+10440 >second: usermove 10440 >second: c4d6
+10558 <second: move e7d6
+10558 >first : time 29889
+10558 >first : otim 29876
+book hit = (NULL)
+10558 >first : usermove 10558 >first : e7d6
+10657 <first : move d1e2
+10657 >second: time 29876
+10657 >second: otim 29879
+book hit = (NULL)
+10657 >second: usermove 10657 >second: d1e2
+10757 <second: move N@g8
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+10757 >first : time 29879
+10757 >first : otim 29866
+book hit = (NULL)
+10757 >first : usermove 10757 >first : N@g8
+10765 <first : move e2h5
+10765 >second: time 29866
+10765 >second: otim 29878
+book hit = (NULL)
+10765 >second: usermove 10765 >second: e2h5
+10883 <second: move d8h4
+10883 >first : time 29878
+10883 >first : otim 29854
+book hit = (NULL)
+10883 >first : usermove 10883 >first : d8h4
+10999 <first : move P@g4
+LegalDrop: 0 @ 8,3)
+LegalDrop: 0 @ 8,3)
+LegalDrop: 0 @ 8,3)
+LegalDrop: 0 @ 8,3)
+10999 >second: time 29854
+10999 >second: otim 29866
+book hit = (NULL)
+10999 >second: usermove 10999 >second: P@g4
+11012 <second: move h4g3
+11012 >first : time 29866
+11012 >first : otim 29853
+book hit = (NULL)
+11012 >first : usermove 11012 >first : h4g3
+11138 <first : move e1d1
+11138 >second: time 29853
+11138 >second: otim 29854
+book hit = (NULL)
+11138 >second: usermove 11138 >second: e1d1
+11241 <second: move P@f4
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+11242 >first : time 29854
+11242 >first : otim 29843
+book hit = (NULL)
+11242 >first : usermove 11242 >first : P@f4
+11248 <first : move h5h6
+11248 >second: time 29843
+11248 >second: otim 29853
+book hit = (NULL)
+11248 >second: usermove 11248 >second: h5h6
+11354 <second: move f4f3
+11354 >first : time 29853
+11354 >first : otim 29832
+book hit = (NULL)
+11354 >first : usermove 11354 >first : f4f3
+11464 <first : move d4d5
+11464 >second: time 29832
+11464 >second: otim 29842
+book hit = (NULL)
+11464 >second: usermove 11464 >second: d4d5
+11562 <second: move f5g4
+11562 >first : time 29842
+11562 >first : otim 29822
+book hit = (NULL)
+11562 >first : usermove 11562 >first : f5g4
+11670 <first : move g1e2
+11670 >second: time 29822
+11670 >second: otim 29831
+book hit = (NULL)
+11670 >second: usermove 11670 >second: g1e2
+11803 <second: move P@d2
+LegalDrop: 66 @ 5,1)
+LegalDrop: 66 @ 5,1)
+LegalDrop: 66 @ 5,1)
+LegalDrop: 66 @ 5,1)
+11804 >first : time 29831
+11804 >first : otim 29809
+book hit = (NULL)
+11804 >first : usermove 11804 >first : P@d2
+11822 <first : move h3h4
+11822 >second: time 29809
+11822 >second: otim 29829
+book hit = (NULL)
+11822 >second: usermove 11822 >second: h3h4
+11919 <second: move d2c1
+11919 >first : time 29829
+11919 >first : otim 29799
+book hit = (NULL)
+11919 >first : usermove 11919 >first : d2c1q
+12026 <first : move a1c1
+12026 >second: time 29799
+12026 >second: otim 29819
+book hit = (NULL)
+12026 >second: usermove 12026 >second: a1c1
+12134 <second: move B@e1
+LegalDrop: 68 @ 6,0)
+LegalDrop: 68 @ 6,0)
+LegalDrop: 68 @ 6,0)
+LegalDrop: 68 @ 6,0)
+12134 >first : time 29819
+12134 >first : otim 29789
+book hit = (NULL)
+12134 >first : usermove 12134 >first : B@e1
+12150 <first : move N@b3
+LegalDrop: 1 @ 3,2)
+LegalDrop: 1 @ 3,2)
+LegalDrop: 1 @ 3,2)
+LegalDrop: 1 @ 3,2)
+12150 >second: time 29789
+12150 >second: otim 29817
+book hit = (NULL)
+12150 >second: usermove 12150 >second: N@b3
+12156 <second: move g8h6
+12156 >first : time 29817
+12156 >first : otim 29788
+book hit = (NULL)
+12157 >first : usermove 12157 >first : g8h6
+12279 <first : move b3a1
+12279 >second: time 29788
+12279 >second: otim 29805
+book hit = (NULL)
+12279 >second: usermove 12279 >second: b3a1
+12408 <second: move h6f5
+12408 >first : time 29805
+12408 >first : otim 29775
+book hit = (NULL)
+12408 >first : usermove 12408 >first : h6f5
+12543 <first : move P@a7
 LegalDrop: 0 @ 2,6)
 LegalDrop: 0 @ 2,6)
 LegalDrop: 0 @ 2,6)
 LegalDrop: 0 @ 2,6)
-23846 >second: time 89089
-23846 >second: otim 89083
-book hit = (NULL)
-23846 >second: usermove 23846 >second: P@a7
-23865 <second: move b8a7
-23865 >first : time 89083
-23865 >first : otim 89087
-book hit = (NULL)
-23865 >first : usermove 23865 >first : b8a7
-23960 <first : move e2f4
-23960 >second: time 89087
-23960 >second: otim 89073
-book hit = (NULL)
-23960 >second: usermove 23960 >second: e2f4
-24101 <second: move a7b8
-24101 >first : time 89073
-24101 >first : otim 89073
-book hit = (NULL)
-24101 >first : usermove 24101 >first : a7b8
-24212 <first : move d2b2
-24212 >second: time 89073
-24212 >second: otim 89062
-book hit = (NULL)
-24212 >second: usermove 24212 >second: d2b2
-24319 <second: move R@g1
-LegalDrop: 69 @ 8,0)
-LegalDrop: 69 @ 8,0)
-LegalDrop: 69 @ 8,0)
-LegalDrop: 69 @ 8,0)
-24319 >first : time 89062
-24319 >first : otim 89063
-book hit = (NULL)
-24319 >first : usermove 24319 >first : R@g1
-24328 <first : move h1h2
-24328 >second: time 89063
-24328 >second: otim 89061
-book hit = (NULL)
-24328 >second: usermove 24328 >second: h1h2
-24430 <second: move a8b6
-24430 >first : time 89061
-24430 >first : otim 89052
-book hit = (NULL)
-24430 >first : usermove 24430 >first : a8b6
-24566 <first : move c1c3
-24566 >second: time 89052
-24566 >second: otim 89048
-book hit = (NULL)
-24566 >second: usermove 24566 >second: c1c3
-24677 <second: move c6b4
-24678 >first : time 89048
-24678 >first : otim 89041
-book hit = (NULL)
-24678 >first : usermove 24678 >first : c6b4
-24789 <first : move h4h5
-24790 >second: time 89041
-24790 >second: otim 89037
-book hit = (NULL)
-24790 >second: usermove 24790 >second: h4h5
-24891 <second: move b5c6
-24891 >first : time 89037
-24891 >first : otim 89031
-book hit = (NULL)
-24892 >first : usermove 24892 >first : b5c6
-24995 <first : move P@e3
-LegalDrop: 0 @ 6,2)
-LegalDrop: 0 @ 6,2)
-LegalDrop: 0 @ 6,2)
-LegalDrop: 0 @ 6,2)
-24996 >second: time 89031
-24996 >second: otim 89026
-book hit = (NULL)
-24996 >second: usermove 24996 >second: P@e3
-25012 <second: move e6f7
-25012 >first : time 89026
-25012 >first : otim 89029
-book hit = (NULL)
-25012 >first : usermove 25012 >first : e6f7
-25119 <first : move N@a8
-LegalDrop: 1 @ 2,7)
-LegalDrop: 1 @ 2,7)
-LegalDrop: 1 @ 2,7)
-LegalDrop: 1 @ 2,7)
-25119 >second: time 89029
-25119 >second: otim 89015
-book hit = (NULL)
-25119 >second: usermove 25119 >second: N@a8
-25136 <second: move P@e6
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 6,5)
-25136 >first : time 89015
-25136 >first : otim 89028
-book hit = (NULL)
-25136 >first : usermove 25136 >first : P@e6
-25148 <first : move c3d4
-25148 >second: time 89028
-25148 >second: otim 89014
-book hit = (NULL)
-25148 >second: usermove 25148 >second: c3d4
-25242 <second: move c6b7
-25242 >first : time 89014
-25242 >first : otim 89018
-book hit = (NULL)
-25242 >first : usermove 25242 >first : c6b7
-25342 <first : move Q@a2
-LegalDrop: 4 @ 2,1)
-LegalDrop: 4 @ 2,1)
-LegalDrop: 4 @ 2,1)
-LegalDrop: 4 @ 2,1)
-25342 >second: time 89018
-25342 >second: otim 89004
-book hit = (NULL)
-25342 >second: usermove 25342 >second: Q@a2
-25357 <second: move P@c2
-LegalDrop: 66 @ 4,1)
-LegalDrop: 66 @ 4,1)
-LegalDrop: 66 @ 4,1)
-LegalDrop: 66 @ 4,1)
-25357 >first : time 89004
-25357 >first : otim 89017
-book hit = (NULL)
-25357 >first : usermove 25357 >first : P@c2
-25364 <first : move a3b4
-25364 >second: time 89017
-25364 >second: otim 89004
-book hit = (NULL)
-25364 >second: usermove 25364 >second: a3b4
-25455 <second: move c7c6
-25455 >first : time 89004
-25455 >first : otim 89008
-book hit = (NULL)
-25455 >first : usermove 25455 >first : c7c6
-25559 <first : move b2b1
-25560 >second: time 89008
-25560 >second: otim 88993
-book hit = (NULL)
-25560 >second: usermove 25560 >second: b2b1
-25671 <second: move P@d2
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-25671 >first : time 88993
-25671 >first : otim 88997
-book hit = (NULL)
-25671 >first : usermove 25671 >first : P@d2
-25691 <first : move N@e7
-LegalDrop: 1 @ 6,6)
-LegalDrop: 1 @ 6,6)
-LegalDrop: 1 @ 6,6)
-LegalDrop: 1 @ 6,6)
-25692 >second: time 88997
-25692 >second: otim 88991
-book hit = (NULL)
-25692 >second: usermove 25692 >second: N@e7
-25707 <second: move b6a4
-25707 >first : time 88991
-25707 >first : otim 88995
-book hit = (NULL)
-25707 >first : usermove 25707 >first : b6a4
-25834 <first : move a2a1
-25834 >second: time 88995
-25834 >second: otim 88978
-book hit = (NULL)
-25834 >second: usermove 25834 >second: a2a1
-25935 <second: move f7g6
-25935 >first : time 88978
-25935 >first : otim 88985
-book hit = (NULL)
-25935 >first : usermove 25935 >first : f7g6
-26042 <first : move e7g6
-26042 >second: time 88985
-26042 >second: otim 88968
-book hit = (NULL)
-26042 >second: usermove 26042 >second: e7g6
-26190 <second: move P@e4
-LegalDrop: 66 @ 6,3)
-LegalDrop: 66 @ 6,3)
-LegalDrop: 66 @ 6,3)
-LegalDrop: 66 @ 6,3)
-26191 >first : time 88968
-26191 >first : otim 88970
-book hit = (NULL)
-26191 >first : usermove 26191 >first : P@e4
-26196 <first : move B@c3
-LegalDrop: 2 @ 4,2)
-LegalDrop: 2 @ 4,2)
-LegalDrop: 2 @ 4,2)
-LegalDrop: 2 @ 4,2)
-26196 >second: time 88970
-26196 >second: otim 88967
-book hit = (NULL)
-26196 >second: usermove 26196 >second: B@c3
-26205 <second: move c6c7
-26206 >first : time 88967
-26206 >first : otim 88969
-book hit = (NULL)
-26206 >first : usermove 26206 >first : c6c7
-26305 <first : move d4e5
-26305 >second: time 88969
-26305 >second: otim 88957
-book hit = (NULL)
-26305 >second: usermove 26305 >second: d4e5
-26419 <second: move B@f3
-LegalDrop: 68 @ 7,2)
-LegalDrop: 68 @ 7,2)
-LegalDrop: 68 @ 7,2)
-LegalDrop: 68 @ 7,2)
-26419 >first : time 88957
-26419 >first : otim 88958
-book hit = (NULL)
-26419 >first : usermove 26419 >first : B@f3
-26436 <first : move f6f8
-26436 >second: time 88958
-26436 >second: otim 88955
-book hit = (NULL)
-26436 >second: usermove 26436 >second: f6f8
-26539 <second: move b7c8
-26540 >first : time 88955
-26540 >first : otim 88948
-book hit = (NULL)
-26540 >first : usermove 26540 >first : b7c8
-26642 <first : move h5h6
-26642 >second: time 88948
-26642 >second: otim 118945
-book hit = (NULL)
-26642 >second: usermove 26642 >second: h5h6
-26757 <second: move f3h1
-26757 >first : time 118945
-26757 >first : otim 118936
-book hit = (NULL)
-26757 >first : usermove 26757 >first : f3h1
-26898 <first : move a1a3
-26898 >second: time 118936
-26898 >second: otim 118931
-book hit = (NULL)
-26898 >second: usermove 26898 >second: a1a3
-27012 <second: move g1d1
-27012 >first : time 118931
-27012 >first : otim 118925
-book hit = (NULL)
-27012 >first : usermove 27012 >first : g1d1
-27148 <first : move a8c7
-27148 >second: time 118925
-27148 >second: otim 118917
-book hit = (NULL)
-27148 >second: usermove 27148 >second: a8c7
-27289 <second: move h8f6
-27289 >first : time 118917
-27289 >first : otim 118911
-book hit = (NULL)
-27289 >first : usermove 27289 >first : h8f6
-27415 <first : move R@a8
-LegalDrop: 3 @ 2,7)
-LegalDrop: 3 @ 2,7)
-LegalDrop: 3 @ 2,7)
-LegalDrop: 3 @ 2,7)
-27415 >second: time 118911
-27415 >second: otim 118905
-book hit = (NULL)
-27415 >second: usermove 27415 >second: R@a8
-27419 <second: move b8b7
-27419 >first : time 118905
-27419 >first : otim 118910
-book hit = (NULL)
-27419 >first : usermove 27419 >first : b8b7
-27531 <first : move f4g2
-27531 >second: time 118910
-27531 >second: otim 118894
-book hit = (NULL)
-27531 >second: usermove 27531 >second: f4g2
-27666 <second: move d1f1
-27666 >first : time 118894
-27666 >first : otim 118897
-book hit = (NULL)
-27666 >first : usermove 27666 >first : d1f1
-27776 <first : move c7e6
-27776 >second: time 118897
-27776 >second: otim 118883
-book hit = (NULL)
-27776 >second: usermove 27776 >second: c7e6
-27919 <second: move b7a8
-27920 >first : time 118883
-27920 >first : otim 118882
-book hit = (NULL)
-27920 >first : usermove 27920 >first : b7a8
-28029 <first : move g6e7
-28029 >second: time 118882
-28029 >second: otim 118872
-book hit = (NULL)
-28029 >second: usermove 28029 >second: g6e7
-28156 <second: move R@b6
-LegalDrop: 69 @ 3,5)
-LegalDrop: 69 @ 3,5)
-LegalDrop: 69 @ 3,5)
-LegalDrop: 69 @ 3,5)
-28156 >first : time 118872
-28156 >first : otim 118870
-book hit = (NULL)
-28156 >first : usermove 28156 >first : R@b6
-28170 <first : move P@b2
-LegalDrop: 0 @ 3,1)
-LegalDrop: 0 @ 3,1)
-LegalDrop: 0 @ 3,1)
-LegalDrop: 0 @ 3,1)
-28170 >second: time 118870
-28170 >second: otim 118870
-book hit = (NULL)
-28170 >second: usermove 28170 >second: P@b2
-28184 <second: move f6g7
-28184 >first : time 118870
-28184 >first : otim 118868
-book hit = (NULL)
-28184 >first : usermove 28184 >first : f6g7
-28278 <first : move g2e1
-28278 >second: time 118868
-28278 >second: otim 118861
-book hit = (NULL)
-28278 >second: usermove 28278 >second: g2e1
-28411 <second: move f1g1
-28411 >first : time 118861
-28411 >first : otim 118855
-book hit = (NULL)
-28411 >first : usermove 28411 >first : f1g1
-28527 <first : move f8f2
-28527 >second: time 118855
-28527 >second: otim 118849
-book hit = (NULL)
-28527 >second: usermove 28527 >second: f8f2
-28660 <second: move h1g2
-28661 >first : time 118849
-28661 >first : otim 118842
-book hit = (NULL)
-28661 >first : usermove 28661 >first : h1g2
-28786 <first : move e7f5
-28786 >second: time 118842
-28786 >second: otim 118837
-book hit = (NULL)
-28787 >second: usermove 28787 >second: e7f5
-28926 <second: move g2f3
-28927 >first : time 118837
-28927 >first : otim 118827
-book hit = (NULL)
-28927 >first : usermove 28927 >first : g2f3
-29028 <first : move c3d4
-29028 >second: time 118827
-29028 >second: otim 118827
-book hit = (NULL)
-29028 >second: usermove 29028 >second: c3d4
-29137 <second: move c8b7
-29137 >first : time 118827
-29137 >first : otim 118817
-book hit = (NULL)
-29137 >first : usermove 29137 >first : c8b7
-29250 <first : move b2b3
-29251 >second: time 118817
-29251 >second: otim 118815
-book hit = (NULL)
-29251 >second: usermove 29251 >second: b2b3
-29356 <second: move c2c1
-29357 >first : time 118815
-29357 >first : otim 118806
-book hit = (NULL)
-29357 >first : usermove 29357 >first : c2c1q
-29461 <first : move a3a4
-29461 >second: time 118806
-29461 >second: otim 118805
-book hit = (NULL)
-29461 >second: usermove 29461 >second: a3a4
-29590 <second: move b6e6
-29590 >first : time 118805
-29590 >first : otim 118793
-book hit = (NULL)
-29590 >first : usermove 29590 >first : b6e6
-29717 <first : move N@h4
-LegalDrop: 1 @ 9,3)
-LegalDrop: 1 @ 9,3)
-LegalDrop: 1 @ 9,3)
-LegalDrop: 1 @ 9,3)
-29717 >second: time 118793
-29717 >second: otim 118792
-book hit = (NULL)
-29717 >second: usermove 29717 >second: N@h4
-29722 <second: move b7c8
-29722 >first : time 118792
-29722 >first : otim 118793
-book hit = (NULL)
-29722 >first : usermove 29722 >first : b7c8
-29814 <first : move b1c1
-29814 >second: time 118793
-29814 >second: otim 118783
-book hit = (NULL)
-29814 >second: usermove 29814 >second: b1c1
-29915 <second: move N@a3
-LegalDrop: 67 @ 2,2)
-LegalDrop: 67 @ 2,2)
-LegalDrop: 67 @ 2,2)
-LegalDrop: 67 @ 2,2)
-29915 >first : time 118783
-29915 >first : otim 118782
-book hit = (NULL)
-29915 >first : usermove 29915 >first : N@a3
-29923 <first : move h6g7
-29923 >second: time 118782
-29923 >second: otim 118782
-book hit = (NULL)
-29923 >second: usermove 29923 >second: h6g7
-30018 <second: move e6h6
-30018 >first : time 118782
-30018 >first : otim 118773
-book hit = (NULL)
-30018 >first : usermove 30018 >first : e6h6
-30144 <first : move e5d6
-30145 >second: time 118773
-30145 >second: otim 118769
-book hit = (NULL)
-30145 >second: usermove 30145 >second: e5d6
-30242 <second: move a8b7
-30242 >first : time 118769
-30242 >first : otim 118763
-book hit = (NULL)
-30242 >first : usermove 30242 >first : a8b7
-30354 <first : move h2g1
-30355 >second: time 118763
-30355 >second: otim 118758
-book hit = (NULL)
-30355 >second: usermove 30355 >second: h2g1
-30461 <second: move d2d1q
-30461 >first : time 118758
-30461 >first : otim 118752
-book hit = (NULL)
-30461 >first : usermove 30461 >first : d2d1q
-30563 <first : move P@e2
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-LegalDrop: 0 @ 6,1)
-30563 >second: time 118752
-30563 >second: otim 118748
-book hit = (NULL)
-30563 >second: usermove 30563 >second: P@e2
-30580 <second: move h6f6
-30580 >first : time 118748
-30580 >first : otim 118751
-book hit = (NULL)
-30580 >first : usermove 30580 >first : h6f6
-30678 <first : move R@g8
-LegalDrop: 3 @ 8,7)
-LegalDrop: 3 @ 8,7)
-LegalDrop: 3 @ 8,7)
-LegalDrop: 3 @ 8,7)
-30678 >second: time 118751
-30678 >second: otim 118738
-book hit = (NULL)
-30678 >second: usermove 30678 >second: R@g8
-30688 <second: move d1e2
-30688 >first : time 118738
-30688 >first : otim 118750
-book hit = (NULL)
-30688 >first : usermove 30688 >first : d1e2
-30789 <first : move B@h6
-LegalDrop: 2 @ 9,5)
-LegalDrop: 2 @ 9,5)
-LegalDrop: 2 @ 9,5)
-LegalDrop: 2 @ 9,5)
-30790 >second: time 118750
-30790 >second: otim 118728
-book hit = (NULL)
-30790 >second: usermove 30790 >second: B@h6
-30800 <second: move P@e7
+12544 >second: time 29775
+12544 >second: otim 29791
+book hit = (NULL)
+12544 >second: usermove 12544 >second: P@a7
+12557 <second: move g3h4
+12557 >first : time 29791
+12558 >first : otim 29774
+book hit = (NULL)
+12558 >first : usermove 12558 >first : g3h4
+12660 <first : move g2h1
+12660 >second: time 29774
+12660 >second: otim 29781
+book hit = (NULL)
+12660 >second: usermove 12660 >second: g2h1
+12765 <second: move f5e3
+12765 >first : time 29781
+12765 >first : otim 29763
+book hit = (NULL)
+12765 >first : usermove 12765 >first : f5e3
+12895 <first : move f2e3
+12895 >second: time 29763
+12895 >second: otim 29768
+book hit = (NULL)
+12895 >second: usermove 12895 >second: f2e3
+13002 <second: move h4f6
+13002 >first : time 29768
+13002 >first : otim 29752
+book hit = (NULL)
+13002 >first : usermove 13002 >first : h4f6
+13135 <first : move a2a4
+13136 >second: time 29752
+13136 >second: otim 29755
+book hit = (NULL)
+13136 >second: usermove 13136 >second: a2a4
+13247 <second: move Q@c4
+LegalDrop: 70 @ 4,3)
+LegalDrop: 70 @ 4,3)
+LegalDrop: 70 @ 4,3)
+LegalDrop: 70 @ 4,3)
+13247 >first : time 29755
+13247 >first : otim 29741
+book hit = (NULL)
+13247 >first : usermove 13247 >first : Q@c4
+13262 <first : move N@e6
+LegalDrop: 1 @ 6,5)
+LegalDrop: 1 @ 6,5)
+LegalDrop: 1 @ 6,5)
+LegalDrop: 1 @ 6,5)
+13262 >second: time 29741
+13262 >second: otim 29753
+book hit = (NULL)
+13262 >second: usermove 13262 >second: N@e6
+13275 <second: move h8h6
+13276 >first : time 29753
+13276 >first : otim 29740
+book hit = (NULL)
+13276 >first : usermove 13276 >first : h8h6
+13373 <first : move e3e4
+13373 >second: time 29740
+13373 >second: otim 29743
+book hit = (NULL)
+13373 >second: usermove 13373 >second: e3e4
+13475 <second: move P@b5
+LegalDrop: 66 @ 3,4)
+LegalDrop: 66 @ 3,4)
+LegalDrop: 66 @ 3,4)
+LegalDrop: 66 @ 3,4)
+13475 >first : time 29743
+13475 >first : otim 29730
+book hit = (NULL)
+13475 >first : usermove 13475 >first : P@b5
+13482 <first : move e6f4
+13482 >second: time 29730
+13482 >second: otim 29743
+book hit = (NULL)
+13482 >second: usermove 13482 >second: e6f4
+13610 <second: move f6c3
+13610 >first : time 29743
+13610 >first : otim 29717
+book hit = (NULL)
+13610 >first : usermove 13610 >first : f6c3
+13741 <first : move a7a8
+13741 >second: time 29717
+13741 >second: otim 29730
+book hit = (NULL)
+13741 >second: usermove 13741 >second: a7a8q
+13852 <second: move P@g3
+LegalDrop: 66 @ 8,2)
+LegalDrop: 66 @ 8,2)
+LegalDrop: 66 @ 8,2)
+LegalDrop: 66 @ 8,2)
+13853 >first : time 29730
+13853 >first : otim 29706
+book hit = (NULL)
+13853 >first : usermove 13853 >first : P@g3
+13868 <first : move e2c3
+13868 >second: time 29706
+13868 >second: otim 29728
+book hit = (NULL)
+13868 >second: usermove 13868 >second: e2c3
+13993 <second: move h6h2
+13993 >first : time 29728
+13993 >first : otim 29693
+book hit = (NULL)
+13993 >first : usermove 13993 >first : h6h2
+14125 <first : move Q@d3
+LegalDrop: 4 @ 5,2)
+LegalDrop: 4 @ 5,2)
+LegalDrop: 4 @ 5,2)
+LegalDrop: 4 @ 5,2)
+14125 >second: time 29693
+14125 >second: otim 29715
+book hit = (NULL)
+14125 >second: usermove 14125 >second: Q@d3
+14132 <second: move h2h5
+14132 >first : time 29715
+14132 >first : otim 29693
+book hit = (NULL)
+14132 >first : usermove 14132 >first : h2h5
+14263 <first : move f4g2
+14263 >second: time 29693
+14263 >second: otim 29702
+book hit = (NULL)
+14263 >second: usermove 14263 >second: f4g2
+14377 <second: move h5h2
+14377 >first : time 29702
+14377 >first : otim 29681
+book hit = (NULL)
+14377 >first : usermove 14377 >first : h5h2
+14490 <first : move d3c4
+14490 >second: time 29681
+14490 >second: otim 29690
+book hit = (NULL)
+14490 >second: usermove 14490 >second: d3c4
+14594 <second: move c6d5
+14594 >first : time 29690
+14594 >first : otim 29671
+book hit = (NULL)
+14594 >first : usermove 14594 >first : c6d5
+14699 <first : move b2b3
+14699 >second: time 29671
+14699 >second: otim 29680
+book hit = (NULL)
+14699 >second: usermove 14699 >second: b2b3
+14808 <second: move P@b7
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+14808 >first : time 29680
+14808 >first : otim 29660
+book hit = (NULL)
+14808 >first : usermove 14808 >first : P@b7
+14814 <first : move e4e5
+14814 >second: time 29660
+14814 >second: otim 29679
+book hit = (NULL)
+14814 >second: usermove 14814 >second: e4e5
+14916 <second: move R@g8
+LegalDrop: 69 @ 8,7)
+LegalDrop: 69 @ 8,7)
+LegalDrop: 69 @ 8,7)
+LegalDrop: 69 @ 8,7)
+14916 >first : time 29679
+14916 >first : otim 29650
+book hit = (NULL)
+14916 >first : usermove 14916 >first : R@g8
+14933 <first : move c4c6
+14934 >second: time 29650
+14934 >second: otim 29678
+book hit = (NULL)
+14934 >second: usermove 14934 >second: c4c6
+15033 <second: move b4c3
+15033 >first : time 29678
+15033 >first : otim 29640
+book hit = (NULL)
+15033 >first : usermove 15033 >first : b4c3
+15139 <first : move Q@g1
+LegalDrop: 4 @ 8,0)
+LegalDrop: 4 @ 8,0)
+LegalDrop: 4 @ 8,0)
+LegalDrop: 4 @ 8,0)
+15139 >second: time 29640
+15139 >second: otim 29667
+book hit = (NULL)
+15139 >second: usermove 15139 >second: Q@g1
+15155 <second: move h2h1
+15155 >first : time 29667
+15155 >first : otim 29638
+book hit = (NULL)
+15155 >first : usermove 15155 >first : h2h1
+15254 <first : move d1e1
+15254 >second: time 29638
+15254 >second: otim 59657
+book hit = (NULL)
+15254 >second: usermove 15254 >second: d1e1
+15363 <second: move N@b2
+LegalDrop: 67 @ 3,1)
+LegalDrop: 67 @ 3,1)
+LegalDrop: 67 @ 3,1)
+LegalDrop: 67 @ 3,1)
+15363 >first : time 59657
+15363 >first : otim 59627
+book hit = (NULL)
+15363 >first : usermove 15363 >first : N@b2
+15381 <first : move B@c7
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+15381 >second: time 59627
+15381 >second: otim 59655
+book hit = (NULL)
+15381 >second: usermove 15381 >second: B@c7
+15395 <second: move h1h6
+15395 >first : time 59655
+15395 >first : otim 59626
+book hit = (NULL)
+15395 >first : usermove 15395 >first : h1h6
+15518 <first : move g1h2
+15518 >second: time 59626
+15518 >second: otim 59643
+book hit = (NULL)
+15518 >second: usermove 15518 >second: g1h2
+15620 <second: move b7c6
+15620 >first : time 59643
+15620 >first : otim 59616
+book hit = (NULL)
+15620 >first : usermove 15620 >first : b7c6
+15726 <first : move a4b5
+15726 >second: time 59616
+15726 >second: otim 59632
+book hit = (NULL)
+15726 >second: usermove 15726 >second: a4b5
+15842 <second: move B@h4
+LegalDrop: 68 @ 9,3)
+LegalDrop: 68 @ 9,3)
+LegalDrop: 68 @ 9,3)
+LegalDrop: 68 @ 9,3)
+15842 >first : time 59632
+15842 >first : otim 59604
+book hit = (NULL)
+15842 >first : usermove 15842 >first : B@h4
+15847 <first : move P@e6
+LegalDrop: 0 @ 6,5)
+LegalDrop: 0 @ 6,5)
+LegalDrop: 0 @ 6,5)
+LegalDrop: 0 @ 6,5)
+15848 >second: time 59604
+15848 >second: otim 59632
+book hit = (NULL)
+15848 >second: usermove 15848 >second: P@e6
+15859 <second: move b2a4
+15859 >first : time 59632
+15859 >first : otim 59603
+book hit = (NULL)
+15859 >first : usermove 15859 >first : b2a4
+15989 <first : move e6d7
+15989 >second: time 59603
+15989 >second: otim 59619
+book hit = (NULL)
+15989 >second: usermove 15989 >second: e6d7
+16101 <second: move c8d7
+16101 >first : time 59619
+16101 >first : otim 59592
+book hit = (NULL)
+16101 >first : usermove 16101 >first : c8d7
+16208 <first : move P@d2
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+16208 >second: time 59592
+16208 >second: otim 59608
+book hit = (NULL)
+16208 >second: usermove 16208 >second: P@d2
+16214 <second: move P@d3
+LegalDrop: 66 @ 5,2)
+LegalDrop: 66 @ 5,2)
+LegalDrop: 66 @ 5,2)
+LegalDrop: 66 @ 5,2)
+16214 >first : time 59608
+16214 >first : otim 59591
+book hit = (NULL)
+16214 >first : usermove 16214 >first : P@d3
+16226 <first : move c1d1
+16226 >second: time 59591
+16226 >second: otim 59607
+book hit = (NULL)
+16226 >second: usermove 16226 >second: c1d1
+16319 <second: move Q@e2
+LegalDrop: 70 @ 6,1)
+LegalDrop: 70 @ 6,1)
+LegalDrop: 70 @ 6,1)
+LegalDrop: 70 @ 6,1)
+16320 >first : usermove 16320 >first : Q@e2
+GameEnds(27, Xboard adjudication: Checkmate, 4)
+16320 >first : result 0-1 {Xboard adjudication: Checkmate}
+16320 >second: result 0-1 {Xboard adjudication: Checkmate}
+16320 >first : quit
+16321 >second: quit
+Reset(1, 1) from gameMode 8
+recognized 'crazyhouse' (-1) as variant crazyhouse
+GameEnds(0, (null), 2)
+shuffleOpenings = 0
+StartChildProcess (dir=".") make run
+43066 >first : xboard
+protover 2
+43066 >first : new
+random
+43066 >first : variant crazyhouse
+43066 >first : level 40 5 0
+43066 >first : post
+43066 >first : hard
+43079 <first : Makefile:29: warning: overriding commands for target `run'
+43079 <first : Makefile:18: warning: ignoring old commands for target `run'
+43079 <first : ./Main
+43079 <first : 
+43079 <first : feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+43079 >first : accepted done
+43079 >first : accepted sigint
+43079 >first : accepted sigterm
+43079 >first : accepted san
+43079 >first : accepted reuse
+43079 >first : accepted usermove
+43079 >first : accepted analyze
+43079 >first : accepted ping
+43079 >first : accepted setboard
+43079 >first : accepted level
+43079 >first : accepted variants
+43079 >first : accepted name
+43079 >first : accepted myname
+43079 >first : accepted done
+45126 >first : force
+StartChildProcess (dir=".") make run
+45133 >second: xboard
+protover 2
+45141 <second: Makefile:29: warning: overriding commands for target `run'
+45141 <second: Makefile:18: warning: ignoring old commands for target `run'
+45141 <second: ./Main
+45143 <second: 
+45143 <second: feature done=0 sigint=0 sigterm=0 san=0 reuse=0 usermove=1 analyze=0 ping=0 setboard=0 level=0 variants="crazyhouse" name="MyBot" myname="MyBot" done=1
+45143 >second: accepted done
+45143 >second: accepted sigint
+45143 >second: accepted sigterm
+45143 >second: accepted san
+45143 >second: accepted reuse
+45143 >second: accepted usermove
+45143 >second: accepted analyze
+45143 >second: accepted ping
+45143 >second: accepted setboard
+45143 >second: accepted level
+45143 >second: accepted variants
+45143 >second: accepted name
+45143 >second: accepted myname
+45143 >second: accepted done
+45144 >second: new
+random
+45144 >second: variant crazyhouse
+45144 >second: level 40 5 0
+45144 >second: post
+45144 >second: hard
+45144 >second: force
+New game (0): MyBot-MyBot (w)
+45156 >first : computer
+45156 >first : name MyBot
+45156 >second: computer
+45156 >second: name MyBot
+45156 >first : black
+45156 >first : time 30000
+45156 >first : otim 30000
+45156 >first : white
+book hit = (NULL)
+45156 >first : go
+nps: w=-1, b=-1
+45158 <first : move c2c4
+45158 >second: time 30000
+45158 >second: otim 29999
+book hit = (NULL)
+45158 >second: usermove 45158 >second: c2c4
+45158 >second: black
+45158 >second: go
+45256 <second: move e7e6
+45256 >first : time 29999
+45256 >first : otim 29990
+book hit = (NULL)
+45256 >first : usermove 45256 >first : e7e6
+45354 <first : move b2b3
+45354 >second: time 29990
+45354 >second: otim 29990
+book hit = (NULL)
+45354 >second: usermove 45354 >second: b2b3
+45448 <second: move c7c6
+45448 >first : time 29990
+45448 >first : otim 29980
+book hit = (NULL)
+45448 >first : usermove 45448 >first : c7c6
+45546 <first : move d2d4
+45547 >second: time 29980
+45547 >second: otim 29980
+book hit = (NULL)
+45547 >second: usermove 45547 >second: d2d4
+45642 <second: move d7d6
+45642 >first : time 29980
+45642 >first : otim 29971
+book hit = (NULL)
+45642 >first : usermove 45642 >first : d7d6
+45735 <first : move c1h6
+45735 >second: time 29971
+45735 >second: otim 29970
+book hit = (NULL)
+45735 >second: usermove 45735 >second: c1h6
+45854 <second: move b8a6
+45854 >first : time 29970
+45854 >first : otim 29959
+book hit = (NULL)
+45854 >first : usermove 45854 >first : b8a6
+45975 <first : move h6e3
+45975 >second: time 29959
+45975 >second: otim 29958
+book hit = (NULL)
+45975 >second: usermove 45975 >second: h6e3
+46091 <second: move g8f6
+46091 >first : time 29958
+46091 >first : otim 29947
+book hit = (NULL)
+46091 >first : usermove 46091 >first : g8f6
+46205 <first : move h2h3
+46205 >second: time 29947
+46205 >second: otim 29947
+book hit = (NULL)
+46205 >second: usermove 46205 >second: h2h3
+46294 <second: move c6c5
+46294 >first : time 29947
+46294 >first : otim 29938
+book hit = (NULL)
+46294 >first : usermove 46294 >first : c6c5
+46386 <first : move e3f4
+46386 >second: time 29938
+46386 >second: otim 29938
+book hit = (NULL)
+46386 >second: usermove 46386 >second: e3f4
+46476 <second: move h8g8
+46476 >first : time 29938
+46476 >first : otim 29929
+book hit = (NULL)
+46476 >first : usermove 46476 >first : h8g8
+46567 <first : move b1c3
+46567 >second: time 29929
+46567 >second: otim 29929
+book hit = (NULL)
+46567 >second: usermove 46567 >second: b1c3
+46684 <second: move g7g5
+46684 >first : time 29929
+46684 >first : otim 29918
+book hit = (NULL)
+46684 >first : usermove 46684 >first : g7g5
+46778 <first : move c3e4
+46778 >second: time 29918
+46778 >second: otim 29919
+book hit = (NULL)
+46778 >second: usermove 46778 >second: c3e4
+46890 <second: move a6c7
+46890 >first : time 29919
+46890 >first : otim 29906
+book hit = (NULL)
+46890 >first : usermove 46890 >first : a6c7
+47015 <first : move f4d6
+47015 >second: time 29906
+47015 >second: otim 29907
+book hit = (NULL)
+47015 >second: usermove 47015 >second: f4d6
+47145 <second: move a7a6
+47146 >first : time 29907
+47146 >first : otim 29893
+book hit = (NULL)
+47146 >first : usermove 47146 >first : a7a6
+47253 <first : move P@g3
+LegalDrop: 0 @ 8,2)
+LegalDrop: 0 @ 8,2)
+LegalDrop: 0 @ 8,2)
+LegalDrop: 0 @ 8,2)
+47253 >second: time 29893
+47253 >second: otim 29896
+book hit = (NULL)
+47253 >second: usermove 47253 >second: P@g3
+47265 <second: move g8g7
+47266 >first : time 29896
+47266 >first : otim 29892
+book hit = (NULL)
+47266 >first : usermove 47266 >first : g8g7
+47361 <first : move a2a3
+47361 >second: time 29892
+47361 >second: otim 29886
+book hit = (NULL)
+47361 >second: usermove 47361 >second: a2a3
+47464 <second: move f6g8
+47465 >first : time 29886
+47465 >first : otim 29882
+book hit = (NULL)
+47465 >first : usermove 47465 >first : f6g8
+47592 <first : move e4c5
+47592 >second: time 29882
+47592 >second: otim 29874
+book hit = (NULL)
+47592 >second: usermove 47592 >second: e4c5
+47717 <second: move d8d7
+47717 >first : time 29874
+47717 >first : otim 29869
+book hit = (NULL)
+47717 >first : usermove 47717 >first : d8d7
+47828 <first : move P@d2
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+47828 >second: time 29869
+47828 >second: otim 29863
+book hit = (NULL)
+47828 >second: usermove 47828 >second: P@d2
+47843 <second: move a8a7
+47843 >first : time 29863
+47843 >first : otim 29868
+book hit = (NULL)
+47843 >first : usermove 47843 >first : a8a7
+47945 <first : move d6e7
+47945 >second: time 29868
+47945 >second: otim 29852
+book hit = (NULL)
+47945 >second: usermove 47945 >second: d6e7
+48053 <second: move a6a5
+48053 >first : time 29852
+48053 >first : otim 29857
+book hit = (NULL)
+48053 >first : usermove 48053 >first : a6a5
+48158 <first : move g1f3
+48159 >second: time 29857
+48159 >second: otim 29842
+book hit = (NULL)
+48159 >second: usermove 48159 >second: g1f3
+48276 <second: move g5g4
+48276 >first : time 29842
+48276 >first : otim 29845
+book hit = (NULL)
+48276 >first : usermove 48276 >first : g5g4
+48371 <first : move e7f8
+48371 >second: time 29845
+48371 >second: otim 29832
+book hit = (NULL)
+48371 >second: usermove 48371 >second: e7f8
+48472 <second: move b7b5
+48472 >first : time 29832
+48472 >first : otim 29835
+book hit = (NULL)
+48472 >first : usermove 48472 >first : b7b5
+48570 <first : move c5b7
+48570 >second: time 29835
+48570 >second: otim 29822
+book hit = (NULL)
+48570 >second: usermove 48570 >second: c5b7
+48694 <second: move d7d8
+48694 >first : time 29822
+48694 >first : otim 29823
+book hit = (NULL)
+48694 >first : usermove 48694 >first : d7d8
+48799 <first : move f3h4
+48799 >second: time 29823
+48799 >second: otim 29812
+book hit = (NULL)
+48799 >second: usermove 48799 >second: f3h4
+48926 <second: move f7f6
+48927 >first : time 29812
+48927 >first : otim 29810
+book hit = (NULL)
+48927 >first : usermove 48927 >first : f7f6
+49026 <first : move h1h2
+49026 >second: time 29810
+49026 >second: otim 29802
+book hit = (NULL)
+49026 >second: usermove 49026 >second: h1h2
+49126 <second: move c7a8
+49126 >first : time 29802
+49126 >first : otim 29800
+book hit = (NULL)
+49126 >first : usermove 49126 >first : c7a8
+49251 <first : move B@c7
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+LegalDrop: 2 @ 4,6)
+49252 >second: time 29800
+49252 >second: otim 29790
+book hit = (NULL)
+49252 >second: usermove 49252 >second: B@c7
+49270 <second: move c8d7
+49271 >first : time 29790
+49271 >first : otim 29798
+book hit = (NULL)
+49271 >first : usermove 49271 >first : c8d7
+49373 <first : move c7b6
+49373 >second: time 29798
+49373 >second: otim 29779
+book hit = (NULL)
+49373 >second: usermove 49373 >second: c7b6
+49483 <second: move d7c8
+49483 >first : time 29779
+49483 >first : otim 29787
+book hit = (NULL)
+49483 >first : usermove 49483 >first : d7c8
+49593 <first : move b7d6
+49593 >second: time 29787
+49593 >second: otim 29768
+book hit = (NULL)
+49593 >second: usermove 49593 >second: b7d6
+49728 <second: move e8f8
+49729 >first : time 29768
+49729 >first : otim 29774
+book hit = (NULL)
+49729 >first : usermove 49729 >first : e8f8
+49830 <first : move d6f5
+49830 >second: time 29774
+49830 >second: otim 29758
+book hit = (NULL)
+49830 >second: usermove 49830 >second: d6f5
+49959 <second: move B@h8
+LegalDrop: 68 @ 9,7)
+LegalDrop: 68 @ 9,7)
+LegalDrop: 68 @ 9,7)
+LegalDrop: 68 @ 9,7)
+49959 >first : time 29758
+49959 >first : otim 29761
+book hit = (NULL)
+49959 >first : usermove 49959 >first : B@h8
+49973 <first : move f5e7
+49973 >second: time 29761
+49973 >second: otim 29757
+book hit = (NULL)
+49973 >second: usermove 49973 >second: f5e7
+50099 <second: move g8e7
+50099 >first : time 29757
+50099 >first : otim 29748
+book hit = (NULL)
+50099 >first : usermove 50099 >first : g8e7
+50233 <first : move h3g4
+50233 >second: time 29748
+50233 >second: otim 29743
+book hit = (NULL)
+50233 >second: usermove 50233 >second: h3g4
+50337 <second: move N@c1
+LegalDrop: 67 @ 4,0)
+LegalDrop: 67 @ 4,0)
+LegalDrop: 67 @ 4,0)
+LegalDrop: 67 @ 4,0)
+50338 >first : time 29743
+50338 >first : otim 29738
+book hit = (NULL)
+50338 >first : usermove 50338 >first : N@c1
+50354 <first : move b3b4
+50354 >second: time 29738
+50354 >second: otim 29742
+book hit = (NULL)
+50354 >second: usermove 50354 >second: b3b4
+50463 <second: move d8d7
+50464 >first : time 29742
+50464 >first : otim 29727
+book hit = (NULL)
+50464 >first : usermove 50464 >first : d8d7
+50566 <first : move P@d6
+LegalDrop: 0 @ 5,5)
+LegalDrop: 0 @ 5,5)
+LegalDrop: 0 @ 5,5)
+LegalDrop: 0 @ 5,5)
+50566 >second: time 29727
+50566 >second: otim 29731
+book hit = (NULL)
+50566 >second: usermove 50566 >second: P@d6
+50575 <second: move d7b7
+50575 >first : time 29731
+50575 >first : otim 29726
+book hit = (NULL)
+50575 >first : usermove 50576 >first : d7b7
+50683 <first : move d2d3
+50683 >second: time 29726
+50683 >second: otim 29721
+book hit = (NULL)
+50683 >second: usermove 50683 >second: d2d3
+50790 <second: move e7g8
+50790 >first : time 29721
+50790 >first : otim 29715
+book hit = (NULL)
+50790 >first : usermove 50790 >first : e7g8
+50916 <first : move b6c5
+50916 >second: time 29715
+50916 >second: otim 29708
+book hit = (NULL)
+50916 >second: usermove 50916 >second: b6c5
+51023 <second: move b7f7
+51024 >first : time 29708
+51024 >first : otim 29704
+book hit = (NULL)
+51024 >first : usermove 51024 >first : b7f7
+51150 <first : move h4f3
+51150 >second: time 29704
+51150 >second: otim 29695
+book hit = (NULL)
+51150 >second: usermove 51150 >second: h4f3
+51279 <second: move h7h5
+51279 >first : time 29695
+51279 >first : otim 29691
+book hit = (NULL)
+51279 >first : usermove 51279 >first : h7h5
+51371 <first : move f3e5
+51372 >second: time 29691
+51372 >second: otim 29686
+book hit = (NULL)
+51372 >second: usermove 51372 >second: f3e5
+51486 <second: move a5b4
+51486 >first : time 29686
+51486 >first : otim 29680
+book hit = (NULL)
+51486 >first : usermove 51486 >first : a5b4
+51588 <first : move e5f7
+51588 >second: time 29680
+51588 >second: otim 29676
+book hit = (NULL)
+51588 >second: usermove 51588 >second: e5f7
+51721 <second: move P@f4
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+51721 >first : time 29676
+51721 >first : otim 29667
+book hit = (NULL)
+51721 >first : usermove 51721 >first : P@f4
+51735 <first : move e2e3
+51735 >second: time 29667
+51735 >second: otim 29674
+book hit = (NULL)
+51735 >second: usermove 51735 >second: e2e3
+51823 <second: move h5h4
+51824 >first : time 29674
+51824 >first : otim 29658
+book hit = (NULL)
+51824 >first : usermove 51824 >first : h5h4
+51914 <first : move Q@c7
+LegalDrop: 4 @ 4,6)
+LegalDrop: 4 @ 4,6)
+LegalDrop: 4 @ 4,6)
+LegalDrop: 4 @ 4,6)
+51914 >second: time 29658
+51914 >second: otim 29665
+book hit = (NULL)
+51914 >second: usermove 51914 >second: Q@c7
+51918 <second: move f4g3
+51918 >first : time 29665
+51918 >first : otim 29657
+book hit = (NULL)
+51918 >first : usermove 51918 >first : f4g3
+52002 <first : move g4g5
+52002 >second: time 29657
+52002 >second: otim 29657
+book hit = (NULL)
+52002 >second: usermove 52002 >second: g4g5
+52089 <second: move h4h3
+52089 >first : time 29657
+52089 >first : otim 29649
+book hit = (NULL)
+52089 >first : usermove 52089 >first : h4h3
+52175 <first : move d1a4
+52175 >second: time 29649
+52175 >second: otim 29648
+book hit = (NULL)
+52175 >second: usermove 52175 >second: d1a4
+52284 <second: move P@e7
 LegalDrop: 66 @ 6,6)
 LegalDrop: 66 @ 6,6)
 LegalDrop: 66 @ 6,6)
 LegalDrop: 66 @ 6,6)
-30800 >first : time 118728
-30800 >first : otim 118749
+52284 >first : time 29648
+52284 >first : otim 29638
 book hit = (NULL)
-30800 >first : usermove 30800 >first : P@e7
-30818 <first : move h4f3
-30818 >second: time 118749
-30818 >second: otim 118726
+52284 >first : usermove 52284 >first : P@e7
+52289 <first : move a4a7
+52289 >second: time 29638
+52289 >second: otim 29648
 book hit = (NULL)
-30818 >second: usermove 30818 >second: h4f3
-30945 <second: move f6f7
-30945 >first : time 118726
-30945 >first : otim 118736
+52289 >second: usermove 52289 >second: a4a7
+52399 <second: move c1b3
+52399 >first : time 29648
+52399 >first : otim 29627
 book hit = (NULL)
-30945 >first : usermove 30945 >first : f6f7
-31058 <first : move f5h4
-31058 >second: time 118736
-31058 >second: otim 118715
+52399 >first : usermove 52399 >first : c1b3
+52509 <first : move f7h6
+52509 >second: time 29627
+52509 >second: otim 29637
 book hit = (NULL)
-31058 >second: usermove 31058 >second: f5h4
-31197 <second: move g4f3
-31197 >first : time 118715
-31197 >first : otim 118722
+52509 >second: usermove 52509 >second: f7h6
+52616 <second: move g3h2
+52616 >first : time 29637
+52616 >first : otim 29616
 book hit = (NULL)
-31197 >first : usermove 31197 >first : g4f3
-31308 <first : move B@f1
-LegalDrop: 2 @ 7,0)
-LegalDrop: 2 @ 7,0)
-LegalDrop: 2 @ 7,0)
-LegalDrop: 2 @ 7,0)
-31308 >second: time 118722
-31308 >second: otim 118704
+52616 >first : usermove 52616 >first : g3h2
+52704 <first : move c5b6
+52704 >second: time 29616
+52704 >second: otim 59628
 book hit = (NULL)
-31308 >second: usermove 31308 >second: B@f1
-31320 <second: move N@a2
-LegalDrop: 67 @ 2,1)
-LegalDrop: 67 @ 2,1)
-LegalDrop: 67 @ 2,1)
-LegalDrop: 67 @ 2,1)
-31320 >first : time 118704
-31320 >first : otim 118721
+52704 >second: usermove 52704 >second: c5b6
+52791 <second: move R@a6
+LegalDrop: 69 @ 2,5)
+LegalDrop: 69 @ 2,5)
+LegalDrop: 69 @ 2,5)
+LegalDrop: 69 @ 2,5)
+52791 >first : time 59628
+52791 >first : otim 59607
 book hit = (NULL)
-31320 >first : usermove 31320 >first : N@a2
-31325 <first : move f2g2
-31325 >second: time 118721
-31325 >second: otim 118703
+52791 >first : usermove 52791 >first : R@a6
+52800 <first : move R@d7
+LegalDrop: 3 @ 5,6)
+LegalDrop: 3 @ 5,6)
+LegalDrop: 3 @ 5,6)
+LegalDrop: 3 @ 5,6)
+52800 >second: time 59607
+52800 >second: otim 59627
 book hit = (NULL)
-31325 >second: usermove 31325 >second: f2g2
-31437 <second: move b7a8
-31437 >first : time 118703
-31437 >first : otim 118710
+52800 >second: usermove 52800 >second: R@d7
+52809 <second: move b3c5
+52809 >first : time 59627
+52809 >first : otim 59607
 book hit = (NULL)
-31437 >first : usermove 31437 >first : b7a8
-31555 <first : move e1c2
-31555 >second: time 118710
-31555 >second: otim 118692
+52809 >first : usermove 52809 >first : b3c5
+52919 <first : move e1c1
+52919 >second: time 59607
+52919 >second: otim 59616
 book hit = (NULL)
-31555 >second: usermove 31555 >second: e1c2
-31686 <second: move e2d2
-31686 >first : time 118692
-31686 >first : otim 118697
+52919 >second: usermove 52919 >second: e1c1
+53005 <second: move f8e8
+53005 >first : time 59616
+53005 >first : otim 59598
 book hit = (NULL)
-31686 >first : usermove 31686 >first : e2d2
-31790 <first : move g8h8
-31790 >second: time 118697
-31790 >second: otim 118681
+53005 >first : usermove 53005 >first : f8e8
+53093 <first : move c1b2
+53093 >second: time 59598
+53093 >second: otim 59607
 book hit = (NULL)
-31790 >second: usermove 31790 >second: g8h8
-31901 <second: move d2c3
-31902 >first : time 118681
-31902 >first : otim 118685
+53093 >second: usermove 53093 >second: c1b2
+53183 <second: move g8h6
+53183 >first : time 59607
+53183 >first : otim 59589
 book hit = (NULL)
-31902 >first : usermove 31902 >first : d2c3
-32006 <first : move a4a5
-32006 >second: time 118685
-32006 >second: otim 118671
+53183 >first : usermove 53183 >first : g8h6
+53291 <first : move c7b7
+53291 >second: time 59589
+53291 >second: otim 59597
 book hit = (NULL)
-32006 >second: usermove 32006 >second: a4a5
-32113 <second: move f7f6
-32114 >first : time 118671
-32114 >first : otim 118675
+53291 >second: usermove 53291 >second: c7b7
+53378 <second: move N@f8
+LegalDrop: 67 @ 7,7)
+LegalDrop: 67 @ 7,7)
+LegalDrop: 67 @ 7,7)
+LegalDrop: 67 @ 7,7)
+53378 >first : time 59597
+53378 >first : otim 59580
 book hit = (NULL)
-32114 >first : usermove 32114 >first : f7f6
-32219 <first : move d4f6
-32219 >second: time 118675
-32219 >second: otim 118660
+53378 >first : usermove 53378 >first : N@f8
+53382 <first : move g2h3
+53382 >second: time 59580
+53382 >second: otim 59596
 book hit = (NULL)
-32219 >second: usermove 32219 >second: d4f6
-32332 <second: move a3b1
-32333 >first : time 118660
-32333 >first : otim 118663
+53382 >second: usermove 53382 >second: g2h3
+53470 <second: move a6a7
+53470 >first : time 59596
+53470 >first : otim 59571
 book hit = (NULL)
-32333 >first : usermove 32333 >first : a3b1
-32461 <first : move P@e2
+53470 >first : usermove 53470 >first : a6a7
+53557 <first : move P@c7
+LegalDrop: 0 @ 4,6)
+LegalDrop: 0 @ 4,6)
+LegalDrop: 0 @ 4,6)
+LegalDrop: 0 @ 4,6)
+53557 >second: time 59571
+53557 >second: otim 59588
+book hit = (NULL)
+53557 >second: usermove 53557 >second: P@c7
+53567 <second: move a7a4
+53567 >first : time 59588
+53567 >first : otim 59570
+book hit = (NULL)
+53567 >first : usermove 53567 >first : a7a4
+53676 <first : move b7b8
+53676 >second: time 59570
+53676 >second: otim 59577
+book hit = (NULL)
+53676 >second: usermove 53676 >second: b7b8
+53765 <second: move a8b6
+53765 >first : time 59577
+53765 >first : otim 59562
+book hit = (NULL)
+53765 >first : usermove 53765 >first : a8b6
+53877 <first : move d1b1
+53877 >second: time 59562
+53877 >second: otim 59565
+book hit = (NULL)
+53877 >second: usermove 53877 >second: d1b1
+53964 <second: move h2h1
+53964 >first : time 59565
+53964 >first : otim 59553
+book hit = (NULL)
+53964 >first : usermove 53964 >first : h2h1q
+54051 <first : move d4d5
+54051 >second: time 59553
+54051 >second: otim 59557
+book hit = (NULL)
+54051 >second: usermove 54051 >second: d4d5
+54140 <second: move B@e4
+LegalDrop: 68 @ 6,3)
+LegalDrop: 68 @ 6,3)
+LegalDrop: 68 @ 6,3)
+LegalDrop: 68 @ 6,3)
+54140 >first : time 59557
+54140 >first : otim 59544
+book hit = (NULL)
+54140 >first : usermove 54140 >first : B@e4
+54149 <first : move f1g2
+54149 >second: time 59544
+54149 >second: otim 59556
+book hit = (NULL)
+54149 >second: usermove 54149 >second: f1g2
+54238 <second: move a4a7
+54238 >first : time 59556
+54238 >first : otim 59535
+book hit = (NULL)
+54238 >first : usermove 54238 >first : a4a7
+54348 <first : move f2f3
+54348 >second: time 59535
+54348 >second: otim 59545
+book hit = (NULL)
+54348 >second: usermove 54348 >second: f2f3
+54435 <second: move Q@d4
+LegalDrop: 70 @ 5,3)
+LegalDrop: 70 @ 5,3)
+LegalDrop: 70 @ 5,3)
+LegalDrop: 70 @ 5,3)
+54435 >first : time 59545
+54435 >first : otim 59526
+book hit = (NULL)
+54435 >first : usermove 54435 >first : Q@d4
+54439 <first : move e3d4
+54439 >second: time 59526
+54439 >second: otim 59544
+book hit = (NULL)
+54440 >second: usermove 54440 >second: e3d4
+54527 <second: move h6f7
+54527 >first : time 59544
+54527 >first : otim 59518
+book hit = (NULL)
+54527 >first : usermove 54527 >first : h6f7
+54640 <first : move Q@a4
+LegalDrop: 4 @ 2,3)
+LegalDrop: 4 @ 2,3)
+LegalDrop: 4 @ 2,3)
+LegalDrop: 4 @ 2,3)
+54641 >second: time 59518
+54641 >second: otim 59533
+book hit = (NULL)
+54641 >second: usermove 54641 >second: Q@a4
+54652 <second: move g7g5
+54652 >first : time 59533
+54652 >first : otim 59516
+book hit = (NULL)
+54652 >first : usermove 54652 >first : g7g5
+54739 <first : move a4b4
+54739 >second: time 59516
+54739 >second: otim 59524
+book hit = (NULL)
+54739 >second: usermove 54739 >second: a4b4
+54825 <second: move P@h6
+LegalDrop: 66 @ 9,5)
+LegalDrop: 66 @ 9,5)
+LegalDrop: 66 @ 9,5)
+LegalDrop: 66 @ 9,5)
+54825 >first : time 59524
+54825 >first : otim 59508
+book hit = (NULL)
+54825 >first : usermove 54825 >first : P@h6
+54834 <first : move P@f2
+LegalDrop: 0 @ 7,1)
+LegalDrop: 0 @ 7,1)
+LegalDrop: 0 @ 7,1)
+LegalDrop: 0 @ 7,1)
+54834 >second: time 59508
+54834 >second: otim 59524
+book hit = (NULL)
+54834 >second: usermove 54834 >second: P@f2
+54843 <second: move c5a6
+54843 >first : time 59524
+54843 >first : otim 59507
+book hit = (NULL)
+54843 >first : usermove 54843 >first : c5a6
+54954 <first : move g2f1
+54954 >second: time 59507
+54954 >second: otim 59512
+book hit = (NULL)
+54954 >second: usermove 54954 >second: g2f1
+55045 <second: move a6c7
+55045 >first : time 59512
+55045 >first : otim 59498
+book hit = (NULL)
+55045 >first : usermove 55045 >first : a6c7
+55161 <first : move d7e7
+55161 >second: time 59498
+55161 >second: otim 59501
+book hit = (NULL)
+55161 >second: usermove 55161 >second: d7e7
+55253 <second: move e8d8
+55253 >first : time 59501
+55253 >first : otim 59489
+book hit = (NULL)
+55253 >first : usermove 55253 >first : e8d8
+55347 <first : move P@h5
+LegalDrop: 0 @ 9,4)
+LegalDrop: 0 @ 9,4)
+LegalDrop: 0 @ 9,4)
+LegalDrop: 0 @ 9,4)
+55347 >second: time 59489
+55347 >second: otim 59491
+book hit = (NULL)
+55347 >second: usermove 55347 >second: P@h5
+55360 <second: move P@c2
+LegalDrop: 66 @ 4,1)
+LegalDrop: 66 @ 4,1)
+LegalDrop: 66 @ 4,1)
+LegalDrop: 66 @ 4,1)
+55360 >first : time 59491
+55360 >first : otim 59487
+book hit = (NULL)
+55360 >first : usermove 55360 >first : P@c2
+55365 <first : move e7e6
+55365 >second: time 59487
+55365 >second: otim 59491
+book hit = (NULL)
+55365 >second: usermove 55365 >second: e7e6
+55451 <second: move b6d5
+55451 >first : time 59491
+55451 >first : otim 59479
+book hit = (NULL)
+55451 >first : usermove 55451 >first : b6d5
+55559 <first : move P@h7
+LegalDrop: 0 @ 9,6)
+LegalDrop: 0 @ 9,6)
+LegalDrop: 0 @ 9,6)
+LegalDrop: 0 @ 9,6)
+55559 >second: time 59479
+55559 >second: otim 59480
+book hit = (NULL)
+55559 >second: usermove 55559 >second: P@h7
+55563 <second: move P@b7
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+LegalDrop: 66 @ 3,6)
+55563 >first : time 59480
+55563 >first : otim 59478
+book hit = (NULL)
+55563 >first : usermove 55563 >first : P@b7
+55572 <first : move e6e7
+55572 >second: time 59478
+55572 >second: otim 59479
+book hit = (NULL)
+55572 >second: usermove 55572 >second: e6e7
+55659 <second: move c7e8
+55659 >first : time 59479
+55659 >first : otim 59470
+book hit = (NULL)
+55659 >first : usermove 55659 >first : c7e8
+55773 <first : move d3e4
+55773 >second: time 59470
+55773 >second: otim 59468
+book hit = (NULL)
+55773 >second: usermove 55773 >second: d3e4
+55865 <second: move g5e5
+55866 >first : time 59468
+55866 >first : otim 59460
+book hit = (NULL)
+55866 >first : usermove 55866 >first : g5e5
+55954 <first : move b8a7
+55954 >second: time 59460
+55954 >second: otim 59459
+book hit = (NULL)
+55954 >second: usermove 55954 >second: b8a7
+56044 <second: move b7b6
+56044 >first : time 59459
+56044 >first : otim 59451
+book hit = (NULL)
+56044 >first : usermove 56044 >first : b7b6
+56133 <first : move B@e6
+LegalDrop: 2 @ 6,5)
+LegalDrop: 2 @ 6,5)
+LegalDrop: 2 @ 6,5)
+LegalDrop: 2 @ 6,5)
+56133 >second: time 59451
+56133 >second: otim 59450
+book hit = (NULL)
+56133 >second: usermove 56133 >second: B@e6
+56144 <second: move e5e6
+56144 >first : time 59450
+56144 >first : otim 59450
+book hit = (NULL)
+56144 >first : usermove 56144 >first : e5e6
+56231 <first : move R@g8
+LegalDrop: 3 @ 8,7)
+LegalDrop: 3 @ 8,7)
+LegalDrop: 3 @ 8,7)
+LegalDrop: 3 @ 8,7)
+56231 >second: time 59450
+56231 >second: otim 59441
+book hit = (NULL)
+56231 >second: usermove 56231 >second: R@g8
+56240 <second: move B@c6
+LegalDrop: 68 @ 4,5)
+LegalDrop: 68 @ 4,5)
+LegalDrop: 68 @ 4,5)
+LegalDrop: 68 @ 4,5)
+56240 >first : time 59441
+56240 >first : otim 59449
+book hit = (NULL)
+56240 >first : usermove 56240 >first : B@c6
+56248 <first : move e7e8
+56248 >second: time 59449
+56248 >second: otim 59441
+book hit = (NULL)
+56248 >second: usermove 56248 >second: e7e8
+56334 <second: move e6e8
+56334 >first : time 59441
+56334 >first : otim 59441
+book hit = (NULL)
+56334 >first : usermove 56334 >first : e6e8
+56420 <first : move N@e3
+LegalDrop: 1 @ 6,2)
+LegalDrop: 1 @ 6,2)
+LegalDrop: 1 @ 6,2)
+LegalDrop: 1 @ 6,2)
+56420 >second: time 59441
+56420 >second: otim 59432
+book hit = (NULL)
+56420 >second: usermove 56420 >second: N@e3
+56424 <second: move f7e5
+56424 >first : time 59432
+56424 >first : otim 59440
+book hit = (NULL)
+56424 >first : usermove 56424 >first : f7e5
+56533 <first : move e3d1
+56534 >second: time 59440
+56534 >second: otim 59421
+book hit = (NULL)
+56534 >second: usermove 56534 >second: e3d1
+56642 <second: move c8e6
+56642 >first : time 59421
+56642 >first : otim 59430
+book hit = (NULL)
+56642 >first : usermove 56642 >first : c8e6
+56752 <first : move a7b7
+56752 >second: time 59430
+56752 >second: otim 59410
+book hit = (NULL)
+56752 >second: usermove 56752 >second: a7b7
+56837 <second: move R@a2
+LegalDrop: 69 @ 2,1)
+LegalDrop: 69 @ 2,1)
+LegalDrop: 69 @ 2,1)
+LegalDrop: 69 @ 2,1)
+56837 >first : time 59410
+56837 >first : otim 59421
+book hit = (NULL)
+56837 >first : usermove 56837 >first : R@a2
+56846 <first : move b2a2
+56846 >second: time 59421
+56846 >second: otim 59409
+book hit = (NULL)
+56846 >second: usermove 56846 >second: b2a2
+56934 <second: move e5c4
+56934 >first : time 59409
+56934 >first : otim 59412
+book hit = (NULL)
+56934 >first : usermove 56934 >first : e5c4
+57047 <first : move e4d5
+57047 >second: time 59412
+57047 >second: otim 59398
+book hit = (NULL)
+57047 >second: usermove 57047 >second: e4d5
+57139 <second: move P@d7
+LegalDrop: 66 @ 5,6)
+LegalDrop: 66 @ 5,6)
+LegalDrop: 66 @ 5,6)
+LegalDrop: 66 @ 5,6)
+57139 >first : time 59398
+57139 >first : otim 59403
+book hit = (NULL)
+57139 >first : usermove 57139 >first : P@d7
+57150 <first : move N@a8
+LegalDrop: 1 @ 2,7)
+LegalDrop: 1 @ 2,7)
+LegalDrop: 1 @ 2,7)
+LegalDrop: 1 @ 2,7)
+57150 >second: time 59403
+57150 >second: otim 59397
+book hit = (NULL)
+57150 >second: usermove 57150 >second: N@a8
+57155 <second: move f6f5
+57155 >first : time 59397
+57155 >first : otim 59403
+book hit = (NULL)
+57155 >first : usermove 57155 >first : f6f5
+57242 <first : move h3h4
+57242 >second: time 59403
+57242 >second: otim 59388
+book hit = (NULL)
+57242 >second: usermove 57242 >second: h3h4
+57329 <second: move c4e5
+57329 >first : time 59388
+57329 >first : otim 59394
+book hit = (NULL)
+57329 >first : usermove 57329 >first : c4e5
+57437 <first : move g8g4
+57438 >second: time 59394
+57438 >second: otim 59377
+book hit = (NULL)
+57438 >second: usermove 57438 >second: g8g4
+57548 <second: move e5f3
+57548 >first : time 59377
+57548 >first : otim 59383
+book hit = (NULL)
+57548 >first : usermove 57548 >first : e5f3
+57661 <first : move f1e2
+57662 >second: time 59383
+57662 >second: otim 59366
+book hit = (NULL)
+57662 >second: usermove 57662 >second: f1e2
+57755 <second: move f3d4
+57755 >first : time 59366
+57755 >first : otim 59373
+book hit = (NULL)
+57755 >first : usermove 57755 >first : f3d4
+57870 <first : move b7b6
+57870 >second: time 59373
+57870 >second: otim 59354
+book hit = (NULL)
+57870 >second: usermove 57870 >second: b7b6
+57964 <second: move d8c8
+57964 >first : time 59354
+57964 >first : otim 59364
+book hit = (NULL)
+57964 >first : usermove 57964 >first : d8c8
+58058 <first : move b6d8
+58058 >second: time 59364
+58058 >second: otim 59345
+book hit = (NULL)
+58058 >second: usermove 58058 >second: b6d8
+58176 <second: move c8b7
+58176 >first : time 59345
+58176 >first : otim 59352
+book hit = (NULL)
+58176 >first : usermove 58176 >first : c8b7
+58269 <first : move d8c7
+58270 >second: time 59352
+58270 >second: otim 59335
+book hit = (NULL)
+58270 >second: usermove 58270 >second: d8c7
+58364 <second: move b7a8
+58364 >first : time 59335
+58364 >first : otim 59343
+book hit = (NULL)
+58364 >first : usermove 58364 >first : b7a8
+58459 <first : move R@h2
+LegalDrop: 3 @ 9,1)
+LegalDrop: 3 @ 9,1)
+LegalDrop: 3 @ 9,1)
+LegalDrop: 3 @ 9,1)
+58460 >second: time 59343
+58460 >second: otim 59326
+book hit = (NULL)
+58460 >second: usermove 58460 >second: R@h2
+58472 <second: move c6d5
+58472 >first : time 59326
+58472 >first : otim 59342
+book hit = (NULL)
+58472 >first : usermove 58472 >first : c6d5
+58563 <first : move b4c4
+58563 >second: time 59342
+58563 >second: otim 89317
+book hit = (NULL)
+58563 >second: usermove 58563 >second: b4c4
+58654 <second: move e8d8
+58655 >first : time 89317
+58655 >first : otim 89333
+book hit = (NULL)
+58655 >first : usermove 58655 >first : e8d8
+58747 <first : move g4d4
+58747 >second: time 89333
+58747 >second: otim 89307
+book hit = (NULL)
+58747 >second: usermove 58747 >second: g4d4
+58865 <second: move P@c3
+LegalDrop: 66 @ 4,2)
+LegalDrop: 66 @ 4,2)
+LegalDrop: 66 @ 4,2)
+LegalDrop: 66 @ 4,2)
+58865 >first : time 89307
+58865 >first : otim 89321
+book hit = (NULL)
+58865 >first : usermove 58865 >first : P@c3
+58871 <first : move N@a6
+LegalDrop: 1 @ 2,5)
+LegalDrop: 1 @ 2,5)
+LegalDrop: 1 @ 2,5)
+LegalDrop: 1 @ 2,5)
+58871 >second: time 89321
+58871 >second: otim 89307
+book hit = (NULL)
+58871 >second: usermove 58871 >second: N@a6
+58882 <second: move h8e5
+58883 >first : time 89307
+58883 >first : otim 89320
+book hit = (NULL)
+58883 >first : usermove 58883 >first : h8e5
+58997 <first : move P@b6
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+58997 >second: time 89320
+58997 >second: otim 89295
+book hit = (NULL)
+58997 >second: usermove 58997 >second: P@b6
+59009 <second: move P@g7
+LegalDrop: 66 @ 8,6)
+LegalDrop: 66 @ 8,6)
+LegalDrop: 66 @ 8,6)
+LegalDrop: 66 @ 8,6)
+59009 >first : time 89295
+59009 >first : otim 89318
+book hit = (NULL)
+59009 >first : usermove 59009 >first : P@g7
+59013 <first : move c7c8
+59014 >second: time 89318
+59014 >second: otim 89295
+book hit = (NULL)
+59014 >second: usermove 59014 >second: c7c8
+59103 <second: move d8c8
+59103 >first : time 89295
+59103 >first : otim 89309
+book hit = (NULL)
+59103 >first : usermove 59103 >first : d8c8
+59192 <first : move e2d3
+59192 >second: time 89309
+59192 >second: otim 89286
+book hit = (NULL)
+59192 >second: usermove 59192 >second: e2d3
+59279 <second: move f8h7
+59279 >first : time 89286
+59279 >first : otim 89301
+book hit = (NULL)
+59279 >first : usermove 59279 >first : f8h7
+59387 <first : move b1b3
+59387 >second: time 89301
+59387 >second: otim 89275
+book hit = (NULL)
+59387 >second: usermove 59387 >second: b1b3
+59475 <second: move N@e4
+LegalDrop: 67 @ 6,3)
+LegalDrop: 67 @ 6,3)
+LegalDrop: 67 @ 6,3)
+LegalDrop: 67 @ 6,3)
+59475 >first : time 89275
+59475 >first : otim 89292
+book hit = (NULL)
+59475 >first : usermove 59475 >first : N@e4
+59479 <first : move b3b1
+59479 >second: time 89292
+59479 >second: otim 89275
+book hit = (NULL)
+59479 >second: usermove 59479 >second: b3b1
+59565 <second: move a8b7
+59565 >first : time 89275
+59565 >first : otim 89283
+book hit = (NULL)
+59565 >first : usermove 59565 >first : a8b7
+59653 <first : move b1a1
+59653 >second: time 89283
+59653 >second: otim 89266
+book hit = (NULL)
+59653 >second: usermove 59653 >second: b1a1
+59741 <second: move Q@f6
+LegalDrop: 70 @ 7,5)
+LegalDrop: 70 @ 7,5)
+LegalDrop: 70 @ 7,5)
+LegalDrop: 70 @ 7,5)
+59741 >first : time 89266
+59741 >first : otim 89275
+book hit = (NULL)
+59741 >first : usermove 59741 >first : Q@f6
+59745 <first : move a3a4
+59745 >second: time 89275
+59745 >second: otim 89266
+book hit = (NULL)
+59745 >second: usermove 59745 >second: a3a4
+59833 <second: move b5b4
+59833 >first : time 89266
+59833 >first : otim 89266
+book hit = (NULL)
+59833 >first : usermove 59833 >first : b5b4
+59922 <first : move d1c3
+59922 >second: time 89266
+59922 >second: otim 89257
+book hit = (NULL)
+59922 >second: usermove 59922 >second: d1c3
+60037 <second: move P@a7
+LegalDrop: 66 @ 2,6)
+LegalDrop: 66 @ 2,6)
+LegalDrop: 66 @ 2,6)
+LegalDrop: 66 @ 2,6)
+60037 >first : time 89257
+60037 >first : otim 89254
+book hit = (NULL)
+60037 >first : usermove 60037 >first : P@a7
+60042 <first : move P@d2
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+LegalDrop: 0 @ 5,1)
+60042 >second: time 89254
+60042 >second: otim 89256
+book hit = (NULL)
+60042 >second: usermove 60042 >second: P@d2
+60052 <second: move e4c5
+60053 >first : time 89256
+60053 >first : otim 89253
+book hit = (NULL)
+60053 >first : usermove 60053 >first : e4c5
+60166 <first : move b6a7
+60167 >second: time 89253
+60167 >second: otim 89245
+book hit = (NULL)
+60167 >second: usermove 60167 >second: b6a7
+60259 <second: move P@e7
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+60259 >first : time 89245
+60259 >first : otim 89244
+book hit = (NULL)
+60259 >first : usermove 60259 >first : P@e7
+60264 <first : move d4d5
+60265 >second: time 89244
+60265 >second: otim 89244
+book hit = (NULL)
+60265 >second: usermove 60265 >second: d4d5
+60356 <second: move e6d5
+60356 >first : time 89244
+60356 >first : otim 89235
+book hit = (NULL)
+60356 >first : usermove 60356 >first : e6d5
+60449 <first : move B@e4
+LegalDrop: 2 @ 6,3)
+LegalDrop: 2 @ 6,3)
+LegalDrop: 2 @ 6,3)
+LegalDrop: 2 @ 6,3)
+60449 >second: time 89235
+60449 >second: otim 89235
+book hit = (NULL)
+60449 >second: usermove 60449 >second: B@e4
+60454 <second: move R@g3
+LegalDrop: 69 @ 8,2)
+LegalDrop: 69 @ 8,2)
+LegalDrop: 69 @ 8,2)
+LegalDrop: 69 @ 8,2)
+60455 >first : time 89235
+60455 >first : otim 89234
+book hit = (NULL)
+60455 >first : usermove 60455 >first : R@g3
+60466 <first : move c3d5
+60466 >second: time 89234
+60466 >second: otim 89234
+book hit = (NULL)
+60466 >second: usermove 60466 >second: c3d5
+60576 <second: move c5a6
+60576 >first : time 89234
+60576 >first : otim 89223
+book hit = (NULL)
+60576 >first : usermove 60576 >first : c5a6
+60688 <first : move P@c6
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+60689 >second: time 89223
+60689 >second: otim 89223
+book hit = (NULL)
+60689 >second: usermove 60689 >second: P@c6
+60699 <second: move c8c6
+60700 >first : time 89223
+60700 >first : otim 89222
+book hit = (NULL)
+60700 >first : usermove 60700 >first : c8c6
+60786 <first : move B@b5
+LegalDrop: 2 @ 3,4)
+LegalDrop: 2 @ 3,4)
+LegalDrop: 2 @ 3,4)
+LegalDrop: 2 @ 3,4)
+60786 >second: time 89222
+60786 >second: otim 89214
+book hit = (NULL)
+60786 >second: usermove 60786 >second: B@b5
+60795 <second: move P@b3
+LegalDrop: 66 @ 3,2)
+LegalDrop: 66 @ 3,2)
+LegalDrop: 66 @ 3,2)
+LegalDrop: 66 @ 3,2)
+60796 >first : time 89214
+60796 >first : otim 89221
+book hit = (NULL)
+60796 >first : usermove 60796 >first : P@b3
+60804 <first : move c4b3
+60804 >second: time 89221
+60804 >second: otim 89213
+book hit = (NULL)
+60804 >second: usermove 60804 >second: c4b3
+60892 <second: move h7f8
+60892 >first : time 89213
+60892 >first : otim 89212
+book hit = (NULL)
+60892 >first : usermove 60892 >first : h7f8
+61003 <first : move a1b1
+61003 >second: time 89212
+61003 >second: otim 89202
+book hit = (NULL)
+61003 >second: usermove 61003 >second: a1b1
+61093 <second: move c6d6
+61093 >first : time 89202
+61093 >first : otim 89203
+book hit = (NULL)
+61093 >first : usermove 61093 >first : c6d6
+61185 <first : move b1b2
+61185 >second: time 89203
+61185 >second: otim 89193
+book hit = (NULL)
+61185 >second: usermove 61185 >second: b1b2
+61275 <second: move N@e3
+LegalDrop: 67 @ 6,2)
+LegalDrop: 67 @ 6,2)
+LegalDrop: 67 @ 6,2)
+LegalDrop: 67 @ 6,2)
+61275 >first : time 89193
+61275 >first : otim 89194
+book hit = (NULL)
+61275 >first : usermove 61275 >first : N@e3
+61286 <first : move P@g6
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+61286 >second: time 89194
+61286 >second: otim 89192
+book hit = (NULL)
+61286 >second: usermove 61286 >second: P@g6
+61295 <second: move P@f4
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+61295 >first : time 89192
+61295 >first : otim 89193
+book hit = (NULL)
+61295 >first : usermove 61295 >first : P@f4
+61300 <first : move a4a5
+61300 >second: time 89193
+61300 >second: otim 89191
+book hit = (NULL)
+61300 >second: usermove 61300 >second: a4a5
+61388 <second: move d6b6
+61389 >first : time 89191
+61389 >first : otim 89185
+book hit = (NULL)
+61389 >first : usermove 61389 >first : d6b6
+61479 <first : move d5f6
+61479 >second: time 89185
+61479 >second: otim 89182
+book hit = (NULL)
+61479 >second: usermove 61479 >second: d5f6
+61595 <second: move b7c7
+61595 >first : time 89182
+61595 >first : otim 89173
+book hit = (NULL)
+61595 >first : usermove 61595 >first : b7c7
+61684 <first : move b3d5
+61684 >second: time 89173
+61684 >second: otim 89173
+book hit = (NULL)
+61684 >second: usermove 61684 >second: b3d5
+61793 <second: move e5d6
+61793 >first : time 89173
+61793 >first : otim 89162
+book hit = (NULL)
+61793 >first : usermove 61793 >first : e5d6
+61880 <first : move Q@e6
+LegalDrop: 4 @ 6,5)
+LegalDrop: 4 @ 6,5)
+LegalDrop: 4 @ 6,5)
+LegalDrop: 4 @ 6,5)
+61880 >second: time 89162
+61880 >second: otim 89165
+book hit = (NULL)
+61880 >second: usermove 61880 >second: Q@e6
+61889 <second: move e3f1
+61889 >first : time 89165
+61889 >first : otim 89161
+book hit = (NULL)
+61889 >first : usermove 61889 >first : e3f1
+62001 <first : move d5f5
+62001 >second: time 89161
+62001 >second: otim 89153
+book hit = (NULL)
+62001 >second: usermove 62001 >second: d5f5
+62088 <second: move d6c5
+62088 >first : time 89153
+62088 >first : otim 89152
+book hit = (NULL)
+62088 >first : usermove 62088 >first : d6c5
+62179 <first : move f6g8
+62179 >second: time 89152
+62179 >second: otim 89144
+book hit = (NULL)
+62179 >second: usermove 62179 >second: f6g8
+62294 <second: move b4b3
+62295 >first : time 89144
+62295 >first : otim 89141
+book hit = (NULL)
+62295 >first : usermove 62295 >first : b4b3
+62388 <first : move a2a1
+62388 >second: time 89141
+62388 >second: otim 89135
+book hit = (NULL)
+62388 >second: usermove 62388 >second: a2a1
+62480 <second: move g3g4
+62480 >first : time 89135
+62480 >first : otim 89132
+book hit = (NULL)
+62480 >first : usermove 62480 >first : g3g4
+62568 <first : move b5c6
+62568 >second: time 89132
+62568 >second: otim 89126
+book hit = (NULL)
+62568 >second: usermove 62568 >second: b5c6
+62655 <second: move f8g6
+62656 >first : time 89126
+62656 >first : otim 89123
+book hit = (NULL)
+62656 >first : usermove 62656 >first : f8g6
+62766 <first : move e6d6
+62766 >second: time 89123
+62766 >second: otim 89115
+book hit = (NULL)
+62766 >second: usermove 62766 >second: e6d6
+62857 <second: move c5d6
+62857 >first : time 89115
+62857 >first : otim 89114
+book hit = (NULL)
+62857 >first : usermove 62857 >first : c5d6
+62949 <first : move P@d4
+LegalDrop: 0 @ 5,3)
+LegalDrop: 0 @ 5,3)
+LegalDrop: 0 @ 5,3)
+LegalDrop: 0 @ 5,3)
+62950 >second: time 89114
+62950 >second: otim 89106
+book hit = (NULL)
+62950 >second: usermove 62950 >second: P@d4
+62955 <second: move P@e2
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+62955 >first : time 89106
+62955 >first : otim 89113
+book hit = (NULL)
+62955 >first : usermove 62955 >first : P@e2
+62965 <first : move c6b5
+62965 >second: time 89113
+62965 >second: otim 89105
+book hit = (NULL)
+62965 >second: usermove 62965 >second: c6b5
+63056 <second: move Q@e3
+LegalDrop: 70 @ 6,2)
+LegalDrop: 70 @ 6,2)
+LegalDrop: 70 @ 6,2)
+LegalDrop: 70 @ 6,2)
+63056 >first : time 89105
+63056 >first : otim 89104
+book hit = (NULL)
+63056 >first : usermove 63056 >first : Q@e3
+63066 <first : move b2b1
+63066 >second: time 89104
+63066 >second: otim 89104
+book hit = (NULL)
+63066 >second: usermove 63066 >second: b2b1
+63157 <second: move e7e5
+63157 >first : time 89104
+63157 >first : otim 89095
+book hit = (NULL)
+63157 >first : usermove 63157 >first : e7e5
+63243 <first : move b1f1
+63243 >second: time 89095
+63243 >second: otim 89095
+book hit = (NULL)
+63243 >second: usermove 63243 >second: b1f1
+63353 <second: move d6f8
+63353 >first : time 89095
+63353 >first : otim 89084
+book hit = (NULL)
+63353 >first : usermove 63353 >first : d6f8
+63463 <first : move f5f7
+63463 >second: time 89084
+63463 >second: otim 89084
+book hit = (NULL)
+63463 >second: usermove 63463 >second: f5f7
+63549 <second: move g4g5
+63549 >first : time 89084
+63549 >first : otim 89075
+book hit = (NULL)
+63549 >first : usermove 63549 >first : g4g5
+63637 <first : move a1b2
+63637 >second: time 89075
+63637 >second: otim 89076
+book hit = (NULL)
+63637 >second: usermove 63637 >second: a1b2
+63723 <second: move a6b8
+63723 >first : time 89076
+63723 >first : otim 89067
+book hit = (NULL)
+63723 >first : usermove 63723 >first : a6b8
+63835 <first : move e4c6
+63835 >second: time 89067
+63835 >second: otim 89064
+book hit = (NULL)
+63835 >second: usermove 63835 >second: e4c6
+63944 <second: move c7d8
+63944 >first : time 89064
+63944 >first : otim 89056
+book hit = (NULL)
+63944 >first : usermove 63944 >first : c7d8
+64031 <first : move a5a6
+64031 >second: time 89056
+64031 >second: otim 89056
+book hit = (NULL)
+64031 >second: usermove 64031 >second: a5a6
+64117 <second: move e3d3
+64117 >first : time 89056
+64117 >first : otim 89047
+book hit = (NULL)
+64117 >first : usermove 64117 >first : e3d3
+64207 <first : move N@a1
+LegalDrop: 1 @ 2,0)
+LegalDrop: 1 @ 2,0)
+LegalDrop: 1 @ 2,0)
+LegalDrop: 1 @ 2,0)
+64207 >second: time 89047
+64207 >second: otim 89047
+book hit = (NULL)
+64207 >second: usermove 64207 >second: N@a1
+64217 <second: move B@e7
+LegalDrop: 68 @ 6,6)
+LegalDrop: 68 @ 6,6)
+LegalDrop: 68 @ 6,6)
+LegalDrop: 68 @ 6,6)
+64217 >first : time 89047
+64217 >first : otim 89046
+book hit = (NULL)
+64217 >first : usermove 64217 >first : B@e7
+64222 <first : move f7g7
+64222 >second: time 89046
+64222 >second: otim 119046
+book hit = (NULL)
+64222 >second: usermove 64222 >second: f7g7
+64310 <second: move e7b4
+64311 >first : time 119046
+64311 >first : otim 119038
+book hit = (NULL)
+64311 >first : usermove 64311 >first : e7b4
+64423 <first : move c6d7
+64423 >second: time 119038
+64423 >second: otim 119035
+book hit = (NULL)
+64423 >second: usermove 64423 >second: c6d7
+64513 <second: move g6h4
+64514 >first : time 119035
+64514 >first : otim 119029
+book hit = (NULL)
+64514 >first : usermove 64514 >first : g6h4
+64628 <first : move f1h1
+64628 >second: time 119029
+64628 >second: otim 119023
+book hit = (NULL)
+64628 >second: usermove 64628 >second: f1h1
+64718 <second: move b8d7
+64718 >first : time 119023
+64718 >first : otim 119020
+book hit = (NULL)
+64718 >first : usermove 64718 >first : b8d7
+64829 <first : move a7a8
+64829 >second: time 119020
+64829 >second: otim 119012
+book hit = (NULL)
+64829 >second: usermove 64829 >second: a7a8q
+64919 <second: move d8c7
+64920 >first : time 119012
+64920 >first : otim 119011
+book hit = (NULL)
+64920 >first : usermove 64920 >first : d8c7
+65012 <first : move b5a4
+65013 >second: time 119011
+65013 >second: otim 119003
+book hit = (NULL)
+65013 >second: usermove 65013 >second: b5a4
+65107 <second: move g5g7
+65107 >first : time 119003
+65107 >first : otim 119001
+book hit = (NULL)
+65107 >first : usermove 65107 >first : g5g7
+65204 <first : move a1c2
+65204 >second: time 119001
+65204 >second: otim 118993
+book hit = (NULL)
+65204 >second: usermove 65204 >second: a1c2
+65323 <second: move h4g2
+65323 >first : time 118993
+65323 >first : otim 118989
+book hit = (NULL)
+65323 >first : usermove 65323 >first : h4g2
+65444 <first : move c2a3
+65444 >second: time 118989
+65444 >second: otim 118981
+book hit = (NULL)
+65444 >second: usermove 65444 >second: c2a3
+65568 <second: move g7g4
+65568 >first : time 118981
+65568 >first : otim 118977
+book hit = (NULL)
+65568 >first : usermove 65568 >first : g7g4
+65682 <first : move d4d5
+65682 >second: time 118977
+65682 >second: otim 118970
+book hit = (NULL)
+65682 >second: usermove 65682 >second: d4d5
+65773 <second: move d3g3
+65773 >first : time 118970
+65773 >first : otim 118968
+book hit = (NULL)
+65773 >first : usermove 65773 >first : d3g3
+65885 <first : move P@c3
+LegalDrop: 0 @ 4,2)
+LegalDrop: 0 @ 4,2)
+LegalDrop: 0 @ 4,2)
+LegalDrop: 0 @ 4,2)
+65885 >second: time 118968
+65885 >second: otim 118958
+book hit = (NULL)
+65885 >second: usermove 65885 >second: P@c3
+65895 <second: move B@a1
+LegalDrop: 68 @ 2,0)
+LegalDrop: 68 @ 2,0)
+LegalDrop: 68 @ 2,0)
+LegalDrop: 68 @ 2,0)
+65895 >first : time 118958
+65895 >first : otim 118967
+book hit = (NULL)
+65895 >first : usermove 65895 >first : B@a1
+65899 <first : move b2a1
+65900 >second: time 118967
+65900 >second: otim 118958
+book hit = (NULL)
+65900 >second: usermove 65900 >second: b2a1
+65988 <second: move P@e7
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+LegalDrop: 66 @ 6,6)
+65988 >first : time 118958
+65988 >first : otim 118958
+book hit = (NULL)
+65988 >first : usermove 65988 >first : P@e7
+65991 <first : move B@c1
+LegalDrop: 2 @ 4,0)
+LegalDrop: 2 @ 4,0)
+LegalDrop: 2 @ 4,0)
+LegalDrop: 2 @ 4,0)
+65992 >second: time 118958
+65992 >second: otim 118958
+book hit = (NULL)
+65992 >second: usermove 65992 >second: B@c1
+66000 <second: move e2e1q
+66000 >first : time 118958
+66000 >first : otim 118957
+book hit = (NULL)
+66000 >first : usermove 66000 >first : e2e1q
+66087 <first : move P@e2
 LegalDrop: 0 @ 6,1)
 LegalDrop: 0 @ 6,1)
 LegalDrop: 0 @ 6,1)
 LegalDrop: 0 @ 6,1)
-32461 >second: time 118663
-32461 >second: otim 118647
+66087 >second: time 118957
+66087 >second: otim 118949
 book hit = (NULL)
-32461 >second: usermove 32461 >second: P@e2
-32464 <second: move e7d6
-32464 >first : time 118647
-32464 >first : otim 118663
+66087 >second: usermove 66087 >second: P@e2
+66092 <second: move b6b8
+66092 >first : time 118949
+66092 >first : otim 118957
 book hit = (NULL)
-32464 >first : usermove 32464 >first : e7d6
-32555 <first : move R@a3
-LegalDrop: 3 @ 2,2)
-LegalDrop: 3 @ 2,2)
-LegalDrop: 3 @ 2,2)
-LegalDrop: 3 @ 2,2)
-32555 >second: time 118663
-32555 >second: otim 118638
+66092 >first : usermove 66092 >first : b6b8
+66178 <first : move a6a7
+66178 >second: time 118957
+66178 >second: otim 118940
 book hit = (NULL)
-32555 >second: usermove 32555 >second: R@a3
-32560 <second: move c3c2
-32560 >first : time 118638
-32560 >first : otim 118663
+66178 >second: usermove 66178 >second: a6a7
+66266 <second: move Q@e6
+LegalDrop: 70 @ 6,5)
+LegalDrop: 70 @ 6,5)
+LegalDrop: 70 @ 6,5)
+LegalDrop: 70 @ 6,5)
+66266 >first : time 118940
+66266 >first : otim 118948
 book hit = (NULL)
-32560 >first : usermove 32560 >first : c3c2
-32647 <first : move g1h1
-32647 >second: time 118663
-32647 >second: otim 118630
+66266 >first : usermove 66266 >first : Q@e6
+66277 <first : move g8h6
+66277 >second: time 118948
+66277 >second: otim 118939
 book hit = (NULL)
-32647 >second: usermove 32647 >second: g1h1
-32734 <second: move a2b4
-32734 >first : time 118630
-32734 >first : otim 118654
+66277 >second: usermove 66277 >second: g8h6
+66387 <second: move c7d6
+66387 >first : time 118939
+66387 >first : otim 118937
 book hit = (NULL)
-32734 >first : usermove 32734 >first : a2b4
-32843 <first : move f6b2
-32843 >second: time 118654
-32843 >second: otim 118619
+66387 >first : usermove 66387 >first : c7d6
+66473 <first : move e2e3
+66473 >second: time 118937
+66473 >second: otim 118931
 book hit = (NULL)
-32843 >second: usermove 32843 >second: f6b2
-32956 <second: move a8b7
-32956 >first : time 118619
-32956 >first : otim 118643
+66473 >second: usermove 66473 >second: e2e3
+66559 <second: move e1f2
+66559 >first : time 118931
+66559 >first : otim 118928
 book hit = (NULL)
-32956 >first : usermove 32956 >first : a8b7
-33048 <first : move h1h2
-33048 >second: time 118643
-33048 >second: otim 118609
+66559 >first : usermove 66559 >first : e1f2
+66648 <first : move a3c2
+66648 >second: time 118928
+66648 >second: otim 118922
 book hit = (NULL)
-33048 >second: usermove 33048 >second: h1h2
-33136 <second: move c8d7
-33136 >first : time 118609
-33136 >first : otim 118634
+66648 >second: usermove 66648 >second: a3c2
+66765 <second: move g4h4
+66766 >first : time 118922
+66766 >first : otim 118916
 book hit = (NULL)
-33136 >first : usermove 33136 >first : c8d7
-33233 <first : move a5a6
-33233 >second: time 118634
-33233 >second: otim 118600
+66766 >first : usermove 66766 >first : g4h4
+66860 <first : move P@b6
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+LegalDrop: 0 @ 3,5)
+66860 >second: time 118916
+66860 >second: otim 118912
 book hit = (NULL)
-33233 >second: usermove 33233 >second: a5a6
-33334 <second: move b4a6
-33334 >first : time 118600
-33334 >first : otim 118624
+66860 >second: usermove 66860 >second: P@b6
+66872 <second: move e6d5
+66872 >first : time 118912
+66872 >first : otim 118915
 book hit = (NULL)
-33334 >first : usermove 33334 >first : b4a6
-33456 <first : move h4f5
-33456 >second: time 118624
-33456 >second: otim 118588
+66872 >first : usermove 66872 >first : e6d5
+66961 <first : move P@g6
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+LegalDrop: 0 @ 8,5)
+66961 >second: time 118915
+66961 >second: otim 118903
 book hit = (NULL)
-33457 >second: usermove 33457 >second: h4f5
-33582 <second: move Q@a5
-LegalDrop: 70 @ 2,4)
-LegalDrop: 70 @ 2,4)
-LegalDrop: 70 @ 2,4)
-LegalDrop: 70 @ 2,4)
-33582 >first : time 118588
-33582 >first : otim 118611
-book hit = (NULL)
-33582 >first : usermove 33582 >first : Q@a5
-33595 <first : move b3b4
-33595 >second: time 118611
-33595 >second: otim 118586
-book hit = (NULL)
-33595 >second: usermove 33595 >second: b3b4
-33689 <second: move N@d1
-LegalDrop: 67 @ 5,0)
-LegalDrop: 67 @ 5,0)
-LegalDrop: 67 @ 5,0)
-LegalDrop: 67 @ 5,0)
-33689 >first : time 118586
-33689 >first : otim 118602
-book hit = (NULL)
-33689 >first : usermove 33689 >first : N@d1
-33701 <first : move b2f6
-33701 >second: time 118602
-33701 >second: otim 118585
-book hit = (NULL)
-33701 >second: usermove 33701 >second: b2f6
-33818 <second: move P@d2
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-33818 >first : time 118585
-33818 >first : otim 118590
-book hit = (NULL)
-33818 >first : usermove 33818 >first : P@d2
-33831 <first : move P@a2
-LegalDrop: 0 @ 2,1)
-LegalDrop: 0 @ 2,1)
-LegalDrop: 0 @ 2,1)
-LegalDrop: 0 @ 2,1)
-33831 >second: time 118590
-33831 >second: otim 118584
-book hit = (NULL)
-33831 >second: usermove 33831 >second: P@a2
-33841 <second: move d2c1
-33842 >first : time 118584
-33842 >first : otim 118589
-book hit = (NULL)
-33842 >first : usermove 33842 >first : d2c1q
-33931 <first : move f5d4
-33931 >second: time 118589
-33931 >second: otim 148575
-book hit = (NULL)
-33931 >second: usermove 33931 >second: f5d4
-34047 <second: move d7e6
-34047 >first : time 148575
-34047 >first : otim 148577
-book hit = (NULL)
-34047 >first : usermove 34047 >first : d7e6
-34138 <first : move b4b5
-34139 >second: time 148577
-34139 >second: otim 148566
-book hit = (NULL)
-34139 >second: usermove 34139 >second: b4b5
-34237 <second: move R@d3
-LegalDrop: 69 @ 5,2)
-LegalDrop: 69 @ 5,2)
-LegalDrop: 69 @ 5,2)
-LegalDrop: 69 @ 5,2)
-34237 >first : time 148566
-34237 >first : otim 148567
-book hit = (NULL)
-34237 >first : usermove 34237 >first : R@d3
-34241 <first : move a3a5
-34241 >second: time 148567
-34241 >second: otim 148565
-book hit = (NULL)
-34241 >second: usermove 34241 >second: a3a5
-34336 <second: move Q@h5
-LegalDrop: 70 @ 9,4)
-LegalDrop: 70 @ 9,4)
-LegalDrop: 70 @ 9,4)
-LegalDrop: 70 @ 9,4)
-34336 >first : time 148565
-34336 >first : otim 148558
-book hit = (NULL)
-34336 >first : usermove 34336 >first : Q@h5
-34343 <first : move Q@h4
-LegalDrop: 4 @ 9,3)
-LegalDrop: 4 @ 9,3)
-LegalDrop: 4 @ 9,3)
-LegalDrop: 4 @ 9,3)
-34343 >second: time 148558
-34343 >second: otim 148565
-book hit = (NULL)
-34343 >second: usermove 34343 >second: Q@h4
-34356 <second: move e6f7
-34356 >first : time 148565
-34356 >first : otim 148557
-book hit = (NULL)
-34356 >first : usermove 34356 >first : e6f7
-34447 <first : move h4h5
-34447 >second: time 148557
-34447 >second: otim 148555
-book hit = (NULL)
-34447 >second: usermove 34447 >second: h4h5
-34540 <second: move b1d2
-34541 >first : time 148555
-34541 >first : otim 148547
-book hit = (NULL)
-34541 >first : usermove 34541 >first : b1d2
-34663 <first : move h2h3
-34663 >second: time 148547
-34663 >second: otim 148543
-book hit = (NULL)
-34663 >second: usermove 34663 >second: h2h3
-34750 <second: move f7g8
-34750 >first : time 148543
-34750 >first : otim 148539
-book hit = (NULL)
-34750 >first : usermove 34750 >first : f7g8
-34840 <first : move a5a4
-34840 >second: time 148539
-34840 >second: otim 148534
-book hit = (NULL)
-34840 >second: usermove 34840 >second: a5a4
-34935 <second: move f3f2
-34935 >first : time 148534
-34935 >first : otim 148529
-book hit = (NULL)
-34935 >first : usermove 34935 >first : f3f2
-35028 <first : move Q@b6
-LegalDrop: 4 @ 3,5)
-LegalDrop: 4 @ 3,5)
-LegalDrop: 4 @ 3,5)
-LegalDrop: 4 @ 3,5)
-35028 >second: time 148529
-35028 >second: otim 148525
-book hit = (NULL)
-35028 >second: usermove 35028 >second: Q@b6
-35040 <second: move b7c8
-35040 >first : time 148525
-35040 >first : otim 148528
-book hit = (NULL)
-35040 >first : usermove 35040 >first : b7c8
-35131 <first : move b6a7
-35131 >second: time 148528
-35131 >second: otim 148516
-book hit = (NULL)
-35131 >second: usermove 35131 >second: b6a7
-35225 <second: move d1b2
-35225 >first : time 148516
-35225 >first : otim 148519
-book hit = (NULL)
-35225 >first : usermove 35225 >first : d1b2
-35340 <first : move a7b8
-35340 >second: time 148519
-35340 >second: otim 148504
-book hit = (NULL)
-35340 >second: usermove 35340 >second: a7b8
-35438 <second: move c8d7
-35439 >first : time 148504
-35439 >first : otim 148509
-book hit = (NULL)
-35439 >first : usermove 35439 >first : c8d7
-35534 <first : move b5a6
-35534 >second: time 148509
-35534 >second: otim 148495
-book hit = (NULL)
-35534 >second: usermove 35534 >second: b5a6
-35634 <second: move d3a3
-35635 >first : time 148495
-35635 >first : otim 148499
-book hit = (NULL)
-35635 >first : usermove 35635 >first : d3a3
-35758 <first : move h7g8q
-35759 >second: time 148499
-35759 >second: otim 148482
-book hit = (NULL)
-35759 >second: usermove 35759 >second: h7g8q
-35859 <second: move d2c4
-35859 >first : time 148482
-35859 >first : otim 148489
-book hit = (NULL)
-35859 >first : usermove 35859 >first : d2c4
-35982 <first : move d4b5
-35982 >second: time 148489
-35982 >second: otim 148470
-book hit = (NULL)
-35982 >second: usermove 35982 >second: d4b5
-36097 <second: move a3e3
-36098 >first : time 148470
-36098 >first : otim 148477
-book hit = (NULL)
-36098 >first : usermove 36098 >first : a3e3
-36222 <first : move N@c8
-LegalDrop: 1 @ 4,7)
-LegalDrop: 1 @ 4,7)
-LegalDrop: 1 @ 4,7)
-LegalDrop: 1 @ 4,7)
-36223 >second: time 148477
-36223 >second: otim 148458
-book hit = (NULL)
-36223 >second: usermove 36223 >second: N@c8
-36237 <second: move c4b6
-36237 >first : time 148458
-36237 >first : otim 148476
-book hit = (NULL)
-36237 >first : usermove 36237 >first : c4b6
-36353 <first : move b8a7
-LegalDrop: 66 @ 2,0)
-LegalDrop: 66 @ 3,0)
-LegalDrop: 66 @ 5,0)
-LegalDrop: 66 @ 6,0)
-LegalDrop: 66 @ 8,0)
-LegalDrop: 66 @ 9,0)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 9,1)
-LegalDrop: 66 @ 9,1)
-LegalDrop: 66 @ 2,2)
-LegalDrop: 66 @ 2,2)
-LegalDrop: 66 @ 3,2)
-LegalDrop: 66 @ 3,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 5,2)
-LegalDrop: 66 @ 5,2)
-LegalDrop: 66 @ 7,2)
-LegalDrop: 66 @ 7,2)
-LegalDrop: 66 @ 3,3)
-LegalDrop: 66 @ 3,3)
-LegalDrop: 66 @ 4,3)
-LegalDrop: 66 @ 4,3)
-LegalDrop: 66 @ 5,3)
-LegalDrop: 66 @ 5,3)
-LegalDrop: 66 @ 7,3)
-LegalDrop: 66 @ 7,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 9,3)
-LegalDrop: 66 @ 9,3)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 7,4)
-LegalDrop: 66 @ 7,4)
-LegalDrop: 66 @ 4,5)
-LegalDrop: 66 @ 4,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 8,5)
-LegalDrop: 66 @ 8,5)
-LegalDrop: 66 @ 3,6)
-LegalDrop: 66 @ 3,6)
-LegalDrop: 66 @ 2,0)
-LegalDrop: 66 @ 3,0)
-LegalDrop: 66 @ 5,0)
-LegalDrop: 66 @ 6,0)
-LegalDrop: 66 @ 8,0)
-LegalDrop: 66 @ 9,0)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 5,1)
-LegalDrop: 66 @ 9,1)
-LegalDrop: 66 @ 9,1)
-LegalDrop: 66 @ 2,2)
-LegalDrop: 66 @ 2,2)
-LegalDrop: 66 @ 3,2)
-LegalDrop: 66 @ 3,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 4,2)
-LegalDrop: 66 @ 5,2)
-LegalDrop: 66 @ 5,2)
-LegalDrop: 66 @ 7,2)
-LegalDrop: 66 @ 7,2)
-LegalDrop: 66 @ 3,3)
-LegalDrop: 66 @ 3,3)
-LegalDrop: 66 @ 4,3)
-LegalDrop: 66 @ 4,3)
-LegalDrop: 66 @ 5,3)
-LegalDrop: 66 @ 5,3)
-LegalDrop: 66 @ 7,3)
-LegalDrop: 66 @ 7,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 8,3)
-LegalDrop: 66 @ 9,3)
-LegalDrop: 66 @ 9,3)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 2,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 6,4)
-LegalDrop: 66 @ 7,4)
-LegalDrop: 66 @ 7,4)
-LegalDrop: 66 @ 4,5)
-LegalDrop: 66 @ 4,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 6,5)
-LegalDrop: 66 @ 8,5)
-LegalDrop: 66 @ 8,5)
-LegalDrop: 66 @ 3,6)
-LegalDrop: 66 @ 3,6)
-36354 >second: time 148476
-36354 >second: otim 148446
-book hit = (NULL)
-36354 >second: usermove 36354 >second: b8a7
-36446 <second: move P@c7
-LegalDrop: 66 @ 4,6)
-LegalDrop: 66 @ 4,6)
-LegalDrop: 66 @ 4,6)
-LegalDrop: 66 @ 4,6)
-36446 >first : time 148446
-36446 >first : otim 148466
-book hit = (NULL)
-36446 >first : usermove 36446 >first : P@c7
-36451 <first : move b5d6
-36452 >second: time 148466
-36452 >second: otim 148445
-book hit = (NULL)
-36452 >second: usermove 36452 >second: b5d6
-36560 <second: move P@h7
+66961 >second: usermove 66961 >second: P@g6
+66971 <second: move P@h7
 LegalDrop: 66 @ 9,6)
 LegalDrop: 66 @ 9,6)
 LegalDrop: 66 @ 9,6)
 LegalDrop: 66 @ 9,6)
-36560 >first : time 148445
-36560 >first : otim 148455
+66971 >first : time 118903
+66971 >first : otim 118914
 book hit = (NULL)
-36560 >first : usermove 36560 >first : P@h7
-36569 <first : move a7b6
-36569 >second: time 148455
-36569 >second: otim 148445
+66971 >first : usermove 66971 >first : P@h7
+66975 <first : move a4b3
+66975 >second: time 118914
+66975 >second: otim 118903
 book hit = (NULL)
-36569 >second: usermove 36569 >second: a7b6
-36658 <second: move e3d3
-36658 >first : time 148445
-36658 >first : otim 148446
+66975 >second: usermove 66975 >second: a4b3
+67065 <second: move f8h6
+67065 >first : time 118903
+67065 >first : otim 118905
 book hit = (NULL)
-36658 >first : usermove 36658 >first : e3d3
-36748 <first : move d6b7
-36748 >second: time 148446
-36748 >second: otim 148436
+67065 >first : usermove 67065 >first : f8h6
+67179 <first : move h2h4
+67179 >second: time 118905
+67179 >second: otim 118892
 book hit = (NULL)
-36748 >second: usermove 36748 >second: d6b7
-36864 <second: move c2a4
-36865 >first : time 148436
-36865 >first : otim 148435
+67179 >second: usermove 67179 >second: h2h4
+67272 <second: move P@e2
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+LegalDrop: 66 @ 6,1)
+67272 >first : time 118892
+67272 >first : otim 118896
 book hit = (NULL)
-36865 >first : usermove 36865 >first : c2a4
-36983 <first : move b7c5
-36983 >second: time 148435
-36983 >second: otim 148424
+67272 >first : usermove 67272 >first : P@e2
+67285 <first : move R@a6
+LegalDrop: 3 @ 2,5)
+LegalDrop: 3 @ 2,5)
+LegalDrop: 3 @ 2,5)
+LegalDrop: 3 @ 2,5)
+67285 >second: time 118896
+67285 >second: otim 118890
 book hit = (NULL)
-36983 >second: usermove 36983 >second: b7c5
-37107 <second: resign
-GameEnds(26, Black resigns, 6)
-37108 >first : result 1-0 {Black resigns}
-37108 >second: result 1-0 {Black resigns}
-37108 >first : quit
-37109 >second: quit
-GameEnds(26, Black resigns, 2)
+67285 >second: usermove 67285 >second: R@a6
+67296 <second: move h6g7
+67296 >first : time 118890
+67296 >first : otim 118895
+book hit = (NULL)
+67296 >first : usermove 67296 >first : h6g7
+67388 <first : move c2e1
+67389 >second: time 118895
+67389 >second: otim 118881
+book hit = (NULL)
+67389 >second: usermove 67389 >second: c2e1
+67506 <second: move N@g8
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+LegalDrop: 67 @ 8,7)
+67506 >first : time 118881
+67506 >first : otim 118883
+book hit = (NULL)
+67506 >first : usermove 67506 >first : N@g8
+67519 <first : move a7b8
+67519 >second: time 118883
+67519 >second: otim 118880
+book hit = (NULL)
+67519 >second: usermove 67519 >second: a7b8q
+67612 <second: move d6e6
+67612 >first : time 118880
+67612 >first : otim 118874
+book hit = (NULL)
+67612 >first : usermove 67613 >first : d6e6
+67707 <first : move c3b4
+67707 >second: time 118874
+67707 >second: otim 118870
+book hit = (NULL)
+67707 >second: usermove 67707 >second: c3b4
+67804 <second: move f4e3
+67804 >first : time 118870
+67804 >first : otim 118864
+book hit = (NULL)
+67804 >first : usermove 67804 >first : f4e3
+67900 <first : move R@g4
+LegalDrop: 3 @ 8,3)
+LegalDrop: 3 @ 8,3)
+LegalDrop: 3 @ 8,3)
+LegalDrop: 3 @ 8,3)
+67901 >second: time 118864
+67901 >second: otim 118861
+book hit = (NULL)
+67901 >second: usermove 67901 >second: R@g4
+67913 <second: move h7g6
+67913 >first : time 118861
+67913 >first : otim 118863
+book hit = (NULL)
+67913 >first : usermove 67913 >first : h7g6
+68006 <first : move g4e4
+68006 >second: time 118863
+68006 >second: otim 118851
+book hit = (NULL)
+68006 >second: usermove 68006 >second: g4e4
+68102 <second: move P@c4
+LegalDrop: 66 @ 4,3)
+LegalDrop: 66 @ 4,3)
+LegalDrop: 66 @ 4,3)
+LegalDrop: 66 @ 4,3)
+68102 >first : time 118851
+68102 >first : otim 118853
+book hit = (NULL)
+68102 >first : usermove 68102 >first : P@c4
+68116 <first : move B@f1
+LegalDrop: 2 @ 7,0)
+LegalDrop: 2 @ 7,0)
+LegalDrop: 2 @ 7,0)
+LegalDrop: 2 @ 7,0)
+68116 >second: time 118853
+68116 >second: otim 118850
+book hit = (NULL)
+68116 >second: usermove 68116 >second: B@f1
+68126 <second: move e6f6
+68127 >first : time 118850
+68127 >first : otim 118852
+book hit = (NULL)
+68127 >first : usermove 68127 >first : e6f6
+68218 <first : move h1h3
+68218 >second: time 118852
+68218 >second: otim 118841
+book hit = (NULL)
+68218 >second: usermove 68218 >second: h1h3
+68311 <second: move d5e4
+68311 >first : time 118841
+68311 >first : otim 118843
+book hit = (NULL)
+68311 >first : usermove 68311 >first : d5e4
+68407 <first : move P@c2
+LegalDrop: 0 @ 4,1)
+LegalDrop: 0 @ 4,1)
+LegalDrop: 0 @ 4,1)
+LegalDrop: 0 @ 4,1)
+68407 >second: time 118843
+68407 >second: otim 118831
+book hit = (NULL)
+68407 >second: usermove 68407 >second: P@c2
+68421 <second: move P@f4
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+LegalDrop: 66 @ 7,3)
+68421 >first : time 118831
+68421 >first : otim 118841
+book hit = (NULL)
+68421 >first : usermove 68421 >first : P@f4
+68426 <first : move e1g2
+68426 >second: time 118841
+68426 >second: otim 118831
+book hit = (NULL)
+68426 >second: usermove 68426 >second: e1g2
+68541 <second: move R@f7
+LegalDrop: 69 @ 7,6)
+LegalDrop: 69 @ 7,6)
+LegalDrop: 69 @ 7,6)
+LegalDrop: 69 @ 7,6)
+68541 >first : time 118831
+68541 >first : otim 118830
+book hit = (NULL)
+68541 >first : usermove 68541 >first : R@f7
+68553 <first : move N@c8
+LegalDrop: 1 @ 4,7)
+LegalDrop: 1 @ 4,7)
+LegalDrop: 1 @ 4,7)
+LegalDrop: 1 @ 4,7)
+68553 >second: time 118830
+68553 >second: otim 118830
+book hit = (NULL)
+68553 >second: usermove 68553 >second: N@c8
+68558 <second: move f6g5
+68558 >first : time 118830
+68558 >first : otim 118829
+book hit = (NULL)
+68558 >first : usermove 68558 >first : f6g5
+68650 <first : move P@d3
+LegalDrop: 0 @ 5,2)
+LegalDrop: 0 @ 5,2)
+LegalDrop: 0 @ 5,2)
+LegalDrop: 0 @ 5,2)
+68650 >second: time 118829
+68650 >second: otim 118820
+book hit = (NULL)
+68650 >second: usermove 68650 >second: P@d3
+68661 <second: move g5h6
+68661 >first : time 118820
+68661 >first : otim 118828
+book hit = (NULL)
+68661 >first : usermove 68661 >first : g5h6
+68750 <first : move h3h2
+68750 >second: time 118828
+68750 >second: otim 118811
+book hit = (NULL)
+68750 >second: usermove 68750 >second: h3h2
+68837 <second: move h6g5
+68837 >first : time 118811
+68837 >first : otim 118820
+book hit = (NULL)
+68837 >first : usermove 68837 >first : h6g5
+68926 <first : move g2e1
+68927 >second: time 118820
+68927 >second: otim 118802
+book hit = (NULL)
+68927 >second: usermove 68927 >second: g2e1
+69041 <second: move g3g1
+69041 >first : time 118802
+69041 >first : otim 118808
+book hit = (NULL)
+69041 >first : usermove 69041 >first : g3g1
+69134 <first : move a1b1
+69134 >second: time 118808
+69134 >second: otim 118793
+book hit = (NULL)
+69134 >second: usermove 69134 >second: a1b1
+69225 <second: move e4f5
+69225 >first : time 118793
+69225 >first : otim 118799
+book hit = (NULL)
+69225 >first : usermove 69225 >first : e4f5
+69317 <first : move c2c3
+69317 >second: time 118799
+69317 >second: otim 118784
+book hit = (NULL)
+69317 >second: usermove 69317 >second: c2c3
+69413 <second: move f5e4
+69413 >first : time 118784
+69413 >first : otim 118789
+book hit = (NULL)
+69413 >first : usermove 69413 >first : f5e4
+69512 <first : move e1c2
+69512 >second: time 118789
+69512 >second: otim 118774
+book hit = (NULL)
+69512 >second: usermove 69512 >second: e1c2
+69637 <second: move g1g3
+69637 >first : time 118774
+69637 >first : otim 118777
+book hit = (NULL)
+69637 >first : usermove 69637 >first : g1g3
+69729 <first : move b4b5
+69729 >second: time 118777
+69729 >second: otim 118765
+book hit = (NULL)
+69729 >second: usermove 69729 >second: b4b5
+69819 <second: move g3h3
+69819 >first : time 118765
+69819 >first : otim 118768
+book hit = (NULL)
+69819 >first : usermove 69819 >first : g3h3
+69914 <first : move c2a3
+69914 >second: time 118768
+69914 >second: otim 118755
+book hit = (NULL)
+69914 >second: usermove 69914 >second: c2a3
+70024 <second: move h3f1
+70025 >first : time 118755
+70025 >first : otim 118757
+book hit = (NULL)
+70025 >first : usermove 70025 >first : h3f1
+70134 <first : move b3c4
+70134 >second: time 118757
+70134 >second: otim 118744
+book hit = (NULL)
+70134 >second: usermove 70134 >second: b3c4
+70221 <second: move B@f8
+LegalDrop: 68 @ 7,7)
+LegalDrop: 68 @ 7,7)
+LegalDrop: 68 @ 7,7)
+LegalDrop: 68 @ 7,7)
+70221 >first : time 118744
+70221 >first : otim 118748
+book hit = (NULL)
+70221 >first : usermove 70221 >first : B@f8
+70226 <first : move P@c6
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+LegalDrop: 0 @ 4,5)
+70226 >second: time 118748
+70226 >second: otim 148744
+book hit = (NULL)
+70226 >second: usermove 70226 >second: P@c6
+70234 <second: move e4d4
+70234 >first : time 148744
+70234 >first : otim 148747
+book hit = (NULL)
+70234 >first : usermove 70234 >first : e4d4
+70322 <first : move a6a7
+70322 >second: time 148747
+70322 >second: otim 148735
+book hit = (NULL)
+70322 >second: usermove 70322 >second: a6a7
+70411 <second: move f7f5
+70411 >first : time 148735
+70411 >first : otim 148739
+book hit = (NULL)
+70411 >first : usermove 70411 >first : f7f5
+70496 <first : move b1b2
+70496 >second: time 148739
+70496 >second: otim 148727
+book hit = (NULL)
+70496 >second: usermove 70496 >second: b1b2
+70582 <second: move d4c5
+70582 >first : time 148727
+70582 >first : otim 148730
+book hit = (NULL)
+70582 >first : usermove 70582 >first : d4c5
+70669 <first : move c6d7
+70669 >second: time 148730
+70669 >second: otim 148718
+book hit = (NULL)
+70669 >second: usermove 70669 >second: c6d7
+70760 <second: move c5c7
+70760 >first : time 148718
+70760 >first : otim 148721
+book hit = (NULL)
+70760 >first : usermove 70760 >first : c5c7
+70858 <first : move h4h3
+70858 >second: time 148721
+70858 >second: otim 148708
+book hit = (NULL)
+70858 >second: usermove 70858 >second: h4h3
+70949 <second: move e3d2
+70949 >first : time 148708
+70949 >first : otim 148712
+book hit = (NULL)
+70949 >first : usermove 70949 >first : e3d2
+71047 <first : move b2b1
+71047 >second: time 148712
+71047 >second: otim 148698
+book hit = (NULL)
+71047 >second: usermove 71047 >second: b2b1
+71142 <second: move P@a4
+LegalDrop: 66 @ 2,3)
+LegalDrop: 66 @ 2,3)
+LegalDrop: 66 @ 2,3)
+LegalDrop: 66 @ 2,3)
+71142 >first : time 148698
+71142 >first : otim 148702
+book hit = (NULL)
+71142 >first : usermove 71142 >first : P@a4
+71158 <first : move N@e1
+LegalDrop: 1 @ 6,0)
+LegalDrop: 1 @ 6,0)
+LegalDrop: 1 @ 6,0)
+LegalDrop: 1 @ 6,0)
+71158 >second: time 148702
+71159 >second: otim 148697
+book hit = (NULL)
+71159 >second: usermove 71159 >second: N@e1
+71172 <second: move g8h6
+71172 >first : time 148697
+71172 >first : otim 148701
+book hit = (NULL)
+71172 >first : usermove 71172 >first : g8h6
+71281 <first : move h3e3
+71281 >second: time 148701
+71281 >second: otim 148686
+book hit = (NULL)
+71281 >second: usermove 71281 >second: h3e3
+71390 <second: move g5f6
+71390 >first : time 148686
+71390 >first : otim 148690
+book hit = (NULL)
+71390 >first : usermove 71390 >first : g5f6
+71478 <first : move b1c2
+71478 >second: time 148690
+71478 >second: otim 148677
+book hit = (NULL)
+71478 >second: usermove 71478 >second: b1c2
+71567 <second: move g6h5
+71567 >first : time 148677
+71567 >first : otim 148681
+book hit = (NULL)
+71567 >first : usermove 71567 >first : g6h5
+71669 <first : move a7b7
+71669 >second: time 148681
+71669 >second: otim 148667
+book hit = (NULL)
+71669 >second: usermove 71669 >second: a7b7
+71770 <second: move P@b2
+LegalDrop: 66 @ 3,1)
+LegalDrop: 66 @ 3,1)
+LegalDrop: 66 @ 3,1)
+LegalDrop: 66 @ 3,1)
+71770 >first : time 148667
+71770 >first : otim 148671
+book hit = (NULL)
+71770 >first : usermove 71770 >first : P@b2
+71775 <first : move e3e4
+71775 >second: time 148671
+71775 >second: otim 148666
+book hit = (NULL)
+71775 >second: usermove 71775 >second: e3e4
+71879 <second: move d2c1
+71879 >first : usermove 71879 >first : d2c1q
+GameEnds(27, Xboard adjudication: Checkmate, 4)
+71879 >first : result 0-1 {Xboard adjudication: Checkmate}
+71879 >second: result 0-1 {Xboard adjudication: Checkmate}
+71879 >first : quit
+71880 >second: quit
+GameEnds(27, Xboard adjudication: Checkmate, 2)
