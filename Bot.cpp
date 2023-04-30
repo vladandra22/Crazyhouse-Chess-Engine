@@ -15,7 +15,7 @@ Bot::Bot() { /* Initialize custom fields here */
 }
 
 void Bot::generateChessBoard(ChessPiece board[8][8]) {
-    // Initialize black pieces
+    // Initialize white pieces
     board[0][0] = {Piece::ROOK, PlaySide::WHITE, false, 0};
     board[0][1] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
     board[0][2] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
@@ -33,7 +33,7 @@ void Bot::generateChessBoard(ChessPiece board[8][8]) {
             board[i][j] = {Piece::EMPTY, PlaySide::NONE, false, 0};
         }
     }
-    // Initialize white pieces
+    // Initialize black pieces
     for (int i = 0; i < 8; i++) {
         board[6][i] = {Piece::PAWN, PlaySide::BLACK, false, 0};
     }
@@ -388,7 +388,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
     }
 
   // Generare mutari CrazyHouse
- for(int i = 0; i < 8; i++)
+ for(int i = 0; i < 8; i++){
     for(int j = 0; j < 8; j++){
         // Verificam sa gasim o destinatie nula pentru piesa noastra
         if(board[i][j].culoare == PlaySide::NONE){
@@ -416,6 +416,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
             }
           }
         }
+      }
     }
       // Generare mutari En Passant
     int last_src_num = last_src[1] - '1';
@@ -423,9 +424,9 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
     int last_dest_num = last_dest[1] - '1';
 
      bool enPassant = false;
-    if(last_src != "zz" && board[last_dest_num][last_dest_lit].piesa == Piece::PAWN && abs(last_dest_num - last_src_num) == 2)
+    if(last_src != "zz" && board[last_dest_num][last_dest_lit].piesa == Piece::PAWN && abs(last_dest_num - last_src_num) == 2){
       enPassant = true;
-    
+    }
       for(int j = 0; j < 8; j++){
         if(board[3][j].piesa == Piece::PAWN && board[3][j].culoare == PlaySide::BLACK && engineSide == PlaySide::BLACK){
           if(enPassant == true)
