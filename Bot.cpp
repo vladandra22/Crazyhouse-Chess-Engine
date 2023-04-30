@@ -16,35 +16,35 @@ Bot::Bot() { /* Initialize custom fields here */
 
 void Bot::generateChessBoard(ChessPiece board[8][8]) {
     // Initialize white pieces
-    board[0][0] = {Piece::ROOK, PlaySide::WHITE, false, 0};
-    board[0][1] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
-    board[0][2] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
-    board[0][3] = {Piece::QUEEN, PlaySide::WHITE, false, 0};
-    board[0][4] = {Piece::KING, PlaySide::WHITE, false, 0};
-    board[0][5] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
-    board[0][6] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
-    board[0][7] = {Piece::ROOK, PlaySide::WHITE, false, 0};
-    for (int i = 0; i < 8; i++) {
-        board[1][i] = {Piece::PAWN, PlaySide::WHITE, false, 0};
-    }
+  board[0][0] = {Piece::ROOK, PlaySide::WHITE, false, 0};
+  board[0][1] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
+  board[0][2] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
+  board[0][3] = {Piece::QUEEN, PlaySide::WHITE, false, 0};
+  board[0][4] = {Piece::KING, PlaySide::WHITE, false, 0};
+  board[0][5] = {Piece::BISHOP, PlaySide::WHITE, false, 0};
+  board[0][6] = {Piece::KNIGHT, PlaySide::WHITE, false, 0};
+  board[0][7] = {Piece::ROOK, PlaySide::WHITE, false, 0};
+  for (int i = 0; i < 8; i++) {
+      board[1][i] = {Piece::PAWN, PlaySide::WHITE, false, 0};
+  }
     // Initialize empty squares
-    for (int i = 2; i < 6; i++) {
-        for (int j = 0; j < 8; j++) {
-            board[i][j] = {Piece::EMPTY, PlaySide::NONE, false, 0};
-        }
+  for (int i = 2; i < 6; i++) {
+      for (int j = 0; j < 8; j++) {
+          board[i][j] = {Piece::EMPTY, PlaySide::NONE, false, 0};
+      }
     }
     // Initialize black pieces
-    for (int i = 0; i < 8; i++) {
-        board[6][i] = {Piece::PAWN, PlaySide::BLACK, false, 0};
-    }
-    board[7][0] = {Piece::ROOK, PlaySide::BLACK, false, 0};
-    board[7][1] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
-    board[7][2] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
-    board[7][3] = {Piece::QUEEN, PlaySide::BLACK, false, 0};
-    board[7][4] = {Piece::KING, PlaySide::BLACK, false, 0};
-    board[7][5] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
-    board[7][6] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
-    board[7][7] = {Piece::ROOK, PlaySide::BLACK, false, 0};
+  for (int i = 0; i < 8; i++) {
+    board[6][i] = {Piece::PAWN, PlaySide::BLACK, false, 0};
+  }
+  board[7][0] = {Piece::ROOK, PlaySide::BLACK, false, 0};
+  board[7][1] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
+  board[7][2] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
+  board[7][3] = {Piece::QUEEN, PlaySide::BLACK, false, 0};
+  board[7][4] = {Piece::KING, PlaySide::BLACK, false, 0};
+  board[7][5] = {Piece::BISHOP, PlaySide::BLACK, false, 0};
+  board[7][6] = {Piece::KNIGHT, PlaySide::BLACK, false, 0};
+  board[7][7] = {Piece::ROOK, PlaySide::BLACK, false, 0};
 }
 
 // Functie care imi face miscarea pe tabla.
@@ -423,7 +423,7 @@ std::queue<Move*> Bot::generateLegalMoves(PlaySide engineSide) {
     int last_dest_lit = last_dest[0] - 'a';
     int last_dest_num = last_dest[1] - '1';
 
-     bool enPassant = false;
+    bool enPassant = false;
     if(last_src != "zz" && board[last_dest_num][last_dest_lit].piesa == Piece::PAWN && abs(last_dest_num - last_src_num) == 2){
       enPassant = true;
     }
